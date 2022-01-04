@@ -1,0 +1,7 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      collapse: section
+    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+    download: ["pdf"]

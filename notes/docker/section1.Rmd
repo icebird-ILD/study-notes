@@ -1,0 +1,9 @@
+## Alpine {-}
+
+### Packages Summary {-}
+
+procps : for hdfs related images   
+iputils : for ping   
+coreutils : for cat mv rm commands   
+openssh : for ssh server   
+bash : ???   

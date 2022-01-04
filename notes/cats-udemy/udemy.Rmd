@@ -1,0 +1,16 @@
+# cats udemy {-}
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+dir=paste(getwd())
+section1_file=paste(dir, "section1.Rmd", sep = "/")
+section2_file=paste(dir, "section2.Rmd", sep = "/")
+```
+
+
+```{r child = section1_file}
+```
+
+```{r child = section2_file}
+```
+

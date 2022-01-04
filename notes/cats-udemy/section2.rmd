@@ -1,0 +1,59 @@
+## Section 2 {-}
+
+### Summary {-}
+
+1. companion objects are the best place for default instance   
+   for type-classes.    
+
+
+2. Ops classes should use value class for performance reasons
+
+
+### Questions {-}
+
+1. context bound implicits   
+   Note : Implement is where ever you find it in current example.   
+   As of now, I can find it here :-
+
+```
+  override def write[A](e: A)(implicit byteEncoder: ByteEncoder[A]): Unit = {
+    val bytes: Array[Byte] = byteEncoder.encode(e)
+    Using(new FileOutputStream("target/obj.codec")) { os =>
+      os.write(bytes)
+      os.flush()
+    }
+  }
+```
+
+2. implicit resolution from companion object scope
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/quiz/5145060#questions/16388800  
+
+
+
+### Topics to work on {-}
+
+1. automatic resolution for Option[A], when encoder for A is given 
+```
+implicit def optionEncoder[A](implicit encoder: ByteEncoder[A]): ByteEncoder[Option[A]] = new ByteEncoder[Option[A]] {
+  override def encode(mayBe: Option[A]): Array[Byte] = {
+    mayBe match {
+      case Some(e) => encoder.encode(e)
+      case None => Array()
+    }
+  }
+}
+```
+
+Also refer :-   
+https://www.udemy.com/course/functional-programming-with-scala-cats/learn/quiz/5145060#questions/14728112
+
+2. Best place to put **ByteEncoderOps**
+
+### Pending {-}
+
+1. Laws (Theory, Example and Practice)   
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/lecture/25327908#questions/14728112   
+
+
+3. Exercise :-   
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/lecture/25808130#questions/14728112

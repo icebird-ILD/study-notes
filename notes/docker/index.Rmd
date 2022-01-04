@@ -1,0 +1,12 @@
+# Docker {-}
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+dir=paste(getwd())
+section1_file=paste(dir, "section1.Rmd", sep = "/")
+```
+
+
+```{r child = section1_file}
+```
+
