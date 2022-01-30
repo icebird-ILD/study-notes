@@ -1,17 +1,142 @@
-## Section 1 {-}
+---
+title: "My Report"
+output: 
+  html_document:
+    number_sections: true
+---
 
-### Summary {-}
 
-Sample summary
+## Module 1 Pages Proposal {-}
 
-### Questions {-}
+### Theory:     Overview of Java
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
 
-sample questions
+### Example:    How to print output in java.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
 
-### Topics to work on {-}
+### Exercise:   Write a Program to disply "My first java program" in jshell file
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
 
-sample topics
+### Exercise:   Write a Program to disply "I am loving coding" in jshell file
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
 
-### Pending {-}
+### Exercise:   Write a Program to disply "I am loving coding" in jshell file in 3 times in 3 lines.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
 
-pending
+### Exercise:   Write a Program in jshell file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing"
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in jshell file which displys value 10
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in jshell file which displys value 37.4
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in jshell file which displys multiple lines as follows: "I am loving coding" and integer value 10
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Theory:     Variable introduction
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Example:    How to create varaiable of type String and dispaly its value.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares String type variable with value "Hollywood" and display its value
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in jshell file which declares 2 String type variables with value "John" and "Marry" and display their values
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to create varaiable of type int and dispaly its value.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares int type variable with value 10 and display its value
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in jshell file which declares 2 int type variables with value 10 and 20 and display their values
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to create varaiable of type float and dispaly its value.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares float type variable with value 37.4 and display its value
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares 2 float type variables with value 37.4 and 98.6 and display their values
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Theory:     What is String concatenation.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to do String concatenation.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which concatenates 2 String literlas in print statement.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which concatenates 3 String literlas in print statement.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares 2 String variables with some values and concatenates these variables in print statement.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares 3 String variables with some values and concatenates these variables in print statement.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which concatenates 1 String literla and 1 int literal in print statement.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in jshell file which declares 2 variables of types String and int with some values and concatenates these variables in print statement.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Addition: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a+b. Print value variable c.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Subtraction: Write a Program in jshell file which declares 3 int variables such as a=100, b=40, c=a-b. Print value variable c.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Multiplication: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a*b. Print value variable c.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Division: Write a Program in jshell file which declares 3 int variables such as a=20, b=10, c=a/b. Print value variable c.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Theory:     Importance of comments.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to comment and uncomment.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Comment few lines in given program such that it gives output 20.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Uncomment few lines in given program such that it gives output 30.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Comment/Uncomment few lines in given program such that it gives output "I love my country and I am proud of it."
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree celsius temprature."
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
