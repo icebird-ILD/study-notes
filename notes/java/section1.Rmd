@@ -122,6 +122,76 @@ Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
 ### Exercise:   Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree celsius temprature."
 Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
 
+### Theory:     Switch to .java fie.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to create empty class in java file.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a java program which contains an empty class file.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to create empty main method in java file.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a java program which contains an class file, in which an empty main method is created.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to print "Hello world" in main method in java file.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a Program in java file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing"
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in java file which displys value 10
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in java file which displys value 37.4
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+
+### Exercise:   Write a Program in java file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Addition: Write a Program in jshell file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Theory:     Importance of methods.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to create method in java file.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Addition: Write a java program in such that it contains static method "addition(int firstArg, int secondArg)" which print addition of given arguments. Call this addition method from main method.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Subtractiion: Write a java program in such that it contains static method "subtraction(int firstArg, int secondArg)" which print subtraction of given arguments. Call this subtraction method from main method.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Square: Write a java program in such that it contains static method "square(int number)" which print square of given argument. Call this square method from main method.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Cube: Write a java program in such that it contains static method "cube(int number)" which print cube of given argument. Call this cube method from main method.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Theory:     Importance of static data members.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Example:    How to create static data member and its usage in java file.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a java program which contains a static data member. Assign it to some value and print this value in main method.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+### Exercise:   Write a java program which contains a static data member. Assign it to some value. Create a static method print which prints static variable value. Call this print method from main method.
+Status:         `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+
+
+
+
+
+
+
+
 
 
 
