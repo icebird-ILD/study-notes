@@ -9,6 +9,7 @@ github-repo: rstudio/bookdown-demo
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(kableExtra)
 dir=paste(getwd())
 cats_udemy_topic_file=paste(dir, "cats-udemy/udemy.Rmd", sep = "/")
 kafka_udemy_topic_file=paste(dir, "kafka-udemy/udemy.Rmd", sep = "/")

@@ -1,17 +1,33 @@
-## Section 2 {-}
+---
+title: "My Report"
+output: 
+  html_document:
+    number_sections: true
+---
 
-### Summary {-}
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(kableExtra)
+```
 
-Sample summary
+## First Module Pages Proposal {-}
 
-### Questions {-}
+1. **Theory** :   
+Overview of Java   
+`r text_spec("TODO", color = "red", bold = TRUE)` 
 
-sample questions
+1. **Example** :   
+How to print output in java.   
+`r text_spec("TODO", color = "red", bold = TRUE)` 
 
-### Topics to work on {-}
+1. **Exercise** :   
+Write a Program to display op message **My first java program** in jshell file.   
+`r text_spec("TODO", color = "red", bold = TRUE)` 
 
-sample topics
+1. **Exercise** :   
+Write a Program to display **I am loving coding** in jshell file.      
+`r text_spec("TODO", color = "red", bold = TRUE)` 
 
-### Pending {-}
 
-pending
+
+
