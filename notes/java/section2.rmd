@@ -12,21 +12,25 @@ library(kableExtra)
 
 ## First Module Pages Proposal {-}
 
-1. **Theory** :   
+1. **Theory** : 
+`r text_spec("TODO", color = "red", bold = TRUE)`   
 Overview of Java   
-`r text_spec("TODO", color = "red", bold = TRUE)` 
 
-1. **Example** :   
+
+1. **Example** : 
+`r text_spec("TODO", color = "red", bold = TRUE)`   
 How to print output in java.   
-`r text_spec("TODO", color = "red", bold = TRUE)` 
 
-1. **Exercise** :   
+
+1. **Exercise** : 
+`r text_spec("TODO", color = "red", bold = TRUE)`   
 Write a Program to display op message **My first java program** in jshell file.   
-`r text_spec("TODO", color = "red", bold = TRUE)` 
 
-1. **Exercise** :   
+
+1. **Exercise** : 
+`r text_spec("TODO", color = "red", bold = TRUE)`   
 Write a Program to display **I am loving coding** in jshell file.      
-`r text_spec("TODO", color = "red", bold = TRUE)` 
+
 
 
 
