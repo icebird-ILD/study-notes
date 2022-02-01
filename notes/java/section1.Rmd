@@ -1,164 +1,237 @@
 ## Display Output {-}
 
-### Theory:     Overview of Java.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Overview of Java.    
 
-### Example:    How to print output in java.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to print output in java.     
 
-### Exercise:   Write a Program to disply "My first java program" in jshell file.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program to disply "My first java program" in jshell file.    
 
-### Exercise:   Write a Program to disply "I am loving coding" in jshell file.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program to disply "I am loving coding" in jshell file.     
 
-### Exercise:   Write a Program to disply "I am loving coding" in jshell file in 3 times in 3 lines.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program to disply "I am loving coding" in jshell file in 3 times in 3 lines.     
 
-### Exercise:   Write a Program in jshell file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing".    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
 
-### Exercise:   Write a Program in jshell file which displys value 10.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which displys value 10.     
 
-### Exercise:   Write a Program in jshell file which displys value 37.4.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which displys value 37.4.     
 
-### Exercise:   Write a Program in jshell file which displys multiple lines as follows: "I am loving coding" and integer value 10.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which displys multiple lines as follows: "I am loving coding" and integer value 10.    
 
 ## Variables, Data types {-}
 
-### Theory:     Variable introduction.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Variable introduction.     
 
-### Example:    How to create varaiable of type String and dispaly its value..    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create varaiable of type String and dispaly its value..    
 
-### Exercise:   Write a Program in jshell file which declares String type variable with value "Hollywood" and display its value.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares String type variable with value "Hollywood" and display its value.     
 
-### Exercise:   Write a Program in jshell file which declares 2 String type variables with value "John" and "Marry" and display their values.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares 2 String type variables with value "John" and "Marry" and display their values.    
 
-### Example:    How to create varaiable of type int and dispaly its value.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create varaiable of type int and dispaly its value.    
 
-### Exercise:   Write a Program in jshell file which declares int type variable with value 10 and display its value.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares int type variable with value 10 and display its value.     
 
-### Exercise:   Write a Program in jshell file which declares 2 int type variables with value 10 and 20 and display their values.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares 2 int type variables with value 10 and 20 and display their values.   
 
-### Example:    How to create varaiable of type float and dispaly its value.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create varaiable of type float and dispaly its value.    
 
-### Exercise:   Write a Program in jshell file which declares float type variable with value 37.4 and display its value.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares float type variable with value 37.4 and display its value.    
 
-### Exercise:   Write a Program in jshell file which declares 2 float type variables with value 37.4 and 98.6 and display their values.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares 2 float type variables with value 37.4 and 98.6 and display their values.   
 
-### Exercise:   Write a Program in jshell file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
 
-### Theory:     What is String concatenation.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+What is String concatenation.   
 
-### Example:    How to do String concatenation.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to do String concatenation.   
 
-### Exercise:   Write a Program in jshell file which concatenates 2 String literlas in print statement.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which concatenates 2 String literlas in print statement.   
 
-### Exercise:   Write a Program in jshell file which concatenates 3 String literlas in print statement.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which concatenates 3 String literlas in print statement.   
 
-### Exercise:   Write a Program in jshell file which declares 2 String variables with some values and concatenates these variables in print statement.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares 2 String variables with some values and concatenates these variables in print statement.    
 
-### Exercise:   Write a Program in jshell file which declares 3 String variables with some values and concatenates these variables in print statement.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares 3 String variables with some values and concatenates these variables in print statement.    
 
-### Exercise:   Write a Program in jshell file which concatenates 1 String literla and 1 int literal in print statement.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which concatenates 1 String literla and 1 int literal in print statement.    
 
-### Exercise:   Write a Program in jshell file which declares 2 variables of types String and int with some values and concatenates these variables in print statement.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jshell file which declares 2 variables of types String and int with some values and concatenates these variables in print statement.   
 
-### Exercise:   Addition: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a+b. Print value variable c.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Addition: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a+b. Print value variable c.    
 
-### Exercise:   Subtraction: Write a Program in jshell file which declares 3 int variables such as a=100, b=40, c=a-b. Print value variable c.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Subtraction: Write a Program in jshell file which declares 3 int variables such as a=100, b=40, c=a-b. Print value variable c.   
 
-### Exercise:   Multiplication: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a*b. Print value variable c.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Multiplication: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a*b. Print value variable c.    
 
-### Exercise:   Division: Write a Program in jshell file which declares 3 int variables such as a=20, b=10, c=a/b. Print value variable c.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Division: Write a Program in jshell file which declares 3 int variables such as a=20, b=10, c=a/b. Print value variable c.    
 
-### Theory:     Importance of comments.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of comments.   
 
-### Example:    How to comment and uncomment.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to comment and uncomment.   
 
-### Exercise:   Comment few lines in given program such that it gives output 20.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Comment few lines in given program such that it gives output 20.    
 
-### Exercise:   Uncomment few lines in given program such that it gives output 30.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Uncomment few lines in given program such that it gives output 30.    
 
-### Exercise:   Comment/Uncomment few lines in given program such that it gives output "I love my country and I am proud of it."    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Comment/Uncomment few lines in given program such that it gives output "I love my country and I am proud of it."    
 
-### Exercise:   Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree celsius temprature."    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree celsius temprature."    
 
 ## Classes {-}
 
-### Theory:     Switch to .java fie.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Switch to .java fie.    
 
-### Example:    How to create empty class in java file.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create empty class in java file.   
 
-### Exercise:   Write a java program which contains an empty class file.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains an empty class file.    
 
-### Example:    How to create empty main method in java file.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create empty main method in java file.   
 
-### Exercise:   Write a java program which contains an class file, in which an empty main method is created.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains an class file, in which an empty main method is created.    
 
-### Example:    How to print "Hello world" in main method in java file.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to print "Hello world" in main method in java file.   
 
-### Exercise:   Write a Program in java file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing".    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in java file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
 
-### Exercise:   Write a Program in java file which displys value 10.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in java file which displys value 10.    
 
-### Exercise:   Write a Program in java file which displys value 37.4.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)` 
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in java file which displys value 37.4.     
 
-### Exercise:   Write a Program in java file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in java file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
 
-### Exercise:   Addition: Write a Program in jshell file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Addition: Write a Program in jshell file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.    
 
 ## Static Methods {-}
 
-### Theory:     Importance of methods.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of methods.    
 
-### Example:    How to create method in java file.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create method in java file.    
 
-### Exercise:   Addition: Write a java program in such that it contains static method "addition(int firstArg, int secondArg)" which print addition of given arguments. Call this addition method from main method.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Addition: Write a java program in such that it contains static method "addition(int firstArg, int secondArg)" which print addition of given arguments. Call this addition method from main method.    
 
-### Exercise:   Subtractiion: Write a java program in such that it contains static method "subtraction(int firstArg, int secondArg)" which print subtraction of given arguments. Call this subtraction method from main method.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Subtractiion: Write a java program in such that it contains static method "subtraction(int firstArg, int secondArg)" which print subtraction of given arguments. Call this subtraction method from main method.    
 
-### Exercise:   Square: Write a java program in such that it contains static method "square(int number)" which print square of given argument. Call this square method from main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Square: Write a java program in such that it contains static method "square(int number)" which print square of given argument. Call this square method from main method.   
 
-### Exercise:   Cube: Write a java program in such that it contains static method "cube(int number)" which print cube of given argument. Call this cube method from main method.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Cube: Write a java program in such that it contains static method "cube(int number)" which print cube of given argument. Call this cube method from main method.    
 
 ## Static Data Members {-}
 
-### Theory:     Importance of static data members.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of static data members.    
 
-### Example:    How to create static data member and its usage in java file.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create static data member and its usage in java file.    
 
-### Exercise:   Write a java program which contains a static data member. Assign it to some value and print this value in main method.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a static data member. Assign it to some value and print this value in main method.       
 
-### Exercise:   Write a java program which contains a static data member. Assign it to some value. Create a static method print which prints static variable value. Call this print method from main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a static data member. Assign it to some value. Create a static method print which prints static variable value. Call this print method from main method.   
 
-### Exercise:   Write a java program which contains a static data member. Assign it to some value. Create two static methods printOne and printTwo which prints static variable value. Call these print methods from main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a static data member. Assign it to some value. Create two static methods printOne and printTwo which prints static variable value. Call these print methods from main method.   
 
-### Exercise:   Write a java program which contains a static data member. Assign it to some value. Create two static methods doubleTheValue which doubles the static data member value and print which prints static variable value. First call doubleTheValue method and then print method from main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a static data member. Assign it to some value. Create two static methods doubleTheValue which doubles the static data member value and print which prints static variable value. First call doubleTheValue method and then print method from main method.   
 
 ## Objects {-}
 
-### Theory:     Object introduction   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Object introduction   
 
-### Example:    How to create object of a class   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create object of a class   
 
-### Exercise:   Write a java program which contains main method. Create object of this class in main method.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains main method. Create object of this class in main method.    
 
-### Exercise:   Write a java program which contains main method. Create two objects of this class in main method. Print these objects.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains main method. Create two objects of this class in main method. Print these objects.    
 
 ## Instance Methods {-}
 
-### Theory:     Instance/Non-static method introduction   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Instance/Non-static method introduction   
 
-### Example:    How to create Instance/Non-static method in a class   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create Instance/Non-static method in a class   
 
-### Exercise:   Write a java program which contains main method. Create object of this class in main method. Create Non-static method play() in this class. Call this play() method from object created in main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains main method. Create object of this class in main method. Create Non-static method play() in this class. Call this play() method from object created in main method.   
 
-### Exercise:   Write a java program which contains main method. Create 2 objects of this class in main method. Create Non-static method play() in this class. Call this play() method from these objects created in main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains main method. Create 2 objects of this class in main method. Create Non-static method play() in this class. Call this play() method from these objects created in main method.   
 
 ## Instance Data Members {-}
 
-### Theory:     Importance of Instance data members.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of Instance data members.    
 
-### Example:    How to create Instance data member and its usage in java file.    `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create Instance data member and its usage in java file.    
 
-### Exercise:   Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   
 
-### Exercise:   Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   `r kableExtra::text_spec("TODO", color = "red", bold = TRUE)`
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   
 
 
 
