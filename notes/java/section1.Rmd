@@ -121,44 +121,6 @@ Comment/Uncomment few lines in given program such that it gives output "I love m
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree Celsius temperature."    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Module 02: Class, Main Method, Static Method, Static Block, Static Data Member {-}
 
 #### Classes {-}
@@ -327,10 +289,21 @@ Instance/Non-static method introduction
 How to create Instance/Non-static method in a class   
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains main method. Create object of this class in main method. Create Non-static method play() in this class. Call this play() method from object created in main method.   
+Create class **Person**. Create instance data member **name** in **Person** class. Create instance method **print()** which prints the value of  **name**. Create object **personObj** of **Person** class  in main method. Call **print()** on **personObj** in main method.  
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains main method. Create 2 objects of this class in main method. Create Non-static method play() in this class. Call this play() method from these objects created in main method.   
+Create class **Person**. Create instance data member **name** in **Person** class. Create instance method **setValue(string newName)** which assigns the variable **newName** to **name**. Create instance method **print()** which prints the value of **name**. Create object **personObj** of **Person** class  in main method. Call **setValue("Jack")** on **personObj** in main method. Call **print()** on **personObj** in main method.   
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create instance data member **name** in **Person** class. Create instance data member **age** in **Person** class. Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**. Create object **personObj** of **Person** class  in main method. Call **setValues("Jack", 21)** on **personObj** in main method. Call **print()** on **personObj** in main method.    
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create instance data member **name** in **Person** class. Create instance data member **age** in **Person** class. Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**. Create 2 objects **personObj1** and **personObj2** of **Person** class  in main method. Call **setValues("Jack", 21)** on **personObj1** in main method. Call **setValues("Daniel", 22)** on **personObj2** in main method. Call **print()** on **personObj1** and **personObj2** in main method.   
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create instance data member **name** with default value *Tom* in **Person** class. Create instance data member **age** with default value *21* in **Person** class. Create instance method **modifyValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**. Create object **personObj** of **Person** class  in main method. Call **setValues("Jack", 22)** on **personObj** in main method. Call **print()** on **personObj** in main method. Call **setValues("Harry", 24)** on **personObj** in main method. Call **print()** on **personObj** in main method. Call **setValues("Diana", 16)** on **personObj** in main method. Call **print()** on **personObj** in main method.   
+
+
 
 
 
