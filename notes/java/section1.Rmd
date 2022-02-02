@@ -1,6 +1,8 @@
 
 ## Core Java {-}
 
+### Module 01: jShell {-}
+
 #### Display Output {-}
 
 1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
@@ -10,116 +12,118 @@ Overview of Java.
 How to print output in java.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program to disply "My first java program" in jshell file.    
+Write a Program to display "My first java program" in jShell file.    
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program to disply "I am loving coding" in jshell file.     
+Write a Program to display "I am loving coding" in jShell file.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program to disply "I am loving coding" in jshell file in 3 times in 3 lines.     
+Write a Program to display "I am loving coding" in jShell file in 3 times in 3 lines.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
+Write a Program in jShell file which displays multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which displys value 10.     
+Write a Program in jShell file which displays value 10.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which displys value 37.4.     
+Write a Program in jShell file which displays value 37.4.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which displys multiple lines as follows: "I am loving coding" and integer value 10.    
+Write a Program in jShell file which displays multiple lines as follows: "I am loving coding" and integer value 10.    
 
-## Variables, Data types {-}
+#### Variables, Data types {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Variable introduction.     
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create varaiable of type String and dispaly its value..    
+10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create variable of type String and dispaly its value..    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares String type variable with value "Hollywood" and display its value.     
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares String type variable with value "Hollywood" and display its value.     
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares 2 String type variables with value "John" and "Marry" and display their values.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares 2 String type variables with value "John" and "Marry" and display their values.    
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create varaiable of type int and dispaly its value.    
+10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create variable of type int and dispaly its value.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares int type variable with value 10 and display its value.     
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares int type variable with value 10 and display its value.     
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares 2 int type variables with value 10 and 20 and display their values.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares 2 int type variables with value 10 and 20 and display their values.   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create varaiable of type float and dispaly its value.    
+10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create variable of type float and dispaly its value.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares float type variable with value 37.4 and display its value.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares float type variable with value 37.4 and display its value.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares 2 float type variables with value 37.4 and 98.6 and display their values.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares 2 float type variables with value 37.4 and 98.6 and display their values.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 What is String concatenation.   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to do String concatenation.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which concatenates 2 String literlas in print statement.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which concatenates 2 String literlas in print statement.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which concatenates 3 String literlas in print statement.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which concatenates 3 String literlas in print statement.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares 2 String variables with some values and concatenates these variables in print statement.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares 2 String variables with some values and concatenates these variables in print statement.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares 3 String variables with some values and concatenates these variables in print statement.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares 3 String variables with some values and concatenates these variables in print statement.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which concatenates 1 String literla and 1 int literal in print statement.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which concatenates 1 String literla and 1 int literal in print statement.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jshell file which declares 2 variables of types String and int with some values and concatenates these variables in print statement.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a Program in jShell file which declares 2 variables of types String and int with some values and concatenates these variables in print statement.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Addition: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a+b. Print value variable c.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Addition: Write a Program in jShell file which declares 3 int variables such as a=10, b=20, c=a+b. Print value variable c.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Subtraction: Write a Program in jshell file which declares 3 int variables such as a=100, b=40, c=a-b. Print value variable c.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Subtraction: Write a Program in jShell file which declares 3 int variables such as a=100, b=40, c=a-b. Print value variable c.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Multiplication: Write a Program in jshell file which declares 3 int variables such as a=10, b=20, c=a*b. Print value variable c.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Multiplication: Write a Program in jShell file which declares 3 int variables such as a=10, b=20, c=a*b. Print value variable c.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Division: Write a Program in jshell file which declares 3 int variables such as a=20, b=10, c=a/b. Print value variable c.    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Division: Write a Program in jShell file which declares 3 int variables such as a=20, b=10, c=a/b. Print value variable c.    
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of comments.   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to comment and uncomment.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Comment few lines in given program such that it gives output 20.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Uncomment few lines in given program such that it gives output 30.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Comment/Uncomment few lines in given program such that it gives output "I love my country and I am proud of it."    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree celsius temprature."    
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree Celsius temperature."    
 
-## Classes {-}
+### Module 02: Class, Main method, Static methods {-}
+
+#### Classes {-}
 
 1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Switch to .java fie.    
@@ -140,61 +144,65 @@ Write a java program which contains an class file, in which an empty main method
 How to print "Hello world" in main method in java file.   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which displys multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
+Write a Program in java file which displays multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which displys value 10.    
+Write a Program in java file which displays value 10.    
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which displys value 37.4.     
+Write a Program in java file which displays value 37.4.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in java file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Addition: Write a Program in jshell file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.    
+Addition: Write a Program in jShell file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.    
 
-## Static Methods {-}
+#### Static Methods {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+12. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of methods.    
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create method in java file.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Addition: Write a java program in such that it contains static method "addition(int firstArg, int secondArg)" which print addition of given arguments. Call this addition method from main method.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Subtractiion: Write a java program in such that it contains static method "subtraction(int firstArg, int secondArg)" which print subtraction of given arguments. Call this subtraction method from main method.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Square: Write a java program in such that it contains static method "square(int number)" which print square of given argument. Call this square method from main method.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Cube: Write a java program in such that it contains static method "cube(int number)" which print cube of given argument. Call this cube method from main method.    
 
-## Static Data Members {-}
+#### Static Data Members {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+18. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of static data members.    
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+18. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create static data member and its usage in java file.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value and print this value in main method.       
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create a static method print which prints static variable value. Call this print method from main method.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create two static methods printOne and printTwo which prints static variable value. Call these print methods from main method.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a static data member. Assign it to some value. Create two static methods doubleTheValue which doubles the static data member value and print which prints static variable value. First call doubleTheValue method and then print method from main method.   
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a static data member. Assign it to some value. Create two static methods doubleTheValue which doubles the static data member value and print which prints static variable value. First call doubleTheValue method and then print method from main method.      
 
-## Objects {-}
+### Module 03: Control Flow Statements {-}
+
+### Module 04: OOPS {-}
+
+#### Objects {-}
 
 1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Object introduction   
@@ -208,32 +216,32 @@ Write a java program which contains main method. Create object of this class in 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains main method. Create two objects of this class in main method. Print these objects.    
 
-## Instance Methods {-}
+#### Instance Methods {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+5. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Instance/Non-static method introduction   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+5. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create Instance/Non-static method in a class   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains main method. Create object of this class in main method. Create Non-static method play() in this class. Call this play() method from object created in main method.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains main method. Create 2 objects of this class in main method. Create Non-static method play() in this class. Call this play() method from these objects created in main method.   
 
-## Instance Data Members {-}
+#### Instance Data Members {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+9. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of Instance data members.    
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+9. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create Instance data member and its usage in java file.    
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+9. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+9. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   
 
 
