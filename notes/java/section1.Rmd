@@ -514,6 +514,55 @@ Create instance method **displayFullName()** which prints full name by calling *
 Create object **emp** of **Employee** class in main method.   
 Call **emp**.**displayFullName()**.   
 
+#### Method Overloading {-}
+
+29. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Method overloading introduction   
+
+29. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to do method overloading
+
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **MethodOverloadingSampe**.   
+Create static method **getSquareArea(int number)** which returns area of square.   
+Create static method **getRectangleArea(int length, int width)** which returns area of rectangle.   
+Call **getSquareArea(5)** in main method.   
+Call **getRectangleArea(5, 7)** in main method.   
+
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **MethodOverloadingSampe**.   
+Create static method **getArea(int number)** which returns area of square.   
+Create static method **getArea(int length, int width)** which returns area of rectangle.   
+Call **getArea(5)** in main method.   
+Call **getArea(5, 7)** in main method.   
+
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **MethodOverloadingSampe**.   
+Create static method **printInt(int number)** which prints the provided integer number.   
+Create static method **printString(String message)** which prints the provided message.
+Call **printInt(5)** in main method.   
+Call **printString("so  many print methods")** in main method.  
+
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **MethodOverloadingSampe**.   
+Create static method **print(int number)** which prints the provided integer number.   
+Create static method **print(String message)** which prints the provided message.
+Call **print(5)** in main method.   
+Call **print("so  many print methods")** in main method.  
+
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **MethodOverloadingSampe**.   
+Create static method **print(char ch)** which prints the provided integer number.   
+Create static method **print(int number)** which prints the provided integer number.   
+Create static method **print(float number)** which prints the provided integer number.   
+Create static method **print(String message)** which prints the provided message.   
+Call **print(5)** in main method.   
+Call **print("method overloading is fun. no need to remember so many method names")** in main method.   
+Call **print(20.03f)** in main method.  
+Call **print('a')** in main method.  
+
+
+
 
 
 
