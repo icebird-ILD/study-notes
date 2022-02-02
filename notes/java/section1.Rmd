@@ -517,10 +517,10 @@ Call **emp**.**displayFullName()**.
 #### Method Overloading {-}
 
 29. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
-Method overloading introduction   
+Method overloading introduction      
 
 29. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to do method overloading
+How to do method overloading   
 
 29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **MethodOverloadingSampe**.   
@@ -560,6 +560,62 @@ Call **print(5)** in main method.
 Call **print("method overloading is fun. no need to remember so many method names")** in main method.   
 Call **print(20.03f)** in main method.  
 Call **print('a')** in main method.  
+
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **MethodOverloadingSampe**.   
+Create static method **print(int x, float y)** which prints the provided integer number and float number.   
+Create static method **print(float x, int y)** which prints the provided float number and integer number.   
+Call **print(10, 10.9f)** in main method.   
+Call **print(10.9f, 10)** in main method.       
+Call **print(10, 10)** in main method.       
+
+#### Constructors {-}
+
+37. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Constructors introduction.         
+
+37. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use constructors.   
+
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create empty constructor **Employee()**.   
+Create static method **greeting()** which prints *"Welcome partners..!!"*.   
+Call **greeting()** in main method.   
+
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create constructor **Employee()** which prints *"New employee joined"*.   
+Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
+Create object **emp** of **Employee** class in main method.   
+Call **emp**.**greeting()** in main method.   
+
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create constructor **Employee()** which prints *"New employee joined"*.   
+Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
+Create anonymous object of **Employee** class and call **greeting()** in main method.   
+
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.  
+Create instance data member **name**.   
+Create constructor **Employee()** which prints *"New employee joined"*.   
+Create constructor **Employee(String empName)** which prints *"New employee "+empName+" joined"*.   
+Create instance method **greeting()** which prints *"Welcome "+name+"..!!"*.   
+Create object **emp1** of **Employee** class in main method.   
+Call **emp1**.**greeting()** in main method.   
+Create object **emp2** of **Employee** class with **Employee("Shane")** in main method.   
+Call **emp2**.**greeting()** in main method.   
+
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.  
+Create instance data member **name**.   
+Create constructor **Employee(String empName)** which prints *"New employee "+empName+" joined"*.   
+Create instance method **greeting()** which prints *"Welcome "+name+"..!!"*.   
+Create object **emp** of **Employee** class with **Employee("Shane")** in main method.   
+Call **emp**.**greeting()** in main method.   
+
+
 
 
 
