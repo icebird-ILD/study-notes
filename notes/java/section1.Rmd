@@ -21,7 +21,7 @@ Write a Program to display "I am loving coding" in jShell file.
 Write a Program to display "I am loving coding" in jShell file in 3 times in 3 lines.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which displays multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
+Write a Program in jShell file which displays multiple line as follows: "I am loving coding" and "Programming is amazing".     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in jShell file which displays value 10.     
@@ -38,7 +38,7 @@ Write a Program in jShell file which displays multiple lines as follows: "I am l
 Variable introduction.     
 
 10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create variable of type String and dispaly its value..    
+How to create variable of type String and display its value..    
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in jShell file which declares String type variable with value "Hollywood" and display its value.     
@@ -47,7 +47,7 @@ Write a Program in jShell file which declares String type variable with value "H
 Write a Program in jShell file which declares 2 String type variables with value "John" and "Marry" and display their values.    
 
 10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create variable of type int and dispaly its value.    
+How to create variable of type int and display its value.    
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in jShell file which declares int type variable with value 10 and display its value.     
@@ -56,7 +56,7 @@ Write a Program in jShell file which declares int type variable with value 10 an
 Write a Program in jShell file which declares 2 int type variables with value 10 and 20 and display their values.   
 
 10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create variable of type float and dispaly its value.    
+How to create variable of type float and display its value.    
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in jShell file which declares float type variable with value 37.4 and display its value.    
@@ -121,7 +121,45 @@ Comment/Uncomment few lines in given program such that it gives output "I love m
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree Celsius temperature."    
 
-### Module 02: Class, Main method, Static methods {-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Module 02: Class, Main Method, Static Method, Static Block, Static Data Member {-}
 
 #### Classes {-}
 
@@ -170,7 +208,7 @@ How to create method in java file.
 Addition: Write a java program in such that it contains static method "addition(int firstArg, int secondArg)" which print addition of given arguments. Call this addition method from main method.    
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Subtractiion: Write a java program in such that it contains static method "subtraction(int firstArg, int secondArg)" which print subtraction of given arguments. Call this subtraction method from main method.    
+Subtraction: Write a java program in such that it contains static method "subtraction(int firstArg, int secondArg)" which print subtraction of given arguments. Call this subtraction method from main method.    
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Square: Write a java program in such that it contains static method "square(int number)" which print square of given argument. Call this square method from main method.   
@@ -178,25 +216,65 @@ Square: Write a java program in such that it contains static method "square(int 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Cube: Write a java program in such that it contains static method "cube(int number)" which print cube of given argument. Call this cube method from main method.    
 
+12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create method with return type.
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program in such that it contains static method "echo(int number)" which returns the same number passed as argument. Call this echo method from main method.
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program in such that it contains static method "echo(string message)" which returns the same message passed as argument. Call this echo method from main method.
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program in such that it contains custom static method "main(string message)" which returns the same message passed as argument. Call this custom main method from main method.   
+
+#### Static Block {-}
+
+22. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of static block.    
+
+22. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create static block in java file.
+
+22. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a static static block in java file. This static block shall print "In static block" message. Try execute this file.
+
+22. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains two static static blocks in java file. The first static block shall print "In first static block" message. The second static block shall print "In second static block" message. Try execute this java file.
+
+22. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains two static static blocks in java file. The first static block shall print "In first static block" message. The second static block shall print "In second static block" message. Create main method, which shall print "In main method". Try execute this java file.
+
+22. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of order of static block.
+
 #### Static Data Members {-}
 
-18. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+28. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of static data members.    
 
-18. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+28. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create static data member and its usage in java file.    
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value and print this value in main method.       
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create a static method print which prints static variable value. Call this print method from main method.   
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create two static methods printOne and printTwo which prints static variable value. Call these print methods from main method.   
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create two static methods doubleTheValue which doubles the static data member value and print which prints static variable value. First call doubleTheValue method and then print method from main method.      
+28. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+How to refer static data member with class name.   
+
+28. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to refer static data member with class name.   
+
+28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains a static data member. Assign it to some value and print this value in main method by referring through class name.      
 
 ### Module 03: Control Flow Statements {-}
 
@@ -216,33 +294,44 @@ Write a java program which contains main method. Create object of this class in 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains main method. Create two objects of this class in main method. Print these objects.    
 
-#### Instance Methods {-}
-
-5. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
-Instance/Non-static method introduction   
-
-5. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create Instance/Non-static method in a class   
-
-5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains main method. Create object of this class in main method. Create Non-static method play() in this class. Call this play() method from object created in main method.   
-
-5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains main method. Create 2 objects of this class in main method. Create Non-static method play() in this class. Call this play() method from these objects created in main method.   
-
 #### Instance Data Members {-}
 
-9. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+5. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of Instance data members.    
 
-9. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+5. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create Instance data member and its usage in java file.    
 
-9. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   
+5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create instance data member **name** in **Person** class. Create object of **Person** class **personObj** in main method. Print **name** of **personObj** in main method.
 
-9. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a instance data member. Assign it to some value. Create object of this class in main method and print value of instance data member in main method.   
+5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create instance data member **name** in **Person** class. Create object of **Person** class **personObj** in main method. Print **name** of **personObj** in main method. Assign value *Jack* to **name**. Print **name** of **personObj** in main method.   
+
+5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create instance data member **name** in **Person** class. Create 2 objects of **Person** class viz. **personObj1** and **personObj2** in main method. Print **name** of **personObj1** in main method. Print **name** of **personObj2** in main method. Assign value *Jack* to **name** of **printObj1**. Assign value *Daniel* to **name** of **printObj2**. Print **name** of **personObj1** and **personObj2** in main method.
+
+5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create instance data member **name** in **Person** class. Create instance data member **salary** with default value *10000* in **Person** class. Create 2 objects of **Person** class viz. **personObj1** and **personObj2** in main method. Print **name** and **salary** of **personObj1** in main method. Print **name** and **salary** of **personObj2** in main method. Assign value *Jack* to **name** of **printObj1**. Assign value *Daniel* to **name** of **printObj2**. Assign value *12000* to **salary** of **personObj1**. Assign value *15000* to **salary** of **personObj2**.  Print **name** and **salary** of **personObj1** and **personObj2** in main method.   
+
+5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**. Create static data member **surname** with default value *Craig* in **Person** class. Create instance data member **name** in **Person** class. Create instance data member **salary** with default value *10000* in **Person** class. Create 2 objects of **Person** class viz. **personObj1** and **personObj2** in main method. Print **name**, **salary** and **surname** of **personObj1** in main method. Print **name**, **salary** and **surname** of **personObj2** in main method. Assign value *Shawn* to **surname**. Assign value *Jack* to **name** of **printObj1**. Assign value *Daniel* to **name** of **printObj2**. Assign value *12000* to **salary** of **personObj1**. Assign value *15000* to **salary** of **personObj2**.  Print **name** and **salary** of **personObj1** and **personObj2** in main method.   
+
+
+#### Instance Methods {-}
+
+12. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Instance/Non-static method introduction   
+
+12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create Instance/Non-static method in a class   
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains main method. Create object of this class in main method. Create Non-static method play() in this class. Call this play() method from object created in main method.   
+
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Write a java program which contains main method. Create 2 objects of this class in main method. Create Non-static method play() in this class. Call this play() method from these objects created in main method.   
+
 
 
 
