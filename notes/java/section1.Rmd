@@ -133,30 +133,65 @@ How to create empty class in java file.
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains an empty class file.    
+Create class **MyFirsClass**.   
 
 1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create empty main method in java file.   
-
+  
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains an class file, in which an empty main method is created.    
+Create class **MyClass**.   
+Create empty **main** method.    
 
 1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to print "Hello world" in main method in java file.   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which displays multiple line as follows: "I am loving coding" and "Prgramming is amazing".     
+Write a Program in java file which displays multiple line as follows: "I am loving coding" and "Programming is amazing".  
+Create class **SampleClass**.   
+Create empty **main** method.    
+Print *I am lovin coding*.    
+Print *Programming is amazing*.    
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in java file which displays value 10.    
+Create class **SampleClass**.   
+Create empty **main** method.    
+Print *10*.    
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in java file which displays value 37.4.     
+Create class **SampleClass**.   
+Create empty **main** method.    
+Print *37.4*.    
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in java file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
+Create class **VariableCreation**.   
+Create empty **main** method.    
+Create variable **String** **name** = *"John"*.   
+Create variable **int** **age** = *10*.   
+Create variable **float** **score** = *7.8*.   
+Print value of **name**.   
+Print value of **age**.   
+Print value of **score**.   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Addition: Write a Program in jShell file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.    
+Addition: Write a Program in java file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.    
+Create class **VariableCreation**.   
+Create empty **main** method.    
+Create variable **int** **a** = *10*.   
+Create variable **int** **b** = *20*.   
+Create variable **int** **c** = **a** + **b**.      
+Print value of **c**.    
+Create variable **int** **p** = *11*.   
+Create variable **int** **q** = *22*.   
+Create variable **int** **r** = **p** + **q**.      
+Print value of **r**.    
+Create variable **int** **x** = *50*.   
+Create variable **int** **y** = *150*.   
+Create variable **int** **z** = **x** + **y**.      
+Print value of **z**.    
 
 #### Static Methods {-}
 
@@ -179,63 +214,70 @@ Square: Write a java program in such that it contains static method "square(int 
 Cube: Write a java program in such that it contains static method "cube(int number)" which print cube of given argument. Call this cube method from main method.    
 
 12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create method with return type.
+How to create method with return type.   
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program in such that it contains static method "echo(int number)" which returns the same number passed as argument. Call this echo method from main method.
+Write a java program in such that it contains static method "echo(int number)" which returns the same number passed as argument. Call this echo method from main method.   
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program in such that it contains static method "echo(string message)" which returns the same message passed as argument. Call this echo method from main method.
+Write a java program in such that it contains static method "echo(string message)" which returns the same message passed as argument. Call this echo method from main method.   
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program in such that it contains custom static method "main(string message)" which returns the same message passed as argument. Call this custom main method from main method.   
 
+12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **NestedCalling**.   
+Create instance method **getFirstName()** which returns *John*.   
+Create instance method **getLastName()** which returns *Marshal*.   
+Create instance method **printFullName()** which prints full name by calling **getFirstName()** and **getLastName()** methods and appending them such as final result is *John Marshal*.   
+
+
 #### Static Block {-}
 
-22. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+23. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of static block.    
 
-22. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+23. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create static block in java file.
 
-22. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static static block in java file. This static block shall print "In static block" message. Try execute this file.
 
-22. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains two static static blocks in java file. The first static block shall print "In first static block" message. The second static block shall print "In second static block" message. Try execute this java file.
 
-22. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains two static static blocks in java file. The first static block shall print "In first static block" message. The second static block shall print "In second static block" message. Create main method, which shall print "In main method". Try execute this java file.
 
-22. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+23. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of order of static block.
 
 #### Static Data Members {-}
 
-28. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+29. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of static data members.    
 
-28. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+29. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create static data member and its usage in java file.    
 
-28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value and print this value in main method.       
 
-28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create a static method print which prints static variable value. Call this print method from main method.   
 
-28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create two static methods printOne and printTwo which prints static variable value. Call these print methods from main method.   
 
-28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value. Create two static methods doubleTheValue which doubles the static data member value and print which prints static variable value. First call doubleTheValue method and then print method from main method.      
-28. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+29. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 How to refer static data member with class name.   
 
-28. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+29. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to refer static data member with class name.   
 
-28. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a java program which contains a static data member. Assign it to some value and print this value in main method by referring through class name.      
 
 ### Module 03: Control Flow Statements {-}
@@ -251,67 +293,226 @@ Object introduction
 How to create object of a class   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains main method. Create object of this class in main method.    
+Create class **Employee**.   
+Create object **emp** of **Employee** in main method.  
+Print **emp**.   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains main method. Create two objects of this class in main method. Print these objects.    
+Create class **Employee**.   
+Create object **emp1** of **Employee** in main method.  
+Create object **emp2** of **Employee** in main method.  
+Print **emp1**.   
+Print **emp2**.   
+
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create object **emp** of **Employee** in main method.  
+Print **emp**.   
+Create another object of **Employee** class and assign it to already created **emp**.     
+Print **emp**.   
+
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Anonymous object introduction   
+
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create anonymous object of a class   
+
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create anonymous object of **Employee** in main method.  
+
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create anonymous object of **Employee** in print statement in main method and print its value.  
 
 #### Instance Data Members {-}
 
-5. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of Instance data members.    
 
-5. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create Instance data member and its usage in java file.    
 
-5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create object of **Person** class **personObj** in main method. Print **name** of **personObj** in main method.
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create object of **Person** class **person** in main method.   
+Print **name** of **person** in main method.
 
-5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create object of **Person** class **personObj** in main method. Print **name** of **personObj** in main method. Assign value *Jack* to **name**. Print **name** of **personObj** in main method.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create object of **Person** class **person** in main method.   
+Print **name** of **person** in main method.   
+Assign value *Jack* to **name**.   
+Print **name** of **person** in main method.   
 
-5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create 2 objects of **Person** class viz. **personObj1** and **personObj2** in main method. Print **name** of **personObj1** in main method. Print **name** of **personObj2** in main method. Assign value *Jack* to **name** of **printObj1**. Assign value *Daniel* to **name** of **printObj2**. Print **name** of **personObj1** and **personObj2** in main method.
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create 2 objects of **Person** class viz. **person1** and **person2** in main method.   
+Print **name** of **person1** in main method.   
+Print **name** of **person2** in main method.   
+Assign value *Jack* to **name** of **person1**.   
+Assign value *Daniel* to **name** of **person2**.   
+Print **name** of **person1** and **person2** in main method.
 
-5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create instance data member **salary** with default value *10000* in **Person** class. Create 2 objects of **Person** class viz. **personObj1** and **personObj2** in main method. Print **name** and **salary** of **personObj1** in main method. Print **name** and **salary** of **personObj2** in main method. Assign value *Jack* to **name** of **printObj1**. Assign value *Daniel* to **name** of **printObj2**. Assign value *12000* to **salary** of **personObj1**. Assign value *15000* to **salary** of **personObj2**.  Print **name** and **salary** of **personObj1** and **personObj2** in main method.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create instance data member **salary** with default value *10000* in **Person** class.   
+Create 2 objects of **Person** class viz. **person1** and **person2** in main method.   
+Print **name** and **salary** of **person1** in main method.   
+Print **name** and **salary** of **person2** in main method.   
+Assign value *Jack* to **name** of **person1**.   
+Assign value *Daniel* to **name** of **person2**.   
+Assign value *12000* to **salary** of **person1**.   
+Assign value *15000* to **salary** of **person2**.    
+Print **name** and **salary** of **person1** and **person2** in main method.   
 
-5. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create static data member **surname** with default value *Craig* in **Person** class. Create instance data member **name** in **Person** class. Create instance data member **salary** with default value *10000* in **Person** class. Create 2 objects of **Person** class viz. **personObj1** and **personObj2** in main method. Print **name**, **salary** and **surname** of **personObj1** in main method. Print **name**, **salary** and **surname** of **personObj2** in main method. Assign value *Shawn* to **surname**. Assign value *Jack* to **name** of **printObj1**. Assign value *Daniel* to **name** of **printObj2**. Assign value *12000* to **salary** of **personObj1**. Assign value *15000* to **salary** of **personObj2**.  Print **name** and **salary** of **personObj1** and **personObj2** in main method.   
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create static data member **surName** with default value *Craig* in **Person** class.   
+Create instance data member **name** in **Person** class.   
+Create instance data member **salary** with default value *10000* in **Person** class.   
+Create 2 objects of **Person** class viz. **person1** and **person2** in main method.   
+Print **name**, **salary** and **surName** of **person1** in main method.   
+Print **name**, **salary** and **surName** of **person2** in main method.   
+Assign value *Shawn* to **surName**.   
+Assign value *Jack* to **name** of **person1**.   
+Assign value *Daniel* to **name** of **person2**.   
+Assign value *12000* to **salary** of **person1**.   
+Assign value *15000* to **salary** of **person2**.    
+Print **name** and **salary** of **person1** and **person2** in main method.     
 
+10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create instance data member **salary** with default value *10000* in **Person** class.   
+Create anonymous object of **Person** in print statement and print value of **salary**.
 
 #### Instance Methods {-}
 
-12. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+18. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Instance/Non-static method introduction   
 
-12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+18. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create Instance/Non-static method in a class   
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create instance method **print()** which prints the value of  **name**. Create object **personObj** of **Person** class  in main method. Call **print()** on **personObj** in main method.  
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create instance method **print()** which prints the value of **name**.   
+Create object **person** of **Person** class  in main method.   
+Call **print()** on **person** in main method.    
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create instance method **setValue(string newName)** which assigns the variable **newName** to **name**. Create instance method **print()** which prints the value of **name**. Create object **personObj** of **Person** class  in main method. Call **setValue("Jack")** on **personObj** in main method. Call **print()** on **personObj** in main method.   
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create instance method **setValue(string newName)** which assigns the variable **newName** to **name**.   
+Create instance method **print()** which prints the value of **name**.   
+Create object **person** of **Person** class  in main method.   
+Call **setValue("Jack")** on **person** in main method.   
+Call **print()** on **person** in main method.     
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create instance data member **age** in **Person** class. Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**. Create object **personObj** of **Person** class  in main method. Call **setValues("Jack", 21)** on **personObj** in main method. Call **print()** on **personObj** in main method.    
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** in **Person** class.   
+Create instance data member **age** in **Person** class.   
+Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. 
+Create instance method **print()** which prints the value of **name** and **age**.   
+Create object **person** of **Person** class  in main method.    
+Call **setValues("Jack", 21)** on **person** in main method.    
+Call **print()** on **person** in main method.    
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** in **Person** class. Create instance data member **age** in **Person** class. Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**. Create 2 objects **personObj1** and **personObj2** of **Person** class  in main method. Call **setValues("Jack", 21)** on **personObj1** in main method. Call **setValues("Daniel", 22)** on **personObj2** in main method. Call **print()** on **personObj1** and **personObj2** in main method.   
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name**.   
+Create instance data member **age**.   
+Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**.   
+Create 2 objects **person1** and **person2** of **Person** class in main method.   
+Call **person1**.**setValues("Jack", 21)** in main method.   
+Call **person2**.**setValues("Daniel", 22)** in main method.   
+Call **person1**.**print()** in main method.     
+Call **person2**.**print()** in main method.     
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**. Create instance data member **name** with default value *Tom* in **Person** class. Create instance data member **age** with default value *21* in **Person** class. Create instance method **modifyValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**. Create object **personObj** of **Person** class  in main method. Call **setValues("Jack", 22)** on **personObj** in main method. Call **print()** on **personObj** in main method. Call **setValues("Harry", 24)** on **personObj** in main method. Call **print()** on **personObj** in main method. Call **setValues("Diana", 16)** on **personObj** in main method. Call **print()** on **personObj** in main method.   
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create instance data member **name** with default value *Tom*.    
+Create instance data member **age** with default value *21*.   
+Create instance method **modifyValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**.    
+Create instance method **print()** which prints the value of **name** and **age**.    
+Create object **person** of **Person** class  in main method.    
+Call **person**.**modifyValues("Jack", 22)** in main method.    
+Call **person**.**print()** in main method.    
+Call **person**.**modifyValues("Harry", 24)** in main method.   
+Call **person**.**print()** in main method.   
+Call **person**.**modifyValues("Diana", 16)** in main method.   
+Call **person**.**print()** in main method.   
 
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Person**.   
+Create static data member **surName** with default value *Craig*.
+Create instance data member **name**.
+Create instance data member **salary** with default value *10000*.
+Create instance method **modifyValues(String newName, int newAge, String newsurName)** which assigns the variable **newName** to **name**, **newAge** to **age** and **newsurName** to **surName**.    
+Create instance method **print()** which prints the value of **name**, **age** and **surName**.  
+Create 2 objects of **Person** class viz. **person1** and **person2** in main method.  
+Call **person1**.**print()** in main method.    
+Call **person2**.**print()** in main method.    
+Call **person1**.**modifyValues("Jack" , 22, "Shawn")** in main method.    
+Call **person1**.**print()** in main method.    
+Call **person2**.**modifyValues("Diana" , 17, "Hilton")** in main method.    
+Call **person2**.**print()** in main method.    
 
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create static data member **companyName** with default value *Folks*.   
+Create instance data member **name**.   
+Create instance data member **salary** with default value *10000*.   
+Create static method **displayCompanyName()** which will display value of **companyName**.   
+Create instance method **displayName()** which will display value of **name**.   
+Create instance method **displaySalary()** which will display value of **salary**.   
+Create static method **setCompanyName(String companyNewName)** which will assign **companyNewName** to **companyName**.   
+Create instance method **setName(String newName)** which will assign **newName** to **name**.   
+Create instance method **setSalary(int newSalary)** which will assign **newSalary** to **salary**.   
+Create object **emp1** of **Employee** class in main method.   
+Call **displayCompanyName()**.   
+Call **emp1**.**setName("Maria")**.   
+Call **emp1**.**setSalary(12000)**.   
+Call **emp1**.**displayName()**.   
+Call **emp1**.**displaySalary()**.   
+Call **emp1**.**displayCompanyName()**.   
+Create object **emp2** of **Employee** class in main method.   
+Call **displayCompanyName()**.   
+Call **emp2**.**setName("Harry")**.   
+Call **emp2**.**displayName()**.   
+Call **emp2**.**displaySalary()**.   
+Call **emp2**.**displayCompanyName()**.   
+Call **setCompanyName("ReadyFolks")**.   
+Call **emp1**.**displayCompanyName()**.   
+Call **emp2**.**displayCompanyName()**.   
 
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create instance data member **name**.   
+Create instance data member **salary** with default value *10000*.   
+Create instance method **displayName()** which will display value of **name**.   
+Create instance method **displaySalary()** which will display value of **salary**.   
+Create instance method **setName(String newName)** which will assign **newName** to **name**.   
+Create instance method **setSalary(int newSalary)** which will assign **newSalary** to **salary**.   
+Create anonymous object of **Employee** class and call **setName("Maria")** on it in main method.   
+Create anonymous object of **Employee** class and call **displayName()** on it in main method.   
 
-
-
-
-
-
-
+18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create class **Employee**.   
+Create instance data member **firstName**.   
+Create instance data member **lastName**.   
+Create instance method **getFirstName()** which returns value of **firstName**.   
+Create instance method **getLastName()** which returns value of **lastName**.   
+Create instance method **displayFullName()** which prints full name by calling **getFirstName()** and **getLastName()** methods and appending them with space in between.   
+Create object **emp** of **Employee** class in main method.   
+Call **emp**.**displayFullName()**.   
 
 
 
