@@ -2907,7 +2907,137 @@ Solution:
           }
         }    
 
+54. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of this keyword as a reference to current object.   
 
+54. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use this keyword as a reference to current object in java file.   
+
+54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Print *this* as first statement in **takeCharge()**.   
+Print *this* as first statement in **moveCharge()**.     
+Call **player4**.**moveCharge()** as last statement in **takeCharge()**.   
+Question:
+
+        class Player {
+          
+          void takeCharge() {
+            
+
+            Player player2 = new Player();
+            System.out.println(player2);
+
+            System.out.println(this);
+
+            Player player3 = new Player();
+            System.out.println(player3);
+
+            player3 .moveCharge();
+
+            Player player4 = new Player();
+            System.out.println(player4);
+
+            System.out.println(this);
+            
+            
+          }
+
+          void moveCharge() {
+            
+          }
+
+          public static void main(String[] args) {
+            Player player1 = new Player();
+            System.out.println(player1);
+
+            player1.takeCharge();
+          }
+        } 
+Solution:
+
+        class Player {
+          
+          void takeCharge() {
+            System.out.println(this);
+
+            Player player2 = new Player();
+            System.out.println(player2);
+
+            System.out.println(this);
+
+            Player player3 = new Player();
+            System.out.println(player3);
+
+            player3.moveCharge();
+
+            Player player4 = new Player();
+            System.out.println(player4);
+
+            System.out.println(this);
+            
+            player4.moveCharge();
+          }
+
+          void moveCharge() {
+            System.out.println(this);
+          }
+
+          public static void main(String[] args) {
+            Player player1 = new Player();
+            System.out.println(player1);
+
+            player1.takeCharge();
+          }
+        } 
+        
+54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Assign value of local variable **ranking** to data member **ranking** in  **modifyValue(int ranking)** with help of **this** keyword.   
+Question:
+
+        class Player {
+          int ranking = 10;
+
+          void modifyValue(int ranking) {
+            System.out.println("Before Change:");
+            System.out.println("argument:" + ranking);
+            System.out.println("data member:" + this.ranking);
+
+            
+
+            System.out.println("After Change:");
+            System.out.println("argument:" + ranking);
+            System.out.println("data member:" + this.ranking);
+          }
+
+          public static void main(String[] args) {
+            Player player = new Player();
+            System.out.println(player.ranking);
+            player.modifyValue(7);
+          }
+        }
+Solution:
+
+        class Player {
+          int ranking = 10;
+
+          void modifyValue(int ranking) {
+            System.out.println("Before Change:");
+            System.out.println("argument:" + ranking);
+            System.out.println("data member:" + this.ranking);
+
+            this.ranking =ranking;
+
+            System.out.println("After Change:");
+            System.out.println("argument:" + ranking);
+            System.out.println("data member:" + this.ranking);
+          }
+
+          public static void main(String[] args) {
+            Player player = new Player();
+            System.out.println(player.ranking);
+            player.modifyValue(7);
+          }
+        }
 
 
 
