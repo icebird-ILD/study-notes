@@ -3,8 +3,8 @@
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 dir=paste(getwd())
-section1_file=paste(dir, "section1.Rmd", sep = "/")
-section2_file=paste(dir, "section2.Rmd", sep = "/")
+section1_file=paste(dir, "module1.Rmd", sep = "/")
+section2_file=paste(dir, "module2.Rmd", sep = "/")
 ```
 
 
