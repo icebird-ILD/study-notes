@@ -176,11 +176,17 @@ Create empty **main** method.
 How to print "Hello world" in main method in java file.   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which displays multiple line as follows: "I am loving coding" and "Programming is amazing".  
-Create class **SampleClass**.   
-Create empty **main** method.    
-Print *I am lovin coding*.    
-Print *Programming is amazing*.   
+Print **I am loving coding**.    
+Print **Programming is amazing**.  
+Question:
+
+        class SampleClass {
+          public static void main(String[] args) {
+            System.out.println("");
+            System.out.println("");
+          }
+        }
+Solution:
 
         class SampleClass {
           public static void main(String[] args) {
@@ -190,10 +196,15 @@ Print *Programming is amazing*.
         }
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which displays value 10.    
-Create class **SampleClass**.   
-Create **main** method.    
-Print *10*.    
+Print **10**.    
+Question:
+
+        class SampleClass {
+          public static void main(String[] args) {
+            System.out.println();
+          }
+        }
+Solution:
 
         class SampleClass {
           public static void main(String[] args) {
@@ -202,10 +213,15 @@ Print *10*.
         }
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which displays value 37.4.     
-Create class **SampleClass**.   
-Create **main** method.    
-Print *37.4*.    
+Print **37.4**.    
+Question:
+
+        class SampleClass {
+          public static void main(String[] args) {
+            System.out.println();
+          }
+        }
+Solution:
 
         class SampleClass {
           public static void main(String[] args) {
@@ -214,15 +230,25 @@ Print *37.4*.
         }
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in java file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
-Create class **VariableCreation**.   
-Create empty **main** method.    
 Create variable **String** **name** = *"John"*.   
 Create variable **int** **age** = *10*.   
-Create variable **float** **score** = *7.8*.   
+Create variable **float** **grade** = *7.8*.   
 Print value of **name**.   
 Print value of **age**.   
-Print value of **score**.   
+Print value of **grade**.   
+Question:
+
+        class VariableCreation {
+          public static void main(String[] args) {
+            
+            
+            
+            System.out.println();
+            System.out.println();
+            System.out.println();
+          }
+        }
+Solution:
 
         class VariableCreation {
           public static void main(String[] args) {
@@ -236,9 +262,7 @@ Print value of **score**.
         }
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Addition: Write a Program in java file which declares 9 int variables such as a=10, b=20, c=a+b. Print value variable c. aa=1, bb=2, cc=aa+bb. Print value variable cc.x=11, y=22, z=x+y. Print value variable z.    
-Create class **VariableCreation**.   
-Create empty **main** method.    
+Addition:    
 Create variable **int** **a** = *10*.   
 Create variable **int** **b** = *20*.   
 Create variable **int** **c** = **a** + **b**.      
@@ -251,6 +275,27 @@ Create variable **int** **x** = *50*.
 Create variable **int** **y** = *150*.   
 Create variable **int** **z** = **x** + **y**.      
 Print value of **z**.  
+Question:
+
+        class VariableCreation {
+          public static void main(String[] args) {
+            
+            
+            
+            System.out.println();
+            
+            
+            
+            
+            System.out.println();
+            
+            
+            
+            
+            System.out.println();
+          }
+        }
+Solution:
 
         class VariableCreation {
           public static void main(String[] args) {
@@ -280,7 +325,20 @@ Importance of methods.
 How to create method in java file.    
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Addition: Write a java program in such that it contains static method "addition(int firstArg, int secondArg)" which print addition of given arguments. Call this addition method from main method.    
+Addition:   
+Implement static method "addition(int number1, int number2)" which prints addition of given arguments.    
+Question:
+
+        class MyOperation {
+          void addition(int number1, int number2){
+            
+          }
+
+          public static void main(String[] args) {
+            addition();
+          }
+        }
+Solution:
 
         class MyOperation {
           void addition(int number1, int number2){
@@ -294,7 +352,21 @@ Addition: Write a java program in such that it contains static method "addition(
         }
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Subtraction: Write a java program in such that it contains static method "subtraction(int firstArg, int secondArg)" which print subtraction of given arguments. Call this subtraction method from main method.    
+Subtraction:    
+Implement static method "subtraction(int number1, int number2)" which prints subtraction of given arguments.   
+Question:
+
+        class MyOperation {
+          void subtraction(int number1, int number2){
+            
+            
+          }
+
+          public static void main(String[] args) {
+            subtraction();
+          }
+        }
+Solution:
 
         class MyOperation {
           void subtraction(int number1, int number2){
@@ -308,7 +380,21 @@ Subtraction: Write a java program in such that it contains static method "subtra
         }
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Square: Write a java program in such that it contains static method "square(int number)" which print square of given argument. Call this square method from main method.  
+Square:    
+Implement static method "square(int number)" which prints square of given argument.   
+Question:
+
+        class MyOperations {
+          void square(int number){
+            
+            
+          }
+
+          public static void main(String[] args) {
+            square();
+          }
+        }
+Solution:
 
         class MyOperations {
           void square(int number){
@@ -322,7 +408,9 @@ Square: Write a java program in such that it contains static method "square(int 
         }
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Cube: Write a java program in such that it contains static method "cube(int number)" which print cube of given argument. Call this cube method from main method.   
+Cube:     
+Implement static method "cube(int number)" which prints cube of given argument.    
+Question:
 
         class MyOperations {
           void cube(int number){
@@ -334,12 +422,37 @@ Cube: Write a java program in such that it contains static method "cube(int numb
             cube();
           }
         }
+Solution:
+
+        class MyOperations {
+          void cube(int number){
+            
+            
+          }
+
+          public static void main(String[] args) {
+            cube();
+          }
+        }
 
 12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
 How to create method with return type.   
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program in such that it contains static method "echo(int number)" which returns the same number passed as argument. Call this echo method from main method.   
+Create static method "echo(int number)" which returns the same number passed as argument.    
+Question:
+
+        class EchoMyNumber {
+          
+            
+          
+
+          public static void main(String[] args) {
+            int returnedNumber = echo(10);
+            System.out.println(returnedNumber);
+          }
+        }
+Solution:
 
         class EchoMyNumber {
           int echo(int number){
@@ -353,7 +466,20 @@ Write a java program in such that it contains static method "echo(int number)" w
         }
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program in such that it contains static method "echo(string message)" which returns the same message passed as argument. Call this echo method from main method.   
+Create static method "echo(string message)" which returns the same message passed as argument.    
+Question:
+
+        class EchoMyMessage {
+          
+          
+          
+
+          public static void main(String[] args) {
+            String returnedMessage = echo("I will come back");
+            System.out.println(returnedMessage);
+          }
+        }
+Solution:
 
         class EchoMyMessage {
           String echo(String message){
@@ -367,7 +493,19 @@ Write a java program in such that it contains static method "echo(string message
         }
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program in such that it contains custom static method "main(string message)" which returns the same message passed as argument. Call this custom main method from main method.   
+Implement custom static method "main(string message)" which returns the same message passed as argument.  Question:  
+
+        class Student {
+          String main(String message){
+            
+          }
+
+          public static void main(String[] args) {
+            String returnedMessage = main("I will come back");
+            System.out.println(returnedMessage);
+          }
+        }
+Solution:  
 
         class Student {
           String main(String message){
@@ -378,13 +516,11 @@ Write a java program in such that it contains custom static method "main(string 
             String returnedMessage = main("I will come back");
             System.out.println(returnedMessage);
           }
-        }
+        }      
 
 12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **NestedCalling**.   
-Create instance method **getFirstName()** which returns *John*.   
-Create instance method **getLastName()** which returns *Marshal*.   
 Create instance method **printFullName()** which prints full name by calling **getFirstName()** and **getLastName()** methods and appending them such as final result is *John Marshal*.   
+Question:
 
         class Student {
           String getFirstName(){
@@ -403,7 +539,25 @@ Create instance method **printFullName()** which prints full name by calling **g
             printFullName();
           }
         }
+Solution:
 
+        class Student {
+          String getFirstName(){
+            return "John";
+          }
+          
+          String getLastName(){
+            return "Marshal";
+          }
+          
+          void printFullName(){
+            System.out.println();
+          }
+
+          public static void main(String[] args) {
+            printFullName();
+          }
+        }
 
 #### Static Block {-}
 
@@ -414,16 +568,37 @@ Importance of static block.
 How to create static block in java file.
 
 23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a static static block in java file. This static block shall print "In static block" message. Try execute this file.   
+Create static block in java file which prints "In static block" message. Try execute this file.   
+Question:
+
+        class StaticBlocksImportance {
+          
+          
+          
+        }
+Solution:
 
         class StaticBlocksImportance {
           static{
             System.out.println("In first static block");
           }
-        }
+        }        
 
 23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains two static static blocks in java file. The first static block shall print "In first static block" message. The second static block shall print "In second static block" message. Try execute this java file.   
+Create first static blocks which prints "In first static block" message.    
+Create second static blocks which prints "In second static block" message. Try execute this java file.    
+Question:
+
+        class StaticBlocksImportance {
+          static{
+            System.out.println("");
+          }
+          
+          static{
+            System.out.println("");
+          }
+        }
+Solution:
 
         class StaticBlocksImportance {
           static{
@@ -433,10 +608,28 @@ Write a java program which contains two static static blocks in java file. The f
           static{
             System.out.println("In second static block");
           }
-        }
+        }        
 
 23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains two static static blocks in java file. The first static block shall print "In first static block" message. The second static block shall print "In second static block" message. Create main method, which shall print "In main method". Try execute this java file.   
+The first static block shall print "In first static block" message.    
+The second static block shall print "In second static block" message.    
+Create main method, which shall print "In main method". Try execute this java file.   
+Question:
+
+        class StaticBlocksImportance {
+          static{
+            System.out.println("");
+          }
+          
+          
+          
+          
+          
+          public static void main(String[] args) {
+            System.out.println("");
+          }
+        }
+Solution:
 
         class StaticBlocksImportance {
           static{
@@ -450,13 +643,17 @@ Write a java program which contains two static static blocks in java file. The f
           public static void main(String[] args) {
             System.out.println("In main method");
           }
-        }
+        }        
 
 23. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Importance of order of static block.   
 
 23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains two static static blocks in java file. The first static block shall print "In first static block" message. The second static block shall print "In second static block" message. Create main method, which shall print "In main method". Try execute this java file.   
+The first static block shall print "In first static block" message.    
+Create main method, which shall print "In main method".   
+The second static block shall print "In second static block" message.    
+Try execute this java file.   
+Question:
 
         class StaticBlocksImportance {
           static{
@@ -471,6 +668,21 @@ Write a java program which contains two static static blocks in java file. The f
             System.out.println("In second static block");
           }
         }
+Solution:
+
+        class StaticBlocksImportance {
+          static{
+            System.out.println("");
+          }
+          
+          public static void main(String[] args) {
+            System.out.println("");
+          }
+          
+          static{
+            System.out.println("");
+          }
+        }        
 
 #### Static Data Members {-}
 
@@ -481,7 +693,19 @@ Importance of static data members.
 How to create static data member and its usage in java file.    
 
 30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a static data member. Assign it to some value and print this value in main method.  
+Create static data member **companyName** of type String.    
+Assign value *Folks* to **companyName** in main method.  
+Question:
+
+        class Employee {
+          
+          
+          public static void main(String[] args) {
+            
+            System.out.println(companyName);
+          }
+        }
+Solution:
 
         class Employee {
           static String companyName;
@@ -490,10 +714,25 @@ Write a java program which contains a static data member. Assign it to some valu
             companyName = "Folks";
             System.out.println(companyName);
           }
-        }
+        }        
 
 30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a static data member. Assign it to some value. Create a static method print which prints static variable value. Call this print method from main method.   
+Assign value *Folks* to **companyName** in main method.    
+Implement **displayCompanyName** such that it prints value of **companyName**.   
+Question:
+
+        class Employee {
+          static String companyName;
+          
+          static displayCompanyName{
+            System.out.println();
+          }
+
+          public static void main(String[] args) {
+            displayCompanyName();
+          }
+        }
+Solution:
 
         class Employee {
           static String companyName = "Folks";
@@ -508,7 +747,27 @@ Write a java program which contains a static data member. Assign it to some valu
         }
 
 30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a static data member. Assign it to some value. Create two static methods printOne and printTwo which prints static variable value. Call these print methods from main method.   
+Implement **displayCompanyName** such that it prints value of **companyName**.   
+Implement **displayCompanyNameDuplicate** such that it prints value of **companyName**.   
+Question:
+
+        class Employee {
+          static String companyName = "Folks";
+          
+          static displayCompanyName{
+            System.out.println();
+          }
+          
+          static displayCompanyNameDuplicate{
+            System.out.println();
+          }
+
+          public static void main(String[] args) {
+            displayCompanyName();
+            displayCompanyNameDuplicate();
+          }
+        }
+Solution:
 
         class Employee {
           static String companyName = "Folks";
@@ -525,10 +784,47 @@ Write a java program which contains a static data member. Assign it to some valu
             displayCompanyName();
             displayCompanyNameDuplicate();
           }
-        }
+        }        
 
 30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a static data member. Assign it to some value. Create two static methods doubleTheValue which doubles the static data member value and print which prints static variable value. First call doubleTheValue method and then print method from main method.  
+Implement static method **doubleCompanyRating()** which doubles the value of **companyRating**.   
+Implement static method **printCompanyRating()** which prints the value of **companyRating**.   
+Question:
+
+        class Employee {
+          static int companyRating = 3;
+          
+          static void doubleCompanyRating(){
+            
+          }
+          
+          static void printCompanyRating(){
+            System.out.println();
+          }
+
+          public static void main(String[] args) {
+            doubleCompanyRating();
+            printCompanyRating();
+          }
+        }
+Solution:
+
+        class Employee {
+          static int companyRating = 3;
+          
+          static void doubleCompanyRating(){
+            companyRating = companyRating * 2;
+          }
+          
+          static void printCompanyRating(){
+            System.out.println(companyRating);
+          }
+
+          public static void main(String[] args) {
+            doubleCompanyRating();
+            printCompanyRating();
+          }
+        }        
 
 30. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 How to refer static data member with class name.   
@@ -537,7 +833,18 @@ How to refer static data member with class name.
 How to refer static data member with class name.   
 
 30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a java program which contains a static data member. Assign it to some value and print this value in main method by referring through class name.   
+Print value of **companyName** in main method by referring through class name.  
+Question:
+
+        class Employee {
+          static String companyName;
+
+          public static void main(String[] args) {
+            companyName = "Folks";
+            
+          }
+        }
+Solution:
 
         class Employee {
           static String companyName;
@@ -546,7 +853,7 @@ Write a java program which contains a static data member. Assign it to some valu
             companyName = "Folks";
             System.out.println(Employee.companyName);
           }
-        }
+        }        
 
 ### Module 03: Control Flow Statements {-}
 
@@ -561,24 +868,45 @@ Object introduction
 How to create object of a class   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
 Create object **emp** of **Employee** in main method.  
 Print **emp**.   
+Question:
 
         class Employee {
 
           public static void main(String[] args) {
-            Employee emp1 = new Employee();
-            System.out.println(emp1);
+            
+            System.out.println();
+          }
+        }
+Solution:
+
+        class Employee {
+
+          public static void main(String[] args) {
+            Employee emp = new Employee();
+            System.out.println(emp);
           }
         }
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
 Create object **emp1** of **Employee** in main method.  
-Create object **emp2** of **Employee** in main method.  
 Print **emp1**.   
+Create object **emp2** of **Employee** in main method.   
 Print **emp2**.  
+Question:
+
+        class Employee {
+
+          public static void main(String[] args) {
+            
+            System.out.println();
+            
+            
+            System.out.println();
+          }
+        }
+Solution:
 
         class Employee {
 
@@ -589,14 +917,26 @@ Print **emp2**.
             Employee emp2 = new Employee();
             System.out.println(emp2);
           }
-        }
+        }        
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
 Create object **emp** of **Employee** in main method.  
 Print **emp**.   
 Create another object of **Employee** class and assign it to already created **emp**.     
 Print **emp**.   
+Question:
+
+        class Employee {
+
+          public static void main(String[] args) {
+            
+            System.out.println();
+            
+            
+            System.out.println();
+          }
+        }
+Solution:
 
         class Employee {
 
@@ -607,7 +947,7 @@ Print **emp**.
             emp = new Employee();
             System.out.println(emp);
           }
-        }
+        }        
 
 1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
 Anonymous object introduction   
@@ -616,8 +956,16 @@ Anonymous object introduction
 How to create anonymous object of a class   
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
 Create anonymous object of **Employee** in main method.   
+Question:
+
+        class Employee {
+
+          public static void main(String[] args) {
+            
+          }
+        }
+Solution:
 
         class Employee {
 
@@ -627,15 +975,23 @@ Create anonymous object of **Employee** in main method.
         }
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
 Create anonymous object of **Employee** in print statement in main method and print its value.   
+Question:
+
+        class Employee {
+
+          public static void main(String[] args) {
+            System.out.println();
+          }
+        }
+Solution:
 
         class Employee {
 
           public static void main(String[] args) {
             System.out.println(new Employee());
           }
-        }
+        }        
 
 #### Instance Data Members {-}
 
@@ -646,10 +1002,19 @@ Importance of Instance data members.
 How to create Instance data member and its usage in java file.    
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
-Create object of **Person** class **person** in main method.   
-Print **name** of **person** in main method.   
+Create object of **Student** class **student** in main method.   
+Print **name** of **student** in main method.   
+Question:
+  
+        class Student {
+          String name;
+
+          public static void main(String[] args) {
+            
+            System.out.println();
+          }
+        }
+Question:
   
         class Student {
           String name;
@@ -658,15 +1023,27 @@ Print **name** of **person** in main method.
             Student student = new Student();
             System.out.println(student.name);
           }
-        }
+        }        
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
-Create object of **Person** class **person** in main method.   
-Print **name** of **person** in main method.   
+Create object of **Student** class **student** in main method.   
+Print **name** of **student** in main method.   
 Assign value *Jack* to **name**.   
-Print **name** of **person** in main method.   
+Print **name** of **student** in main method.   
+Question:
+
+        class Student {
+          String name;
+
+          public static void main(String[] args) {
+            Student student = new Student();
+            System.out.println(student.name);
+
+            
+            System.out.println();
+          }
+        }
+Solution:
 
         class Student {
           String name;
@@ -678,17 +1055,34 @@ Print **name** of **person** in main method.
             student.name = "Jack";
             System.out.println(student.name);
           }
-        }
+        }        
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
-Create 2 objects of **Person** class viz. **person1** and **person2** in main method.   
-Print **name** of **person1** in main method.   
-Print **name** of **person2** in main method.   
-Assign value *Jack* to **name** of **person1**.   
-Assign value *Daniel* to **name** of **person2**.   
-Print **name** of **person1** and **person2** in main method.    
+Print **name** of **student1** in main method.   
+Print **name** of **student2** in main method.   
+Assign value *Jack* to **name** of **student1**.   
+Assign value *Diana* to **name** of **student2**.   
+Print **name** of **student1** and **student2** in main method.    
+Question:
+
+        class Student {
+          String name;
+
+          public static void main(String[] args) {
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            System.out.println(student1.name);
+            System.out.println(student2.name);
+
+            
+            
+
+            System.out.println();
+            System.out.println();
+          }
+        }
+Question:
 
         class Student {
           String name;
@@ -709,17 +1103,48 @@ Print **name** of **person1** and **person2** in main method.
         }
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
-Create instance data member **salary** with default value *10000* in **Person** class.   
-Create 2 objects of **Person** class viz. **person1** and **person2** in main method.   
-Print **name** and **salary** of **person1** in main method.   
-Print **name** and **salary** of **person2** in main method.   
-Assign value *Jack* to **name** of **person1**.   
-Assign value *Daniel* to **name** of **person2**.   
-Assign value *12000* to **salary** of **person1**.   
-Assign value *15000* to **salary** of **person2**.    
-Print **name** and **salary** of **person1** and **person2** in main method.   
+Print **name** of **student1** in main method.   
+Print **marks** of **student1** in main method.   
+Print **name** of **student2** in main method.   
+Print **marks** of **student2** in main method.    
+Assign value *Jack* to **name** of **student1**.   
+Assign value *Diana* to **name** of **student2**.   
+Assign value *7* to **marks** of **student1**.   
+Assign value *8* to **marks** of **student2**.    
+Print **name** of **student1** in main method.   
+Print **marks** of **student1** in main method.   
+Print **name** of **student2** in main method.   
+Print **marks** of **student2** in main method.   
+Question:
+
+        class Student {
+          String name;
+          int marks = 4;
+
+          public static void main(String[] args) {
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            System.out.println(student1.name);
+            System.out.println(student1.marks);
+
+            System.out.println(student2.name);
+            System.out.println(student2.marks);
+
+            
+            
+
+            
+            
+
+            System.out.println();
+            System.out.println();
+
+            System.out.println();
+            System.out.println();
+          }
+        }
+Solution:
 
         class Student {
           String name;
@@ -747,22 +1172,65 @@ Print **name** and **salary** of **person1** and **person2** in main method.
             System.out.println(student2.name);
             System.out.println(student2.marks);
           }
-        }
+        }        
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create static data member **surName** with default value *Craig* in **Person** class.   
-Create instance data member **name** in **Person** class.   
-Create instance data member **salary** with default value *10000* in **Person** class.   
-Create 2 objects of **Person** class viz. **person1** and **person2** in main method.   
-Print **name**, **salary** and **surName** of **person1** in main method.   
-Print **name**, **salary** and **surName** of **person2** in main method.   
-Assign value *Shawn* to **surName**.   
-Assign value *Jack* to **name** of **person1**.   
-Assign value *Daniel* to **name** of **person2**.   
-Assign value *12000* to **salary** of **person1**.   
-Assign value *15000* to **salary** of **person2**.    
-Print **name** and **salary** of **person1** and **person2** in main method.     
+Print **name** of **student1** in main method.   
+Print **marks** of **student1** in main method.   
+Print **schoolName** of **student1** in main method.   
+Print **name** of **student2** in main method.   
+Print **marks** of **student2** in main method.  
+Print **schoolName** of **student2** in main method.   
+Assign value *Better Study School* to **schoolName**.   
+Print value of **schoolName** in main method.   
+Assign value *Jack* to **name** of **student1**.   
+Assign value *Diana* to **name** of **student2**.   
+Assign value *7* to **marks** of **student1**.   
+Assign value *8* to **marks** of **student2**.    
+Print **name** of **student1** in main method.   
+Print **marks** of **student1** in main method.   
+Print **schoolName** of **student1** in main method.   
+Print **name** of **student2** in main method.   
+Print **marks** of **student2** in main method.  
+Print **schoolName** of **student2** in main method.   
+Question:
+
+        class Student {
+          String name;
+          int marks = 4;
+          static String schoolName = "Good Study School";
+
+          public static void main(String[] args) {
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            System.out.println(student1.name);
+            System.out.println(student1.marks);
+            System.out.println(student1.schoolName);
+
+            System.out.println(student2.name);
+            System.out.println(student2.marks);
+            System.out.println(student2.schoolName);
+
+            
+            System.out.println(schoolName);
+
+            
+            
+
+            
+            
+
+            System.out.println();
+            System.out.println();
+            System.out.println();
+
+            System.out.println();
+            System.out.println();
+            System.out.println();
+          }
+        }
+Solution:
 
         class Student {
           String name;
@@ -798,13 +1266,11 @@ Print **name** and **salary** of **person1** and **person2** in main method.
             System.out.println(student2.marks);
             System.out.println(student2.schoolName);
           }
-        }
+        }        
 
 10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
-Create instance data member **salary** with default value *10000* in **Person** class.   
-Create anonymous object of **Person** in print statement and print value of **salary**.   
+Create anonymous object of **Person** in print statement and print value of **salary** on it, in main method.   
+Question:
 
         class Person {
           int salary = 10000;
@@ -813,6 +1279,15 @@ Create anonymous object of **Person** in print statement and print value of **sa
             System.out.println(new Person().salary);
           }
         }
+Solution:
+
+        class Person {
+          int salary = 10000;
+          
+          public static void main(String[] args) {
+            System.out.println();
+          }
+        }        
 
 #### Instance Methods {-}
 
@@ -823,11 +1298,24 @@ Instance/Non-static method introduction
 How to create Instance/Non-static method in a class   
 
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
-Create instance method **print()** which prints the value of **name**.   
+Create instance method **displayValue()** which prints the value of **name**.   
 Create object **person** of **Person** class  in main method.   
-Call **print()** on **person** in main method.    
+Call **displayValue()** on **person** in main method.    
+Question:
+
+        class Person {
+          String name;
+          
+          void displayValue(){
+            System.out.println();
+          }
+
+          public static void main(String[] args) {
+            Person person = new Person();
+            
+          }
+        }
+Solution:
 
         class Person {
           String name;
@@ -840,16 +1328,33 @@ Call **print()** on **person** in main method.
             Person person = new Person();
             person.displayValue();
           }
-        }
+        }        
 
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
 Create instance method **setValue(string newName)** which assigns the variable **newName** to **name**.   
-Create instance method **print()** which prints the value of **name**.   
 Create object **person** of **Person** class  in main method.   
 Call **setValue("Jack")** on **person** in main method.   
-Call **print()** on **person** in main method.     
+Call **displayValue()** on **person** in main method.     
+Question:
+
+        class Person {
+          String name;
+          
+          void setValue(String newName){
+            
+          }
+
+          void displayValue(){
+            System.out.println(name);
+          }
+
+          public static void main(String[] args) {
+            Person person = new Person();
+            
+            person.displayValue();
+          }
+        }
+Solution:
 
         class Person {
           String name;
@@ -867,17 +1372,37 @@ Call **print()** on **person** in main method.
             person.setValue("Diana");
             person.displayValue();
           }
-        }
+        }        
 
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** in **Person** class.   
-Create instance data member **age** in **Person** class.   
 Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**.   
 Create instance method **print()** which prints the value of **name** and **age**.   
 Create object **person** of **Person** class  in main method.    
-Call **setValues("Jack", 21)** on **person** in main method.    
-Call **print()** on **person** in main method.    
+Call **setValues("Diana", 19)** on **person** in main method.    
+Call **displayValues()** on **person** in main method.    
+Question:
+
+        class Person {
+          String name;
+          int age;
+
+          void setValues(String newName, int newAge){
+            
+            
+          }
+
+          void displayValues(){
+            System.out.println(name);
+            System.out.println(age);
+          }
+
+          public static void main(String[] args) {
+            Person person = new Person();
+            
+            
+          }
+        }
+Solution:
 
         class Person {
           String name;
@@ -898,18 +1423,41 @@ Call **print()** on **person** in main method.
             person.setValues("Diana", 19);
             person.displayValues();
           }
-        }
+        }        
 
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name**.   
-Create instance data member **age**.   
-Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**. Create instance method **print()** which prints the value of **name** and **age**.   
-Create 2 objects **person1** and **person2** of **Person** class in main method.   
 Call **person1**.**setValues("Jack", 21)** in main method.   
-Call **person2**.**setValues("Daniel", 22)** in main method.   
-Call **person1**.**print()** in main method.     
-Call **person2**.**print()** in main method.     
+Call **person2**.**setValues("Diana", 19)** in main method.   
+Call **person1**.**displayValues()** in main method.     
+Call **person2**.**displayValues()** in main method.     
+Question:
+
+        class Person {
+          String name;
+          int age;
+
+          void setValues(String newName, int newAge){
+            name = newName;
+            age = newAge;
+          }
+
+          void displayValues(){
+            System.out.println(name);
+            System.out.println(age);
+          }
+
+          public static void main(String[] args) {
+            Person person1 = new Person();
+            Person person2 = new Person();
+
+            
+            
+
+            
+            
+          }
+        }
+Solution:
 
         class Person {
           String name;
@@ -935,21 +1483,47 @@ Call **person2**.**print()** in main method.
             person1.displayValues();
             person2.displayValues();
           }
-        }
+        }        
 
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create instance data member **name** with default value *Tom*.    
-Create instance data member **age** with default value *21*.   
-Create instance method **modifyValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**.    
-Create instance method **print()** which prints the value of **name** and **age**.    
-Create object **person** of **Person** class  in main method.    
-Call **person**.**modifyValues("Jack", 22)** in main method.    
-Call **person**.**print()** in main method.    
-Call **person**.**modifyValues("Harry", 24)** in main method.   
-Call **person**.**print()** in main method.   
-Call **person**.**modifyValues("Diana", 16)** in main method.   
-Call **person**.**print()** in main method.   
+Call **student**.**displayValues()** in main method.    
+Call **student**.**modifyValues("Jack", 7)** in main method.    
+Call **student**.**displayValues()** in main method.    
+Call **student**.**modifyValues("Harry", 6)** in main method.   
+Call **student**.**displayValues()** in main method.   
+Call **student**.**modifyValues("Krish", 8)** in main method.   
+Call **student**.**displayValues()** in main method.   
+Question:
+
+        class Student {
+          String name = "Tom";
+          int marks = 4;
+
+          void modifyValues(String newName, int newMarks){
+            name = newName;
+            marks = newMarks;
+          }
+
+          void displayValues(){
+            System.out.println(name + ", " + marks);
+          }
+
+          public static void main(String[] args) {
+            Student student = new Student();
+            
+            student.displayValues();
+            
+            
+            student.displayValues();
+            
+            
+            student.displayValues();
+            
+            
+            student.displayValues();
+          }
+        }
+Question:
 
         class Student {
           String name = "Tom";
@@ -980,21 +1554,47 @@ Call **person**.**print()** in main method.
           }
         }
 
-
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Person**.   
-Create static data member **surName** with default value *Craig*.
-Create instance data member **name**.
-Create instance data member **salary** with default value *10000*.
-Create instance method **modifyValues(String newName, int newAge, String newsurName)** which assigns the variable **newName** to **name**, **newAge** to **age** and **newsurName** to **surName**.    
-Create instance method **print()** which prints the value of **name**, **age** and **surName**.  
-Create 2 objects of **Person** class viz. **person1** and **person2** in main method.  
-Call **person1**.**print()** in main method.    
-Call **person2**.**print()** in main method.    
-Call **person1**.**modifyValues("Jack" , 22, "Shawn")** in main method.    
-Call **person1**.**print()** in main method.    
-Call **person2**.**modifyValues("Diana" , 17, "Hilton")** in main method.    
-Call **person2**.**print()** in main method.    
+Call **student1**.**displayValues()** in main method.    
+Call **student2**.**displayValues()** in main method.    
+Call **student1**.**modifyValues("Jack" , 22, "Shawn")** in main method.    
+Call **student2**.**modifyValues("Diana" , 17, "Hilton")** in main method.    
+Call **student1**.**displayValues()** in main method.    
+Call **student2**.**displayValues()** in main method.    
+Question:
+
+        class Student {
+          String name;
+          int marks = 4;
+          static String schoolName = "Good Study School";
+
+          void modifyValues(String newName, int newMarks, String schoolNewName){
+            name = newName;
+            marks = newMarks;
+            schoolName = schoolNewName;
+          }
+
+          void displayValues(){
+            System.out.println(name);
+            System.out.println(marks);
+            System.out.println(schoolName);
+          }
+
+          public static void main(String[] args) {
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            student1.displayValues();
+            student2.displayValues();
+
+            student1.modifyValues();
+            student2.modifyValues();
+
+            
+            
+          }
+        }
+Solution:
 
         class Student {
           String name;
@@ -1028,16 +1628,7 @@ Call **person2**.**print()** in main method.
           }
         }
 
-
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
-Create static data member **companyName** with default value *Folks*.   
-Create instance data member **name**.   
-Create instance data member **salary** with default value *10000*.   
-Create static method **displayCompanyName()** which will display value of **companyName**.   
-Create instance method **displayName()** which will display value of **name**.   
-Create instance method **displaySalary()** which will display value of **salary**.   
-Create static method **setCompanyName(String companyNewName)** which will assign **companyNewName** to **companyName**.   
 Create instance method **setName(String newName)** which will assign **newName** to **name**.   
 Create instance method **setSalary(int newSalary)** which will assign **newSalary** to **salary**.   
 Create object **emp1** of **Employee** class in main method.   
@@ -1056,6 +1647,60 @@ Call **emp2**.**displayCompanyName()**.
 Call **setCompanyName("ReadyFolks")**.   
 Call **emp1**.**displayCompanyName()**.   
 Call **emp2**.**displayCompanyName()**.   
+Question:
+
+        class Employee{
+          static String companyName = "Folks";
+          String name;
+          int salary = 10000;
+
+          static void displayCompanyName(){
+            System.out.println(companyName);
+          }
+
+          void displayName(){
+            System.out.println(name);
+          }
+
+          void displaySalary(){
+            System.out.println(salary);
+          }
+
+          static void setCompanyName(String companyNewName) {
+            companyName = companyNewName;
+          }
+
+          
+          
+          
+
+          
+          
+          
+
+          public static void main(String[] args) {
+            
+            displayCompanyName();
+            emp1.setName("Maria");
+            emp1.setSalary(12000);
+            emp1.displayName();
+            emp1.displaySalary();
+            emp1.displayCompanyName();
+
+            
+            displayCompanyName();
+            emp2.setName("Harry");
+            emp2.displayName();
+            emp2.displaySalary();
+            emp2.displayCompanyName();
+
+            setCompanyName("ReadyFolks");
+
+            emp1.displayCompanyName();
+            emp2.displayCompanyName();
+          }
+        }
+Solution:
 
         class Employee{
           static String companyName = "Folks";
@@ -1107,7 +1752,7 @@ Call **emp2**.**displayCompanyName()**.
             emp1.displayCompanyName();
             emp2.displayCompanyName();
           }
-        }
+        }        
 
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **Employee**.   
@@ -1119,6 +1764,25 @@ Create instance method **setName(String newName)** which will assign **newName**
 Create instance method **setSalary(int newSalary)** which will assign **newSalary** to **salary**.   
 Create anonymous object of **Employee** class and call **setName("Maria")** on it in main method.   
 Create anonymous object of **Employee** class and call **displayName()** on it in main method.   
+Question:
+
+        class Employee{
+          String name;
+          
+          void setName(String newName) {
+            name = newName;
+          }
+
+          void displayName(){
+            System.out.println(name);
+          }
+
+          public static void main(String[] args) {
+            
+            
+          }
+        }
+Solution:
 
         class Employee{
           String name;
@@ -1135,7 +1799,7 @@ Create anonymous object of **Employee** class and call **displayName()** on it i
             new Employee().setName("Maria");
             new Employee().displayName();
           }
-        }
+        }        
 
 18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **Employee**.   
@@ -1146,6 +1810,7 @@ Create instance method **getLastName()** which returns value of **lastName**.
 Create instance method **displayFullName()** which prints full name by calling **getFirstName()** and **getLastName()** methods and appending them with space in between.   
 Create object **emp** of **Employee** class in main method.   
 Call **emp**.**displayFullName()**.   
+Question:
 
         class Employee{
           String firstName;
@@ -1160,14 +1825,37 @@ Call **emp**.**displayFullName()**.
           }
 
           void displayFullName(){
-            System.out.println(firstName + " " + lastName);
+            System.out.println();
+          }
+
+          public static void main(String[] args) {
+            
+            
+          }
+        }
+Solution:
+
+        class Employee{
+          String firstName;
+          String lastName;
+
+          String getFirstName() {
+            return firstName;
+          }
+
+          String getLastName() {
+            return lastName;
+          }
+
+          void displayFullName(){
+            System.out.println(getFirstName() + " " + getLastName());
           }
 
           public static void main(String[] args) {
             Employee emp = new Employee();
             emp.displayFullName();
           }
-        }
+        }        
 
 #### Method Overloading {-}
 
@@ -1183,6 +1871,26 @@ Create static method **getSquareArea(int number)** which returns area of square.
 Create static method **getRectangleArea(int length, int width)** which returns area of rectangle.   
 Call **getSquareArea(5)** in main method.   
 Call **getRectangleArea(5, 7)** in main method.   
+Question:
+
+        class MethodOverloadingSample{
+          static int getSquareArea(int number){
+            
+          }
+
+          static int getRectangleArea(int length, int width){
+            
+          }
+
+          public static void main(String[] args) {
+            int squareArea = getSquareArea(5);
+            System.out.println(squareArea);
+            
+            int rectangleArea = getRectangleArea(5, 7);
+            System.out.println(rectangleArea);
+          }
+        }
+Solution:
 
         class MethodOverloadingSample{
           static int getSquareArea(int number){
@@ -1200,14 +1908,34 @@ Call **getRectangleArea(5, 7)** in main method.
             int rectangleArea = getRectangleArea(5, 7);
             System.out.println(rectangleArea);
           }
-        }
+        }        
 
 29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **MethodOverloadingSample**.   
 Create static method **getArea(int number)** which returns area of square.   
 Create static method **getArea(int length, int width)** which returns area of rectangle.   
 Call **getArea(5)** in main method.   
-Call **getArea(5, 7)** in main method.
+Call **getArea(5, 7)** in main method.   
+Question:
+
+        class MethodOverloadingSample{
+          static int getArea(int number){
+            
+          }
+
+          
+          
+          
+
+          public static void main(String[] args) {
+            int squareArea = getArea(5);
+            System.out.println(squareArea);
+            
+            int rectangleArea = getArea(5, 7);
+            System.out.println(rectangleArea);
+          }
+        }
+Solution:
 
         class MethodOverloadingSample{
           static int getArea(int number){
@@ -1225,7 +1953,7 @@ Call **getArea(5, 7)** in main method.
             int rectangleArea = getArea(5, 7);
             System.out.println(rectangleArea);
           }
-        }
+        }        
 
 29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **MethodOverloadingSample**.   
@@ -1233,6 +1961,33 @@ Create static method **printInt(int number)** which prints the provided integer 
 Create static method **printString(String message)** which prints the provided message.
 Call **printInt(5)** in main method.   
 Call **printString("so  many print methods")** in main method.  
+Question:
+
+        class MethodOverloadingSample{
+          static void printChar(char ch){
+            System.out.println(ch);
+          }
+
+          static void printNumber(int number){
+            System.out.println(number);
+          }
+          
+          
+          
+          
+          
+          static void printString(String message){
+            System.out.println(message);
+          }
+
+          public static void main(String[] args) {
+            printInt(5);
+            printString("so  many print methods");
+            printFloat(10.9f);
+            printChar('a');
+          }
+        }
+Solution:
 
         class MethodOverloadingSample{
           static void printChar(char ch){
@@ -1257,14 +2012,31 @@ Call **printString("so  many print methods")** in main method.
             printFloat(10.9f);
             printChar('a');
           }
-        }
+        }        
 
 29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **MethodOverloadingSample**.   
 Create static method **print(int number)** which prints the provided integer number.   
 Create static method **print(String message)** which prints the provided message.
 Call **print(5)** in main method.   
-Call **print("so  many print methods")** in main method. 
+Call **print("so  many print methods")** in main method.   
+Question:
+
+        class MethodOverloadingSample{
+          static void print(int number){
+            System.out.println(number);
+          }
+          
+          
+          
+          
+
+          public static void main(String[] args) {
+            
+            print("method overloading is fun. no need to remember so many method names");
+          }
+        }
+Solution:
 
         class MethodOverloadingSample{
           static void print(int number){
@@ -1290,7 +2062,8 @@ Create static method **print(String message)** which prints the provided message
 Call **print(5)** in main method.   
 Call **print("method overloading is fun. no need to remember so many method names")** in main method.   
 Call **print(20.03f)** in main method.  
-Call **print('a')** in main method.  
+Call **print('a')** in main method.    
+Question:
 
         class MethodOverloadingSample{
           static void print(char ch){
@@ -1316,6 +2089,32 @@ Call **print('a')** in main method.
             print('a');
           }
         }
+Solution:
+
+        class MethodOverloadingSample{
+          static void print(char ch){
+            System.out.println(ch);
+          }
+
+          static void print(int number){
+          
+          }
+          
+          
+          
+          
+          
+          static void print(String message){
+            System.out.println(message);
+          }
+
+          public static void main(String[] args) {
+            print(5);
+            print("method overloading is fun. no need to remember so many method names");
+            print(10.9f);
+            print('a');
+          }
+        }        
 
 29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **MethodOverloadingSample**.   
@@ -1323,7 +2122,27 @@ Create static method **print(int x, float y)** which prints the provided integer
 Create static method **print(float x, int y)** which prints the provided float number and integer number.   
 Call **print(10, 10.9f)** in main method.   
 Call **print(10.9f, 10)** in main method.       
-Call **print(10, 10)** in main method. 
+Call **print(10, 10)** in main method.    
+Question:
+
+        class MethodOverloadingSample{
+          static void print(int x, float y){
+            System.out.println(x);
+            System.out.println(y);
+          }
+
+          
+          
+          
+          
+
+          public static void main(String[] args) {
+            print(10, 10.9f);
+            print(10.9f, 10);
+            //print(10, 10);
+          }
+        }
+Solution:
 
         class MethodOverloadingSample{
           static void print(int x, float y){
@@ -1339,9 +2158,9 @@ Call **print(10, 10)** in main method.
           public static void main(String[] args) {
             print(10, 10.9f);
             print(10.9f, 10);
-            print(10, 10);
+            //print(10, 10);
           }
-        }
+        }        
 
 #### Constructors {-}
 
@@ -1355,7 +2174,24 @@ How to use constructors.
 Create class **Employee**.   
 Create empty constructor **Employee()**.   
 Create static method **greeting()** which prints *"Welcome partners..!!"*.   
-Call **greeting()** in main method.   
+Call **greeting()** in main method.     
+Question:
+
+        class Employee {
+
+          Employee(){
+            System.out.println("");
+          }
+          
+          static void greetings(){
+            System.out.println("Welcome partner..!!");
+          }
+
+          public static void main(String[] args) {
+            greetings();
+          }
+        }
+Solution:
 
         class Employee {
 
@@ -1370,14 +2206,32 @@ Call **greeting()** in main method.
           public static void main(String[] args) {
             greetings();
           }
-        }
+        }        
 
 37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **Employee**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
 Create object **emp** of **Employee** class in main method.   
-Call **emp**.**greeting()** in main method.   
+Call **emp**.**greeting()** in main method.     
+Question:
+
+        class Employee {
+
+          
+          
+          
+          
+          void greetings(){
+            System.out.println("Welcome partner..!!");
+          }
+
+          public static void main(String[] args) {
+            Employee emp = new Employee();
+            emp.greetings();
+          }
+        }
+Solution:
 
         class Employee {
 
@@ -1393,13 +2247,30 @@ Call **emp**.**greeting()** in main method.
             Employee emp = new Employee();
             emp.greetings();
           }
-        }
+        }        
 
 37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **Employee**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
 Create anonymous object of **Employee** class and call **greeting()** in main method.   
+Question:
+
+        class Employee {
+
+          Employee(){
+            System.out.println("");
+          }
+          
+          void greetings(){
+            System.out.println("");
+          }
+
+          public static void main(String[] args) {
+            
+          }
+        }
+Solution:
 
         class Employee {
 
@@ -1414,7 +2285,7 @@ Create anonymous object of **Employee** class and call **greeting()** in main me
           public static void main(String[] args) {
             new Employee().greetings();
           }
-        }
+        }        
 
 37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Create class **Employee**.  
@@ -1426,6 +2297,33 @@ Create object **emp1** of **Employee** class in main method.
 Call **emp1**.**greeting()** in main method.   
 Create object **emp2** of **Employee** class with **Employee("Shane")** in main method.   
 Call **emp2**.**greeting()** in main method.   
+Question:
+
+        class Employee {
+          String name;
+
+          Employee(){
+            System.out.println("New employee joined");
+          }
+          
+          Employee(String empName){
+            name=empName;
+            System.out.println("");
+          }
+          
+          void greetings(){
+            System.out.println("Welcome " + name + "..!!");
+          }
+
+          public static void main(String[] args) {
+            
+            emp1.greetings();
+            
+            
+            emp2.greetings();
+          }
+        }
+Question:
 
         class Employee {
           String name;
@@ -1450,21 +2348,38 @@ Call **emp2**.**greeting()** in main method.
             Employee emp2 = new Employee("Shane");
             emp2.greetings();
           }
-        }
+        }        
 
 37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.  
-Create instance data member **name**.   
-Create constructor **Employee(String empName)** which prints *"New employee "+empName+" joined"*.   
-Create instance method **greeting()** which prints *"Welcome "+name+"..!!"*.   
 Create object **emp** of **Employee** class with **Employee("Shane")** in main method.   
-Call **emp**.**greeting()** in main method.   
+Call **emp**.**greeting()** in main method.     
+Question:
+  
+        class Employee {
+          String name;
+
+          Employee(String empName){
+            name=empName;
+            System.out.println("New employee "+empName+" joined");
+          }
+
+          void greetings(){
+            System.out.println("Welcome " + name + "..!!");
+          }
+
+          public static void main(String[] args) {
+            
+            
+          }
+        }
+Solution:
 
         class Employee {
           String name;
 
           Employee(String empName){
             name=empName;
+            System.out.println("New employee "+empName+" joined");
           }
 
           void greetings(){
@@ -1474,6 +2389,64 @@ Call **emp**.**greeting()** in main method.
           public static void main(String[] args) {
             Employee emp = new Employee("Shane");
             emp.greetings();
+          }
+        }
+        
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create static method with same name as class.   
+Call this method in main method.   
+Question:
+
+        class Employee {
+          Employee(){
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
+
+          Employee(int yearsOfExperience){
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          
+          
+          
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            
+            new Employee();
+            
+            Employee emp2 = new Employee(2);
+            Employee emp3 = new Employee();
+            Employee emp4 = new Employee(3);
+            Employee emp5 = new Employee();
+          }
+        }
+Solution:
+
+        class Employee {
+          Employee(){
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
+
+          Employee(int yearsOfExperience){
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          static void Employee(){
+            System.out.println("method with same class name");
+          }
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            Employee();
+            new Employee();
+            
+            Employee emp2 = new Employee(2);
+            Employee emp3 = new Employee();
+            Employee emp4 = new Employee(3);
+            Employee emp5 = new Employee();
           }
         }
 
