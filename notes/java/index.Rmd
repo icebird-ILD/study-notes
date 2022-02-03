@@ -3,14 +3,14 @@
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 dir=paste(getwd())
-section1_file=paste(dir, "module1.Rmd", sep = "/")
-section2_file=paste(dir, "module2.Rmd", sep = "/")
+module1_file=paste(dir, "module1.Rmd", sep = "/")
+module2_file=paste(dir, "module2.Rmd", sep = "/")
 ```
 
 
-```{r child = section1_file}
+```{r child = module1_file}
 ```
 
-```{r child = section2_file}
+```{r child = module2_file}
 ```
 
