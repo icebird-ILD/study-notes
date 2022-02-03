@@ -2449,8 +2449,463 @@ Solution:
             Employee emp5 = new Employee();
           }
         }
+        
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create instance method **commonTasksForEveryObject()**.   
+Call **commonTasksForEveryObject()** in every constructor.   
+Question:
 
+        class Employee {
+          Employee(){
+            commonTasksForEveryObject();
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
 
+          Employee(int yearsOfExperience){
+            commonTasksForEveryObject();
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          
+          
+          
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            
+            Employee emp2 = new Employee(2);
+          }
+        }
+Solution:
+
+        class Employee {
+          Employee(){
+            commonTasksForEveryObject();
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
+
+          Employee(int yearsOfExperience){
+            commonTasksForEveryObject();
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          void commonTasksForEveryObject(){
+            System.out.println("common tasks for every object");
+          }
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            
+            Employee emp2 = new Employee(2);
+          }
+        }
+        
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create instance method **commonTasksForEveryObject()**.   
+Call **commonTasksForEveryObject()** in every constructor as first line, if not present.   
+Question:
+
+        class Employee {
+          Employee(){
+            commonTasksForEveryObject();
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
+
+          Employee(int yearsOfExperience){
+            
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          
+          
+          
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            
+            Employee emp2 = new Employee(2);
+          }
+        }
+Solution:
+
+        class Employee {
+          Employee(){
+            commonTasksForEveryObject();
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
+
+          Employee(int yearsOfExperience){
+            commonTasksForEveryObject();
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          void commonTasksForEveryObject(){
+            System.out.println("common tasks for every object");
+          }
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            emp1.commonTasksForEveryObject();
+            
+            Employee emp2 = new Employee(2);
+          }
+        }
+
+37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create instance method **Employee()**.   
+Call **Employee()** in every constructor as first line, if not present.   
+Question:
+
+        class Employee {
+          Employee(){
+            Employee();
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
+
+          Employee(int yearsOfExperience){
+            Employee();
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          
+          
+          
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            emp1.Employee();
+            
+            Employee emp2 = new Employee(2);
+          }
+        }
+Solution:
+
+        class Employee {
+          Employee(){
+            Employee();
+            System.out.println("New employee joined with initial salary: 10,000/-");    
+          }
+
+          Employee(int yearsOfExperience){
+            Employee();
+            int salary = yearsOfExperience * 10000;
+            System.out.println("New employee joined with salary: "+salary+"/-");
+          }
+
+          void Employee(){
+            System.out.println("common tasks for every object");
+          }
+
+          public static void main(String[] args) {
+            Employee emp1 = new Employee();
+            emp1.Employee();
+            
+            Employee emp2 = new Employee(2);
+          }
+        }
+        
+#### Initialize Block {-}   
+
+48. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of initialize block.    
+
+48. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create initialize block in java file.
+
+48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create initialize block in java file which prints "In initialize block" message. Try execute this file.   
+Question:
+
+        class InitializeBlockExample {
+          
+          
+          public static void main(String[] args){
+            InitializeBlockExample obj = new InitializeBlockExample();
+          }
+        } 
+Solution:
+
+        class InitializeBlockExample {
+          {
+            System.out.println("In initialize block");
+          }
+          
+          public static void main(String[] args){
+            InitializeBlockExample obj = new InitializeBlockExample();
+          }
+        }  
+        
+48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create first initialize block in java file which prints "In first initialize block" message.    
+Create first initialize block in java file which prints "In second initialize block" message. Try execute this file.   
+Question:
+
+        class InitializeBlockExample {
+          {
+            
+          }
+          
+          {
+            
+          }
+          
+          public static void main(String[] args){
+            new InitializeBlockExample();
+          }
+        }  
+Solution:
+
+        class InitializeBlockExample {
+          {
+            System.out.println("In first initialize block");
+          }
+          
+          {
+            System.out.println("In second initialize block");
+          }
+          
+          public static void main(String[] args){
+            new InitializeBlockExample();
+          }
+        } 
+        
+48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Create anonymous object with constructor **InitializeBlockExample()** in main method.   
+Create anonymous object with constructor **InitializeBlockExample("coding is iterative process")** in main method.   
+Question:
+
+        class InitializeBlockExample {
+          {
+            System.out.println("In first initialize block");
+          }
+          
+          InitializeBlockExample(){
+            System.out.println("default constructor called");
+          }
+          
+          InitializeBlockExample(String message){
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          {
+            System.out.println("In second initialize block");
+          }
+          
+          public static void main(String[] args){
+            
+            
+          }
+        }  
+Solution:
+
+        class InitializeBlockExample {
+          {
+            System.out.println("In first initialize block");
+          }
+          
+          InitializeBlockExample(){
+            System.out.println("default constructor called");
+          }
+          
+          InitializeBlockExample(String message){
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          {
+            System.out.println("In second initialize block");
+          }
+          
+          public static void main(String[] args){
+            new InitializeBlockExample();
+            new InitializeBlockExample("coding is iterative process");
+          }
+        }   
+        
+48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Calculate number of objects created.   
+Create static data member **objectsCount** of type int.   
+Increment **objectsCount** by 1 in initialize block.   
+Print *"No. of objects created: " + objectsCount* in last line of main method.   
+Question:
+
+        class ObjectCounter {
+          
+          
+          {
+            
+          }
+          
+          ObjectCounter(){
+            System.out.println("default constructor called");
+          }
+          
+          ObjectCounter(String message){
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          ObjectCounter(int number){
+            System.out.println("constructor called with number: " + number);
+          }
+          
+          public static void main(String[] args){
+            new ObjectCounter();
+            new ObjectCounter(10);
+            new ObjectCounter();
+            new ObjectCounter("coding is iterative process");
+            new ObjectCounter("hello");
+            new ObjectCounter(100);
+          }
+        }  
+Solution:
+
+        class ObjectCounter {
+          static int objectsCount = 0;
+          
+          {
+            objectsCount++;
+          }
+          
+          ObjectCounter(){
+            System.out.println("default constructor called");
+          }
+          
+          ObjectCounter(String message){
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          ObjectCounter(int number){
+            System.out.println("constructor called with number: " + number);
+          }
+          
+          public static void main(String[] args){
+            new ObjectCounter();
+            new ObjectCounter(10);
+            new ObjectCounter();
+            new ObjectCounter("coding is iterative process");
+            new ObjectCounter("hello");
+            new ObjectCounter(100);
+            
+            System.out.printf("No. of objects created: " + objectsCount);
+          }
+        }   
+        
+#### this keyword  {-}  
+
+54. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of this keyword as constructor in constructor chaining.     
+
+54. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use this keyword as constructor in constructor chaining in java file.   
+        
+54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Constructor chaining.
+Add *this()* as first statement in every constructor except **ConstructorChaining()**.   
+Question:
+
+        class ConstructorChaining {
+          
+          ConstructorChaining(){
+            System.out.println("default constructor called");
+          }
+          
+          ConstructorChaining(String message){
+            
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          ConstructorChaining(int number){
+            
+            System.out.println("constructor called with number: " + number);
+          }
+          
+          public static void main(String[] args){
+            new ConstructorChaining();
+            new ConstructorChaining(10);
+            new ConstructorChaining("coding is iterative process");
+          }
+        }  
+Solution:
+
+        class ConstructorChaining {
+          
+          ConstructorChaining(){
+            System.out.println("default constructor called");
+          }
+          
+          ConstructorChaining(String message){
+            this();
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          ConstructorChaining(int number){
+            this();
+            System.out.println("constructor called with number: " + number);
+          }
+          
+          public static void main(String[] args){
+            new ConstructorChaining();
+            new ConstructorChaining(10);
+            new ConstructorChaining("coding is iterative process");
+          }
+        }    
+        
+54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Constructor chaining.
+Add *this(10)* as first statement in **ConstructorChaining()**.   
+Add *this()* as first statement in **ConstructorChaining(String message)**.   
+Question:
+
+        class ConstructorChaining {
+          
+          ConstructorChaining(){
+            System.out.println("default constructor called");
+          }
+          
+          ConstructorChaining(String message){
+            
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          ConstructorChaining(int number){
+            
+            System.out.println("constructor called with number: " + number);
+          }
+          
+          public static void main(String[] args){
+            new ConstructorChaining();
+            new ConstructorChaining(10);
+            new ConstructorChaining("coding is iterative process");
+          }
+        }  
+Solution:
+
+        class ConstructorChaining {
+          
+          ConstructorChaining(){
+            this(10);
+            System.out.println("default constructor called");
+          }
+          
+          ConstructorChaining(String message){
+            this();
+            System.out.println("constructor called with message: " + message);
+          }
+          
+          ConstructorChaining(int number){
+            System.out.println("constructor called with number: " + number);
+          }
+          
+          public static void main(String[] args){
+            new ConstructorChaining();
+            new ConstructorChaining(10);
+            new ConstructorChaining("coding is iterative process");
+          }
+        }    
 
 
 
