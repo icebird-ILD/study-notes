@@ -836,6 +836,493 @@ Solution:
 
 ### Module 03: Control Flow Statements {-}
 
+#### if else {-}
+
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+if else introduction   
+
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use if else.   
+
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **isEligibleForVoting**. Add condition in **if** block such as value of **age** is greater than 18 then returns true.    
+Question:
+
+        public class Conditions {
+
+          static boolean isEligibleForVoting(int age){
+            
+          }
+
+          public static void main(String[] args) {
+            int age = 25;
+            boolean isEligible = isEligibleForVoting(age);
+            System.out.println(isEligible);
+          }
+        }
+Solution:
+
+        public class Conditions {
+
+          static boolean isEligibleForVoting(int age){
+            if(age > 18){
+              return true;
+            }
+            else{
+              return false;
+            }
+          }
+
+          public static void main(String[] args) {
+            int age = 25;
+            boolean isEligible = isEligibleForVoting(age);
+            System.out.println(isEligible);
+          }
+        }
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateGreaterNumber**. Add condition in **if** block such as value of **number1** is greater than or equal to value of **number2** then returns **number1** otherwise return **number2**.    
+Question:
+
+        public class GreaterNumber {
+          private static int calculateGreaterNumber(int number1, int number2) {
+            
+          }
+
+          public static void main(String[] args) {
+            int number1 = 10;
+            int number2 = 20;
+
+            int greaterNumber = calculateGreaterNumber(number1, number2);
+            System.out.println("greater number is: " + greaterNumber);
+          }
+        }
+Solution:
+
+        public class GreaterNumber {
+          private static int calculateGreaterNumber(int number1, int number2) {
+            if(number1 >= number2) {
+              return number1;
+            }
+            else {
+              return number2;
+            }
+          }
+
+          public static void main(String[] args) {
+            int number1 = 10;
+            int number2 = 20;
+
+            int greaterNumber = calculateGreaterNumber(number1, number2);
+            System.out.println("greater number is: " + greaterNumber);
+          }
+        }
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateSmallerNumber**. Add condition in **if** block such as value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
+Question:
+
+        public class SmallerNumber {
+          private static int calculateSmallerNumber(int number1, int number2) {
+            
+          }
+
+          public static void main(String[] args) {
+            int number1 = 10;
+            int number2 = 20;
+
+            int smallerNumber = calculateSmallerNumber(number1, number2);
+            System.out.println("smaller number is: " + smallerNumber);
+          }
+        }
+Solution:
+
+        public class SmallerNumber {
+          private static int calculateSmallerNumber(int number1, int number2) {
+            if(number1 < number2) {
+              return number1;
+            }
+            else {
+              return number2;
+            }
+          }
+
+          public static void main(String[] args) {
+            int number1 = 10;
+            int number2 = 20;
+
+            int smallerNumber = calculateSmallerNumber(number1, number2);
+            System.out.println("smaller number is: " + smallerNumber);
+          }
+        }
+
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateSmallerNumber**. Print **number1** and *number2* in same line. Add condition in **if** block such that if value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
+Question:
+
+        public class SmallerNumber {
+          private static int calculateSmallerNumber(int number1, int number2) {
+            System.out.println();
+
+            
+          }
+
+          public static void main(String[] args) {
+            System.out.println("smaller number is: " + calculateSmallerNumber(10, 15));
+            System.out.println("smaller number is: " + calculateSmallerNumber(200, 95));
+          }
+        }
+Solution:
+
+        public class SmallerNumber {
+          private static int calculateSmallerNumber(int number1, int number2) {
+            System.out.println("number1=" + number1 + ", number2=" + number2);
+
+            if(number1 < number2) {
+              return number1;
+            }
+            else {
+              return number2;
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("smaller number is: " + calculateSmallerNumber(10, 15));
+            System.out.println("smaller number is: " + calculateSmallerNumber(200, 95));
+          }
+        }
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+Question:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println();
+
+            
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+Solution:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println("number1=" + number1 + ", number2=" + number2 + ", number3=" + number3);
+
+            if(number1 > number2) {
+              if(number1 > number3){
+                return number1;
+              }
+              else {
+                return number3;
+              }
+            }
+            else {
+              if(number2 > number3){
+                return number2;
+              }
+              else {
+                return number3;
+              }
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+Question:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println();
+
+            
+          }
+
+          private static int greaterNumber(int x, int y) {
+            if(x > y){
+              return x;
+            }
+            else {
+              return y;
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+Solution:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println("number1=" + number1 + ", number2=" + number2 + ", number3=" + number3);
+
+            if(number1 > number2) {
+              return greaterNumber(number1, number3);
+            }
+            else {
+              return greaterNumber(number2, number3);
+            }
+          }
+
+          private static int greaterNumber(int x, int y) {
+            if(x > y){
+              return x;
+            }
+            else {
+              return y;
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+Question:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println();
+
+            
+          }
+
+          private static int greaterNumber(int x, int y) {
+            if(x > y){
+              return x;
+            }
+            else {
+              return y;
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+Solution:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println("number1=" + number1 + ", number2=" + number2 + ", number3=" + number3);
+
+            int tempResult = greaterNumber(number1, number2);
+
+            return greaterNumber(tempResult, number3);
+          }
+
+          private static int greaterNumber(int x, int y) {
+            if(x > y){
+              return x;
+            }
+            else {
+              return y;
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }        
+
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+Question:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println();
+
+            
+          }
+
+          private static int greaterNumber(int x, int y) {
+            if(x > y){
+              return x;
+            }
+            else {
+              return y;
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+Solution:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println("number1=" + number1 + ", number2=" + number2 + ", number3=" + number3);
+
+            return greaterNumber((number1, number2), number3);
+          }
+
+          private static int greaterNumber(int x, int y) {
+            if(x > y){
+              return x;
+            }
+            else {
+              return y;
+            }
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+        
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Ternary introduction.   
+
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use ternary operations.   
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateLargestNumber**. Use ternary operator to check greater number.     
+Question:
+
+        public class GreaterNumber {
+          private static int calculateGreaterNumber(int number1, int number2) {
+            System.out.println("number1=" + number1 + ", number2=" + number2);
+
+            int result = 
+            return result;
+          }
+
+          public static void main(String[] args) {
+            System.out.println("greater number is: " + calculateGreaterNumber(10, 20));
+            System.out.println("greater number is: " + calculateGreaterNumber(-2, 0));
+            System.out.println("greater number is: " + calculateGreaterNumber(-5, -15));
+            System.out.println("greater number is: " + calculateGreaterNumber(1, 200));
+          }
+        } 
+Solution:
+
+        public class GreaterNumber {
+          private static int calculateGreaterNumber(int number1, int number2) {
+            System.out.println("number1=" + number1 + ", number2=" + number2);
+
+            int result = number1 > number2 ? number1 : number2;
+            return result;
+          }
+
+          public static void main(String[] args) {
+            System.out.println("greater number is: " + calculateGreaterNumber(10, 20));
+            System.out.println("greater number is: " + calculateGreaterNumber(-2, 0));
+            System.out.println("greater number is: " + calculateGreaterNumber(-5, -15));
+            System.out.println("greater number is: " + calculateGreaterNumber(1, 200));
+          }
+        } 
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateLargestNumber**. Use ternary operator to check greater number.     
+Question:
+
+        public class GreaterNumber {
+          private static int calculateGreaterNumber(int number1, int number2) {
+            System.out.println("number1=" + number1 + ", number2=" + number2);
+
+          }
+
+          public static void main(String[] args) {
+            System.out.println("greater number is: " + calculateGreaterNumber(10, 20));
+            System.out.println("greater number is: " + calculateGreaterNumber(-2, 0));
+            System.out.println("greater number is: " + calculateGreaterNumber(-5, -15));
+            System.out.println("greater number is: " + calculateGreaterNumber(1, 200));
+          }
+        } 
+Solution:
+
+        public class GreaterNumber {
+          private static int calculateGreaterNumber(int number1, int number2) {
+            System.out.println("number1=" + number1 + ", number2=" + number2);
+
+            return number1 > number2 ? number1 : number2;
+          }
+
+          public static void main(String[] args) {
+            System.out.println("greater number is: " + calculateGreaterNumber(10, 20));
+            System.out.println("greater number is: " + calculateGreaterNumber(-2, 0));
+            System.out.println("greater number is: " + calculateGreaterNumber(-5, -15));
+            System.out.println("greater number is: " + calculateGreaterNumber(1, 200));
+          }
+        }   
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. User ternary operations to check largest number.     
+Question:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println();
+
+            
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+Solution:
+
+        public class LargestNumber {
+          private static int calculateLargestNumber(int number1, int number2, int number3) {
+            System.out.println("number1=" + number1 + ", number2=" + number2 + ", number3=" + number3);
+
+            int result = (number1 > number2) ? (number1 > number3 ? number1 : number3) : (number2 > number3 ? number2 : number3);
+            return result;
+          }
+
+          public static void main(String[] args) {
+            System.out.println("largest number is: " + calculateLargestNumber(10, 9, 100));
+            System.out.println("largest number is: " + calculateLargestNumber(9, 100, 10));
+            System.out.println("largest number is: " + calculateLargestNumber(100, 10, 9));
+            System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
+          }
+        }
+
+   
+
 ### Module 04: OOPS {-}
 
 #### Objects {-}
