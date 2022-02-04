@@ -3017,6 +3017,276 @@ Solution:
             player.modifyValue(7);
           }
         }
+        
+#### Nested Classes  {-}          
+
+62. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of  Nested Class.      
+
+62. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to create Nested Classes.   
+
+62. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Assign value of local variable **ranking** to data member **ranking** in  **modifyValue(int ranking)** with help of **this** keyword.   
+Question:
+
+        public class World {
+          public static void main(String[] args) {
+            
+          }
+
+          static class Human{
+            
+            
+            
+          }
+        }
+Solution:
+
+        public class World {
+          public static void main(String[] args) {
+            Human h = new Human();
+          }
+
+          static class Human{
+            String name;
+            int age;
+            String gender;
+          }
+        }
+        
+#### Association  {-}    
+
+65. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of association.   
+
+65. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **rearLeftWheel** of type **Wheel** class in **Car** class with same values as front wheels.   
+Create data member **rearRightWheel** of type **Wheel** class in **Car** class with same values as front wheels.   
+Create data member **seatTwo** of type **Seat** class in **Car** class with same values of **seatOne**.   
+Print details of **rearLeftWheel** in main method.
+Print details of **rearRightWheel** in main method.   
+Print details of **seatTwo** in main method.   
+Question:
+
+        public class AssociationExample {
+          
+          static class Car {
+            String color;
+            String companyName;
+            String model;
+
+            Wheel frontLeftWheel = new Wheel(4, "Alloy");
+            Wheel frontRightWheel = new Wheel(4, "Alloy");
+            
+            
+
+            Seat seatOne = new Seat(5, "Brown", "Leather-Premium", 5000);
+            
+
+            public Car(String color, String companyName, String model) {
+              this.color = color;
+              this.companyName = companyName;
+              this.model = model;
+            }
+          }
+
+          static class Wheel{
+            int size;
+            String type;
+
+            Wheel(int size, String type){
+              this.size = size;
+              this.type = type;
+            }
+          }
+
+          static class Seat{
+            int size;
+            String color;
+            String type;
+            int price;
+
+            Seat(int size, String color, String type, int price){
+              this.size = size;
+              this.color = color;
+              this.type = type;
+              this.price = price;
+            }
+          }
+
+          public static void main(String[] args) {
+            Car car = new Car("White", "Ford", "Brazia");
+            System.out.println("Car details: " + car.color + ", " + car.companyName + ", " + car.model);
+
+            System.out.println("Front left wheel details: " + car.frontLeftWheel.size + ", " + car.frontLeftWheel.type);
+
+            System.out.println("Front right wheel details: " + car.frontRightWheel.size + ", " + car.frontRightWheel.type);
+
+            
+
+            
+
+            System.out.println("Seat one details: " + car.seatOne.color + ", " + car.seatOne.price + ", " + car.seatOne.size + ", " + car.seatOne.type);
+
+            
+          }
+        }
+Solution:
+
+        public class AssociationExample {
+          
+          static class Car {
+            String color;
+            String companyName;
+            String model;
+
+            Wheel frontLeftWheel = new Wheel(4, "Alloy");
+            Wheel frontRightWheel = new Wheel(4, "Alloy");
+            Wheel rearLeftWheel = new Wheel(4, "Alloy");
+            Wheel rearRightWheel = new Wheel(4, "Alloy");
+
+            Seat seatOne = new Seat(5, "Brown", "Leather-Premium", 5000);
+            Seat seatTwo = new Seat(5, "Brown", "Leather-Premium", 5000);
+
+            public Car(String color, String companyName, String model) {
+              this.color = color;
+              this.companyName = companyName;
+              this.model = model;
+            }
+          }
+
+          static class Wheel{
+            int size;
+            String type;
+
+            Wheel(int size, String type){
+              this.size = size;
+              this.type = type;
+            }
+          }
+
+          static class Seat{
+            int size;
+            String color;
+            String type;
+            int price;
+
+            Seat(int size, String color, String type, int price){
+              this.size = size;
+              this.color = color;
+              this.type = type;
+              this.price = price;
+            }
+          }
+
+          public static void main(String[] args) {
+            Car car = new Car("White", "Ford", "Brazia");
+            System.out.println("Car details: " + car.color + ", " + car.companyName + ", " + car.model);
+
+            System.out.println("Front left wheel details: " + car.frontLeftWheel.size + ", " + car.frontLeftWheel.type);
+
+            System.out.println("Front right wheel details: " + car.frontRightWheel.size + ", " + car.frontRightWheel.type);
+
+            System.out.println("Rear left wheel details: " + car.rearLeftWheel.size + ", " + car.rearLeftWheel.type);
+
+            System.out.println("Rear right wheel details: " + car.rearRightWheel.size + ", " + car.rearRightWheel.type);
+
+            System.out.println("Seat one details: " + car.seatOne.color + ", " + car.seatOne.price + ", " + car.seatOne.size + ", " + car.seatOne.type);
+
+            System.out.println("Seat two details: " + car.seatTwo.color + ", " + car.seatTwo.price + ", " + car.seatTwo.size + ", " + car.seatTwo.type);
+          }
+        }
+        
+65. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **spouse** of type **Woman** class in **Man** class.   
+Create data member **spouse** of type **Man** class in **Woman** class.   
+Implement method **weddingCeremony**. Assign object **woman** to **spouse** data member of **man** object. Assign object **man** to **spouse** data member of **woman** object.   
+Print details of **woman** in main method similar to **man** object.   
+Question:
+
+        public class Wedding {
+
+          static class Man{
+            String name;
+            int age;
+            
+
+            Man(String name, int age){
+              this.name = name;
+              this.age = age;
+            }
+          }
+
+          static class Woman{
+            String name;
+            int age;
+            
+
+            Woman(String name, int age){
+              this.name = name;
+              this.age = age;
+            }
+          }
+
+          static void weddingCeremony(Man man, Woman woman){
+            man.spouse = woman;
+            woman.spouse = man;
+          }
+
+          public static void main(String[] args) {
+            Man man = new Man("Harry", 29);
+            Woman woman = new Woman("Diana", 31);
+
+            weddingCeremony(man, woman);
+
+            System.out.println("Man details=> name=" + man.name + ", age=" + man.age + ", wife name=" + man.spouse.name);
+            
+          }
+        }
+Solution:
+
+        public class Wedding {
+
+          static class Man{
+            String name;
+            int age;
+            Woman spouse;
+
+            Man(String name, int age){
+              this.name = name;
+              this.age = age;
+            }
+          }
+
+          static class Woman{
+            String name;
+            int age;
+            Man spouse;
+
+            Woman(String name, int age){
+              this.name = name;
+              this.age = age;
+            }
+          }
+
+          static void weddingCeremony(Man man, Woman woman){
+            man.spouse = woman;
+            woman.spouse = man;
+          }
+
+          public static void main(String[] args) {
+            Man man = new Man("Harry", 29);
+            Woman woman = new Woman("Diana", 31);
+
+            weddingCeremony(man, woman);
+
+            System.out.println("Man details=> name=" + man.name + ", age=" + man.age + ", wife name=" + man.spouse.name);
+            System.out.println("Woman details=> name=" + woman.name + ", age=" + woman.age + ", husband name=" + woman.spouse.name);
+          }
+        }
+     
+
 
 
 
