@@ -1320,7 +1320,199 @@ Solution:
             System.out.println("largest number is: " + calculateLargestNumber(-1, -2, -3));
           }
         }
+        
+#### Loops {-}
 
+16. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+for loop introduction.    
+
+16. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use for loop.   
+
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Print **Java is going to be on my tips with practice.** 5 times in main method.   
+Question:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+          }
+        }
+Solution:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            System.out.println("Java is going to be on my tips with practice.");
+            System.out.println("Java is going to be on my tips with practice.");
+            System.out.println("Java is going to be on my tips with practice.");
+            System.out.println("Java is going to be on my tips with practice.");
+            System.out.println("Java is going to be on my tips with practice.");
+          }
+        }
+        
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Print **Java is going to be on my tips with practice.** 5 times using for loop in main method.   
+Question:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (){
+              System.out.println("");
+            }
+          }
+        }
+Solution:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (int i =0; i< 5; i++){
+              System.out.println("Java is going to be on my tips with practice.");
+            }
+          }
+        }
+        
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Print **Practice makes programming perfect.** 10 times using for loop in main method.   
+Question:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (){
+              System.out.println("");
+            }
+          }
+        }
+Solution:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (int i=0; i< 10; i++){
+              System.out.println("Practice makes programming perfect.");
+            }
+          }
+        }
+        
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Print loop number **j** inside for loop block in main method.   
+Question:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (int j=0; j< 10; j++){
+              System.out.println();
+            }
+          }
+        }
+Solution:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (int j=0; j< 10; j++){
+              System.out.println(i);
+            }
+          }
+        }
+        
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Print message **"loop iteration="** and loop number **k** in same line, inside for loop block in main method.   
+Question:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (int k=0; k< 10; k++){
+              System.out.println();
+            }
+          }
+        }
+Solution:
+
+        public class ForLoop {
+
+          public static void main(String[] args) {
+            for (int k=0; k< 10; k++){
+              System.out.println("loop iteration" + k);
+            }
+          }
+        }
+        
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Call **square** method 7 times with parameter 0 to 6 in main method.   
+Question:
+
+        public class ForLoop {
+          static int square(int number){
+            int squaredValue = number * number;
+            System.out.println("Square of number " + number + " is = " + squaredValue);
+            return squaredValue;
+          }
+
+          public static void main(String[] args) {
+            
+          }
+        }
+Solution:
+
+        public class ForLoop {
+          static int square(int number){
+            int squaredValue = number * number;
+            System.out.println("Square of number " + number + " is = " + squaredValue);
+            return squaredValue;
+          }
+
+          public static void main(String[] args) {
+            square(0);
+            square(1);
+            square(2);
+            square(3);
+            square(4);
+            square(5);
+            square(6);
+          }
+        }
+        
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Call **square** method in for loop starting from 0 to max value 6 in main method. Pass for loop iteration value as argument of **square** method.   
+Question:
+
+        public class ForLoop {
+          static int square(int number){
+            int squaredValue = number * number;
+            System.out.println("Square of number " + number + " is = " + squaredValue);
+            return squaredValue;
+          }
+
+          public static void main(String[] args) {
+            
+          }
+        }
+Solution:
+
+        public class ForLoop {
+          static int square(int number){
+            int squaredValue = number * number;
+            System.out.println("Square of number " + number + " is = " + squaredValue);
+            return squaredValue;
+          }
+
+          public static void main(String[] args) {
+            for (int m=0; m< 7; m++){
+             square(m);
+            }
+          }
+        }        
    
 
 ### Module 04: OOPS {-}
