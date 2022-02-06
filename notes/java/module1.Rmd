@@ -1512,7 +1512,48 @@ Solution:
              square(m);
             }
           }
-        }        
+        }  
+        
+16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+Call **square** method in for loop starting from 0 to max value 6 in main method. Add sqaure value to **total** variable such that it contains the value addition of all squared values.   
+Question:
+
+        public class ForLoop {
+          static int square(int number){
+            int squaredValue = number * number;
+            System.out.println("Square of number " + number + " is = " + squaredValue);
+            return squaredValue;
+          }
+
+          public static void main(String[] args) {
+            int total = 0;
+
+            for (int n=0; n< 7; n++){
+              
+            }
+
+            System.out.println("total squared value = " + total);
+          }
+        }  
+Solution:
+
+        public class ForLoop {
+          static int square(int number){
+            int squaredValue = number * number;
+            System.out.println("Square of number " + number + " is = " + squaredValue);
+            return squaredValue;
+          }
+
+          public static void main(String[] args) {
+            int total = 0;
+
+            for (int n=0; n< 7; n++){
+              total = total + square(n);
+            }
+
+            System.out.println("total squared value = " + total);
+          }
+        }  
    
 
 ### Module 04: OOPS {-}
