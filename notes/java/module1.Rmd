@@ -1556,7 +1556,7 @@ Solution:
         }  
    
 
-### Module 04: OOPS {-}
+### Module 04: OOPS Basics {-}
 
 #### Objects {-}
 
@@ -4005,6 +4005,379 @@ Solution:
             System.out.println("Woman details=> name=" + woman.name + ", age=" + woman.age + ", husband name=" + woman.spouse.name);
           }
         }
+
+#### Input from user  {-}   
+
+68. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Importance of input from user.   
+
+68. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to read inputs from use.   
+        
+68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
+Create variable **nameFromUser** of type **String** class and store the name entered by user in this.   
+Question:
+
+        class Girl {
+          String name;
+
+          Girl(String name){
+            this.name = name;
+          }
+
+          public static void main(String[] args) throws Exception {
+            System.out.print("Enter name of baby girl : ");
+            
+            BufferedReader reader = new BufferedReader(new InputStreamReader());
+
+            Girl girl = new Girl(nameFromUser);
+            System.out.println("Baby girl born with name: " + girl.name);
+          }
+        }  
+Solution:
+
+        class Girl {
+          String name;
+
+          Girl(String name){
+            this.name = name;
+          }
+
+          public static void main(String[] args) throws Exception {
+            System.out.print("Enter name of baby girl : ");
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            String nameFromUser = reader.readLine();
+
+            Girl girl = new Girl(nameFromUser);
+            System.out.println("Baby girl born with name: " + girl.name);
+          }
+        }        
+        
+68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
+Create variable **nameFromUser** of type **String** class and store the name entered by user in this.   
+Again read value in variable **nameFromUser** for 2nd object of **Girl* class.   
+Question:
+
+        class Girl {
+          String name;
+
+          Girl(String name){
+            this.name = name;
+          }
+
+          public static void main(String[] args) throws Exception {
+            System.out.print("Enter name of baby girl : ");
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader());
+            
+
+            Girl girl1 = new Girl(nameFromUser);
+            System.out.println("1st Baby girl born with name: " + girl1.name);
+
+            System.out.println();
+
+            System.out.print("Enter name of 2nd baby girl : ");
+
+            
+
+            Girl girl2 = new Girl(nameFromUser);
+            System.out.println("2nd Baby girl born with name: " + girl2.name);
+          }
+        }   
+Solution:
+
+        class Girl {
+          String name;
+
+          Girl(String name){
+            this.name = name;
+          }
+
+          public static void main(String[] args) throws Exception {
+            System.out.print("Enter name of baby girl : ");
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            String nameFromUser = reader.readLine();
+
+            Girl girl1 = new Girl(nameFromUser);
+            System.out.println("1st Baby girl born with name: " + girl1.name);
+
+            System.out.println();
+
+            System.out.print("Enter name of 2nd baby girl : ");
+
+            nameFromUser = reader.readLine();
+
+            Girl girl2 = new Girl(nameFromUser);
+            System.out.println("2nd Baby girl born with name: " + girl2.name);
+          }
+        }  
+        
+68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
+Store the name of **student1** entered by user in **studentName** variable.   
+Store the name of **student2** entered by user in **studentName** variable.   
+Store the marks of **student1** entered by user in **marksInString** variable.   
+Store the marks of **student2** entered by user in **marksInString** variable.   
+Question:
+
+        public class Student {
+          String name;
+          int marks;
+
+          Student(String name){
+            this.name = name;
+          }
+
+          void setMarks(int marks) {
+            this.marks = marks;
+          }
+
+          public static void main(String[] args) throws Exception {
+            BufferedReader reader = new BufferedReader();
+            
+            System.out.print("Enter name of 1st student: ");
+            String studentName = 
+
+            Student student1 = new Student(studentName);
+            
+            System.out.print("Enter name of 2nd student: ");
+            studentName = 
+
+            Student student2 = new Student(studentName);
+
+            System.out.print("Enter marks of "+student1.name+": ");
+            String marksInString = 
+            int marks = Integer.parseInt(marksInString);
+            
+            student1.setMarks(marks);
+
+            System.out.print("Enter marks of "+student2.name+": ");
+            marksInString = 
+            marks = Integer.parseInt(marksInString);
+            
+            student2.setMarks(marks);
+
+            System.out.println();
+
+            System.out.println("Details of student1: name=" + student1.name + ", marks=" + student1.marks);
+            System.out.println("Details of student2: name=" + student2.name + ", marks=" + student2.marks);
+          }
+        }   
+Solution:
+
+        public class Student {
+          String name;
+          int marks;
+
+          Student(String name){
+            this.name = name;
+          }
+
+          void setMarks(int marks) {
+            this.marks = marks;
+          }
+
+          public static void main(String[] args) throws Exception {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            
+            System.out.print("Enter name of 1st student: ");
+            String studentName = reader.readLine();
+
+            Student student1 = new Student(studentName);
+            
+            System.out.print("Enter name of 2nd student: ");
+            studentName = reader.readLine();
+
+            Student student2 = new Student(studentName);
+
+            System.out.print("Enter marks of "+student1.name+": ");
+            String marksInString = reader.readLine();
+            int marks = Integer.parseInt(marksInString);
+            
+            student1.setMarks(marks);
+
+            System.out.print("Enter marks of "+student2.name+": ");
+            marksInString = reader.readLine();
+            marks = Integer.parseInt(marksInString);
+            
+            student2.setMarks(marks);
+
+            System.out.println();
+
+            System.out.println("Details of student1: name=" + student1.name + ", marks=" + student1.marks);
+            System.out.println("Details of student2: name=" + student2.name + ", marks=" + student2.marks);
+          }
+        }
+        
+68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
+Store the name entered by user in **athleteName** variable.   
+Store the age entered by user in **ageInString** variable.   
+Parse **ageInString** to int type and store result in **age** variable.   
+Store the weight entered by user in **weightInString** variable.   
+Question:
+
+        class Athlete {
+          String name;
+          int age;
+          double weight;
+
+          Athlete(String name){
+            this.name = name;
+          }
+
+          void setAge(int age) {
+            this.age = age;
+          }
+
+          void setWeight(double weight) {
+            this.weight = weight;
+          }
+
+          static Athlete getAthlete() throws Exception{
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+            System.out.print("Enter name of athlete: ");
+            String athleteName = 
+
+            System.out.print("Enter age of " + athleteName + ": ");
+            String ageInString = 
+            int age = 
+
+            System.out.print("Enter weight of " + athleteName + ": ");
+            String weightInString = 
+            double weight = Double.parseDouble(weightInString);
+
+            Athlete athlete = new Athlete(athleteName);
+            athlete.setAge(age);
+            athlete.setWeight(weight);
+
+            return athlete;
+          }
+
+          void printAthleteDetails(){
+            System.out.println("Details of athlete: name=" + name + ", age=" + age + ", weight=" + weight);
+          }
+
+          public static void main(String[] args) throws Exception {
+            Athlete athlete1 = getAthlete();
+            athlete1.printAthleteDetails();
+
+            Athlete athlete2 = getAthlete();
+            athlete2.printAthleteDetails();
+
+            getAthlete().printAthleteDetails();
+          }
+        }  
+Solution:
+
+        class Athlete {
+          String name;
+          int age;
+          double weight;
+
+          Athlete(String name){
+            this.name = name;
+          }
+
+          void setAge(int age) {
+            this.age = age;
+          }
+
+          void setWeight(double weight) {
+            this.weight = weight;
+          }
+
+          static Athlete getAthlete() throws Exception{
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+            System.out.print("Enter name of athlete: ");
+            String athleteName = reader.readLine();
+
+            System.out.print("Enter age of " + athleteName + ": ");
+            String ageInString = reader.readLine();
+            int age = Integer.parseInt(ageInString);
+
+            System.out.print("Enter weight of " + athleteName + ": ");
+            String weightInString = reader.readLine();
+            double weight = Double.parseDouble(weightInString);
+
+            Athlete athlete = new Athlete(athleteName);
+            athlete.setAge(age);
+            athlete.setWeight(weight);
+
+            return athlete;
+          }
+
+          void printAthleteDetails(){
+            System.out.println("Details of athlete: name=" + name + ", age=" + age + ", weight=" + weight);
+          }
+
+          public static void main(String[] args) throws Exception {
+            Athlete athlete1 = getAthlete();
+            athlete1.printAthleteDetails();
+
+            Athlete athlete2 = getAthlete();
+            athlete2.printAthleteDetails();
+
+            getAthlete().printAthleteDetails();
+          }
+        }
+        
+68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
+Store the 1st number entered by user in **number1** variable. Read and parse in a single line without assigning to intermediate variable.   
+Store the 2nd number entered by user in **number2** variable. Read and parse in a single line without assigning to intermediate variable.   
+Question:
+
+        public class Maximum {
+
+          static int getMaximum() throws  Exception {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+            System.out.print("\nEnter 1st number: ");
+            int number1 = 
+
+            System.out.print("Enter 2nd number: ");
+            int number2 = 
+
+            return Math.max(number1, number2);
+          }
+          
+          public static void main (String[] args) throws Exception {
+            int max = getMaximum();
+            System.out.println("Maximum number is = " + max);
+          }
+        }      
+Solution:
+
+        public class Maximum {
+
+          static int getMaximum() throws  Exception {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+            System.out.print("\nEnter 1st number: ");
+            int number1 = Integer.parseInt(reader.readLine());
+
+            System.out.print("Enter 2nd number: ");
+            int number2 = Integer.parseInt(reader.readLine());
+
+            return Math.max(number1, number2);
+          }
+          
+          public static void main (String[] args) throws Exception {
+            int max = getMaximum();
+            System.out.println("Maximum number is = " + max);
+          }
+        }      
+        
+
+        
+
      
 
 
