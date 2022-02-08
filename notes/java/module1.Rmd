@@ -4375,6 +4375,669 @@ Solution:
           }
         }      
         
+### Module 05: OOPS Intermediate {-}
+
+#### Inheritance {-}
+
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Inheritance introduction.   
+
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to inherit class.   
+
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create object **animal** of type **Animal** in main method.   
+Call method **makeSound()** on **animal** object in main method.   
+Question:
+
+        class Animal {
+          void makeSound(){
+
+          }
+        }
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            
+            
+          }
+        }    
+Solution:
+
+        class Animal {
+          void makeSound(){
+
+          }
+        }
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Animal();
+            animal.makeSound();
+          }
+        }
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          void makeSound(){
+
+          }
+        }
+
+        class Dog {
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }      
+Solution:
+
+        class Animal {
+          void makeSound(){
+
+          }
+        }
+
+        class Dog extends Animal{
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+          }
+        }   
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog {
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }     
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            dog.printSpeed();
+          }
+        }   
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Print data member **speed** on **dog** object in main method.    
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog {
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }         
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            System.out.println(dog.speed);
+          }
+        }  
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Implement method **setSpeed(int speed)** such that it sets the value of parameter **speed** to data member **speed**.    
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Call method **setSpeed(20)** on **dog** object in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog {
+          void setSpeed(int speed){
+            
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }         
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          void setSpeed(int speed){
+            this.speed = speed;
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            dog.printSpeed();
+            dog.setSpeed(20);
+            dog.printSpeed();
+          }
+        }      
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog {
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }            
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            dog.printSpeed();
+          }
+        } 
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Implement method **printParentSpeed()** in class **Dog** such that it prints the data member **speed** of class **Animal**.   
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Call method **printParentSpeed()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog {
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+          
+          void printParentSpeed(){
+           System.out.println("Speed from parent class is = " + );
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }             
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+          
+          void printParentSpeed(){
+           System.out.println("Speed from parent class is = " + super.speed);
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            dog.printSpeed();
+            dog.printParentSpeed();
+          }
+        }         
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Implement method **callParentMethod()** in class **Dog** such that it calls the method **printSpeed()** of class **Animal**.   
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Call method **callParentMethod()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog {
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+          
+          void makeSound(){
+            System.out.println("Woof Woof..!!");
+          }
+          
+          void callParentMethod(){
+            
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }            
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+          
+          void makeSound(){
+            System.out.println("Woof Woof..!!");
+          }
+          
+          void callParentMethod(){
+            super.printSpeed();
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            dog.printSpeed();
+            dog.callParentMethod();
+          }
+        }   
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Implement method **printSpeed()** in class **Dog** such that it calls the method **printSpeed()** of class **Animal** and it prints the data member **speed** of class **Animal**.      
+Create object **dog** of type **Dog** in main method.   
+Call method **makeSound()** on **dog** object in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+            super.printSpeed();
+            System.out.println("Speed received from parent class is = " + super.speed);
+          }
+          
+          void makeSound(){
+            System.out.println("Woof Woof..!!");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            dog.printSpeed();
+          }
+        }             
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void makeSound(){
+            
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+            super.printSpeed();
+            System.out.println("Speed received from parent class is = " + super.speed);
+          }
+          
+          void makeSound(){
+            System.out.println("Woof Woof..!!");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.makeSound();
+            dog.printSpeed();
+          }
+        }  
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Modify method **printSpeed()** in class **Dog** such that it has return type **int** instead of **void**. Return data member **speed**.   
+Create object **dog** of type **Dog** in main method.   
+Call method **printSpeed()** on **dog** object in main method.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog {
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }              
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          void printSpeed(){
+            System.out.println("Speed of animal is = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          int speed = 20;
+
+          int printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+            return speed;
+          }
+          
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.printSpeed();
+          }
+        }    
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Override method **getAnimal()** in class **Dog** such that it has return type **Dog**. Create and return new object of class **Dog**.   
+Create object **dog** of type **Dog** in main method.   
+Call method **getAnimal()** on **dog** object and store it in another variable **anotherDog** of type ***Dog* in main method.   
+Call method **printSpeed()*** on **anotherDog** object.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          Animal getAnimal(){
+            return new Animal();
+          }
+        }
+
+        class Dog {
+          int speed = 20;
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            Dog anotherDog = dog.getAnimal();
+            anotherDog.printSpeed();
+          }
+        }             
+Solution:
+
+        class Animal {
+          int speed = 10;
+
+          Animal getAnimal(){
+            return new Animal();
+          }
+        }
+
+        class Dog extends Animal{
+          int speed = 20;
+
+          Dog getAnimal() {
+            return new Dog();
+          }
+
+          void printSpeed(){
+            System.out.println("Speed of dog is = " + speed);
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            Dog anotherDog = dog.getAnimal();
+            anotherDog.printSpeed();
+          }
+        }          
+        
 
         
 
