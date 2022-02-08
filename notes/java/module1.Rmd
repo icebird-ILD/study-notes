@@ -5003,9 +5003,7 @@ Question:
 
         class MainProgram{
           public static void main(String[] args) {
-            Dog dog = new Dog();
-            Dog anotherDog = dog.getAnimal();
-            anotherDog.printSpeed();
+          
           }
         }             
 Solution:
@@ -5038,7 +5036,279 @@ Solution:
           }
         }          
         
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Question:
 
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }             
+Solution:
+
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+          }
+        }    
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Call method **makeSound()*** on **animal** object.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+          
+          void makeSound(){
+           System.out.println("I am still not sure about my sound :(");
+          }
+        }
+
+        class Dog {
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }               
+Solution:
+
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+          
+          void makeSound(){
+           System.out.println("I am still not sure about my sound :(");
+          }
+        }
+
+        class Dog extends Animal{
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+            animal.makeSound();
+          }
+        }    
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Call method **makeSound()*** on **animal** object.   
+Print data member **speed** on  **animal** object.   
+Question:
+
+        class Animal {
+          int speed = 10;
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+          
+          void makeSound(){
+           System.out.println("I am still not sure about my sound :(");
+          }
+        }
+
+        class Dog {
+          int speed = 20;
+        
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }               
+Solution:
+
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+          
+          void makeSound(){
+           System.out.println("I am still not sure about my sound :(");
+          }
+        }
+
+        class Dog extends Animal{
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+            animal.makeSound();
+            System.out.println(animal.speed);
+          }
+        }    
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Print data member **speed** on  **animal** object.   
+Call method **makeSound()*** on **animal** object. This shall give error.   
+Cast object **animal** in type **Dog**. Store the result in **dog** of type **Dog**.   
+Call method **makeSound()*** on **dog** object.   
+Print data member **speed** on  **dog** object.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          void description(){
+            System.out.println("I am a dog.");
+          }
+          
+          void makeSound(){
+           System.out.println("Woof Woof..!!");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+            System.out.println(animal.speed);
+            //animal.makeSound();
+
+            Dog dog = (Dog) animal;
+            dog.makeSound();
+
+            System.out.println(dog.speed);
+          }
+        }              
+Solution:
+
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          void description(){
+            System.out.println("I am a dog.");
+          }
+          
+          void makeSound(){
+           System.out.println("Woof Woof..!!");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+            System.out.println(animal.speed);
+            //animal.makeSound();
+
+            Dog dog = (Dog) animal;
+            dog.makeSound();
+
+            System.out.println(dog.speed);
+          }
+        }            
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Question:
+
+        class Animal {
+          void static description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          void static description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }             
+Solution:
+
+        class Animal {
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+          }
+        }    
         
 
      
