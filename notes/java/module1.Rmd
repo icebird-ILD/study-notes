@@ -21,7 +21,7 @@ Write a Program to display "I am loving coding" in jShell file.
 Write a Program to display "I am loving coding" in jShell file in 3 times in 3 lines.     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which displays multiple line as follows: "I am loving coding" and "Programming is amazing".     
+Write a Program in jShell file which displays multiple line as follows: "I am loving coding" and "Programming is amazing"     
 
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
 Write a Program in jShell file which displays value 10.     
