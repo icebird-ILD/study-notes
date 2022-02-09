@@ -6180,7 +6180,588 @@ Solution:
           }
         }            
         
+#### Abstract Class {-}
+
+29. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Abstraction introduction.   
+
+29. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use abstract class.      
+
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Try to create method **displayColor()** without body in class **Animal**.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          
+        }              
+Solution:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          //void displayColor();
+        }
         
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Try to create method **displayColor()** as **abstract** and without body in class **Animal**.     
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          
+        }              
+Solution:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          // abstract void displayColor();
+        }  
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Try to create method **displayColor()** as **abstract** and without body in class **Animal**.   
+Declare class **Animal** as **abstract**.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          
+        }               
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          abstract void displayColor();
+        }   
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**.   
+Try to create method **displayColor()** without body in class **Animal**.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          
+        }               
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+
+          //void displayColor();
+        }      
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**.   
+Create method **description()** in class **Animal** which prints **I am an animal**.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+        }                
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+        }         
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**.   
+Create method **description()** in class **Animal** which prints **I am an animal**.   
+Create static method **generalDescription()** in class **Animal** which prints **Every animal breathes**.   
+Create abstract method **displayColor()** in class **Animal**.      
+Question:
+
+        class Animal {
+          
+        }                
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }     
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**.   
+Create method **description()** in class **Animal** which prints **I am an animal**.   
+Create static method **generalDescription()** in class **Animal** which prints **Every animal breathes**.   
+Create abstract method **displayColor()** in class **Animal**.  
+Create empty **main** method in class **Animal**.   
+Question:
+
+        class Animal {
+          
+        }                
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+          
+          public static void main(String[] args) {
+            
+          }
+        }        
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**.   
+Try to create object of **Animal** class.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            //Animal animal = new Animal();
+          }
+        }
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**. 
+Delete **abstract** method **displayColor()**.   
+Now, try to create object of **Animal** class.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            //Animal animal = new Animal();
+          }
+        }      
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**. 
+Make **abstract** method **displayColor()** as static as well.   
+Now, try to call **displayColor()** directly via class name in main method.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                
+Solution:
+
+        abstract class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          //abstract static void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            //Animal.displayColor();
+          }
+        }      
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**. 
+Create data member **speed** in **Animal** class.   
+Question:
+
+        class Animal {
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                
+Solution:
+
+        abstract class Animal {
+          int speed = 10;
+          
+          void description(){
+            System.out.println("I am an animal");
+          }
+          
+          static void generalDescription(){
+            System.out.println("Every animal breathes");
+          }
+          
+          abstract void displayColor();
+        }        
+        
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }  
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**. 
+Inherit class **Dog** from **Animal** by using **extend** keyword.   
+Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal**.   
+Call method **displaySpeed()** on **animal** object.   
+Call method **displayColor()** on **animal** object.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          void displaySpeed(){
+            System.out.println("Default speed of animal is = " + speed);
+          }
+
+          abstract void displayColor();
+        }
+
+        class Dog {
+          void displayColor() {
+            System.out.println("Color of dog is brown");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+              Animal animal = new Dog();
+              animal.displaySpeed();
+              animal.displayColor();
+          }
+        }               
+Solution:
+
+        abstract class Animal {
+          int speed = 10;
+
+          void displaySpeed(){
+            System.out.println("Default speed of animal is = " + speed);
+          }
+
+          abstract void displayColor();
+        }
+
+        class Dog extends  Animal{
+          void displayColor() {
+            System.out.println("Color of dog is brown");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+              Animal animal = new Dog();
+              animal.displaySpeed();
+              animal.displayColor();
+          }
+        }        
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**. 
+Inherit class **Dog** from **Animal** by using **extend** keyword.   
+Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
+Inherit class **Cat** from **Animal** by using **extend** keyword.   
+Override abstract method **displayColor()** such that it prints **Color of cat is white** in **Cat** class.   
+Create object of type **Dog** and store it in variable **animal1** of type **Animal**.   
+Call method **displayColor()** on **animal** object.   
+Create object of type **Cat** and store it in variable **animal2** of type **Animal**.   
+Call method **displayColor()** on **animal2** object.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          Animal(){
+            System.out.println("Default speed of animal is = " + speed);
+          }
+
+          Animal(int speed){
+            this.speed = speed;
+            System.out.println("New speed of animal is = " + speed);
+          }
+
+          abstract void displayColor();
+        }
+
+        class Dog {
+          void displayColor() {
+            System.out.println("");
+          }
+        }
+        
+        class Cat {
+          void displayColor() {
+            System.out.println("");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                  
+Solution:
+
+        abstract class Animal {
+          int speed = 10;
+
+          Animal(){
+            System.out.println("Default speed of animal is = " + speed);
+          }
+
+          Animal(int speed){
+            this.speed = speed;
+            System.out.println("New speed of animal is = " + speed);
+          }
+
+          abstract void displayColor();
+        }
+
+        class Dog extends Animal{
+          void displayColor() {
+            System.out.println("Color of dog is brown");
+          }
+        }
+        
+        class Cat extends Animal{
+          void displayColor() {
+            System.out.println("Color of cat is white");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+              Animal animal1 = new Dog();
+              animal1.displayColor();
+              
+              Animal animal2 = new Cat();
+              animal2.displayColor();
+          }
+        }     
+        
+29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **abstract**. 
+Inherit class **Dog** from **Animal** by using **extend** keyword.   
+Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
+Inherit class **Cat** from **Animal** by using **extend** keyword.   
+Override abstract method **displayColor()** such that it prints **Color of cat is white** in **Cat** class.   
+Create object of type **Dog** and store it in variable **animal1** of type **Animal**.   
+Call method **displayColor()** on **animal** object.   
+Create object of type **Cat** and store it in variable **animal2** of type **Animal**.   
+Call method **displayColor()** on **animal2** object.   
+Question:
+
+        class Animal {
+          int speed = 10;
+
+          Animal(){
+            System.out.println("Default speed of animal is = " + speed);
+          }
+
+          Animal(int speed){
+            this.speed = speed;
+            System.out.println("New speed of animal is = " + speed);
+          }
+
+          abstract void displayColor();
+        }
+
+        class Dog {
+          void displayColor() {
+            System.out.println("");
+          }
+        }
+        
+        class Cat {
+          void displayColor() {
+            System.out.println("");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                  
+Solution:
+
+        abstract class Animal {
+          int speed = 10;
+
+          Animal(){
+            System.out.println("Default speed of animal is = " + speed);
+          }
+
+          Animal(int speed){
+            this.speed = speed;
+            System.out.println("New speed of animal is = " + speed);
+          }
+
+          abstract void displayColor();
+        }
+
+        class Dog extends Animal{
+          Dog(){
+          }
+
+          Dog(int speed){
+            super(speed);
+          }
+        
+          void displayColor() {
+            System.out.println("Color of dog is brown");
+          }
+        }
+        
+        class Cat extends Animal{
+          Cat(){
+          }
+
+          Cat(int speed){
+            super(speed);
+          }
+          
+          void displayColor() {
+            System.out.println("Color of cat is white");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+              Animal animal1 = new Dog();
+              animal1.displayColor();
+              
+              Animal animal2 = new Cat();
+              animal2.displayColor();
+              
+              Animal animal3 = new Dog(15);
+              animal3.displayColor();
+
+              Animal animal4 = new Cat(8);
+              animal4.displayColor();
+          }
+        }             
+
+
 
      
 
