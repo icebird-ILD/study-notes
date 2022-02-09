@@ -4418,7 +4418,7 @@ Solution:
         }
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Question:
@@ -4458,7 +4458,7 @@ Solution:
         }   
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -4512,7 +4512,7 @@ Solution:
         }   
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Print data member **speed** on **dog** object in main method.    
@@ -4566,7 +4566,7 @@ Solution:
         }  
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Implement method **setSpeed(int speed)** such that it sets the value of parameter **speed** to data member **speed**.    
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4629,7 +4629,7 @@ Solution:
         }      
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -4691,7 +4691,7 @@ Solution:
         } 
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Implement method **printParentSpeed()** in class **Dog** such that it prints the data member **speed** of class **Animal**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4764,7 +4764,7 @@ Solution:
         }         
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Implement method **callParentMethod()** in class **Dog** such that it calls the method **printSpeed()** of class **Animal**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4845,7 +4845,7 @@ Solution:
         }   
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Implement method **printSpeed()** in class **Dog** such that it calls the method **printSpeed()** of class **Animal** and it prints the data member **speed** of class **Animal**.      
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4922,7 +4922,7 @@ Solution:
         }  
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Modify method **printSpeed()** in class **Dog** such that it has return type **int** instead of **void**. Return data member **speed**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -4978,7 +4978,7 @@ Solution:
         }    
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Override method **getAnimal()** in class **Dog** such that it has return type **Dog**. Create and return new object of class **Dog**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **getAnimal()** on **dog** object and store it in another variable **anotherDog** of type ***Dog* in main method.   
@@ -5037,7 +5037,7 @@ Solution:
         }          
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
 Question:
@@ -5081,7 +5081,7 @@ Solution:
         }    
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
 Call method **makeSound()*** on **animal** object.   
@@ -5135,7 +5135,7 @@ Solution:
         }    
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
 Call method **makeSound()*** on **animal** object.   
@@ -5195,7 +5195,7 @@ Solution:
         }    
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
 Print data member **speed** on  **animal** object.   
@@ -5267,7 +5267,7 @@ Solution:
         }            
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
 Question:
@@ -5311,7 +5311,7 @@ Solution:
         }    
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **description()*** on **dog** object.   
 Question:
@@ -5371,7 +5371,7 @@ Solution:
         } 
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **description()*** on **dog** object.   
 Question:
@@ -5447,7 +5447,7 @@ Solution:
         }  
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
 Question:
@@ -5523,7 +5523,7 @@ Solution:
         }       
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super()** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5602,7 +5602,7 @@ Solution:
         }     
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super("fluffy")** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5681,7 +5681,7 @@ Solution:
         }     
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(30)** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5760,7 +5760,7 @@ Solution:
         }     
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
 Create object **dog1** of type **Dog** with parameterized constructor **Dog("fluffy")** in main method.   
@@ -5862,7 +5862,7 @@ Solution:
         }   
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(name)** as first statement in constructor **Dog(String name)**.   
 Add **super(speed)** as first statement in constructor **Dog(int speed)**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
@@ -5970,7 +5970,7 @@ Solution:
         }      
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super("fluffy");** as first statement in constructor **Dog()**.   
 Add **super(30);** as first statement in constructor **Dog(String name)**.   
 Add **super("tuffy")** as first statement in constructor **Dog(int speed)**.   
@@ -6080,7 +6080,7 @@ Solution:
         }         
         
 1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(name);** as first statement in constructor **Dog(String name)**.   
 Add **super(speed)** as first statement in constructor **Dog(int speed)**. 
 Add **super(name, speed);** as first statement in constructor **Dog(String name, int speed)**.   
