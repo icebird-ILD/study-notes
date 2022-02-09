@@ -5292,13 +5292,13 @@ Question:
 Solution:
 
         class Animal {
-          void description(){
+          void static description(){
             System.out.println("I am from Animal class.");
           }
         }
 
         class Dog extends Animal{
-          void description(){
+          void static description(){
             System.out.println("I am a dog.");
           }
         }
@@ -5309,6 +5309,877 @@ Solution:
             animal.description();
           }
         }    
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object **dog** of type **Dog** in main method.   
+Call method **description()*** on **dog** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog{
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }              
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.description();
+          }
+        } 
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object **dog** of type **Dog** in main method.   
+Call method **description()*** on **dog** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Dog dog = new Dog();
+            dog.description();
+          }
+        }  
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+          }
+        }       
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Add **super()** as first statement in constructor **Dog()**.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            super();
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+          }
+        }     
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Add **super("fluffy")** as first statement in constructor **Dog()**.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            super("fluffy");
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+          }
+        }     
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Add **super(30)** as first statement in constructor **Dog()**.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            super(30);
+            System.out.println("constructor of Dog class is being invoked");
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+          }
+        }     
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Create object **dog1** of type **Dog** with parameterized constructor **Dog("fluffy")** in main method.   
+Call method **description()*** on **dog1** object.   
+Create object **dog2** of type **Dog** with parameterized constructor **Dog(25)** in main method.   
+Call method **description()*** on **dog2** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+          
+          Dog(String name){
+            System.out.println("constructor of Dog class is being invoked with name = " + name);
+          }
+
+          Dog(int speed){
+            System.out.println("constructor of Dog class is being invoked with speed = " + speed);
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+          
+          Dog(String name){
+            System.out.println("constructor of Dog class is being invoked with name = " + name);
+          }
+
+          Dog(int speed){
+            System.out.println("constructor of Dog class is being invoked with speed = " + speed);
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+            
+            Dog dog1 = new Dog("fluffy");
+            dog1.description();
+
+            Dog dog2 = new Dog(25);
+            dog2.description();
+          }
+        }   
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Add **super(name)** as first statement in constructor **Dog(String name)**.   
+Add **super(speed)** as first statement in constructor **Dog(int speed)**.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Create object **dog1** of type **Dog** with parameterized constructor **Dog("fluffy")** in main method.   
+Call method **description()*** on **dog1** object.   
+Create object **dog2** of type **Dog** with parameterized constructor **Dog(25)** in main method.   
+Call method **description()*** on **dog2** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+          
+          Dog(String name){
+            
+            System.out.println("constructor of Dog class is being invoked with name = " + name);
+          }
+
+          Dog(int speed){
+            
+            System.out.println("constructor of Dog class is being invoked with speed = " + speed);
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+          
+          Dog(String name){
+            super(name);
+            System.out.println("constructor of Dog class is being invoked with name = " + name);
+          }
+
+          Dog(int speed){
+            super(speed);
+            System.out.println("constructor of Dog class is being invoked with speed = " + speed);
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+            
+            Dog dog1 = new Dog("fluffy");
+            dog1.description();
+
+            Dog dog2 = new Dog(25);
+            dog2.description();
+          }
+        }      
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Add **super("fluffy");** as first statement in constructor **Dog()**.   
+Add **super(30);** as first statement in constructor **Dog(String name)**.   
+Add **super("tuffy")** as first statement in constructor **Dog(int speed)**.   
+Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
+Call method **description()*** on **animal** object.   
+Create object **dog1** of type **Dog** with parameterized constructor **Dog("capsi")** in main method.   
+Call method **description()*** on **dog1** object.   
+Create object **dog2** of type **Dog** with parameterized constructor **Dog(25)** in main method.   
+Call method **description()*** on **dog2** object.   
+Question:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog {
+          Dog(){
+            System.out.println("constructor of Dog class is being invoked");
+          }
+          
+          Dog(String name){
+            
+            System.out.println("constructor of Dog class is being invoked with name = " + name);
+          }
+
+          Dog(int speed){
+            
+            System.out.println("constructor of Dog class is being invoked with speed = " + speed);
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            
+          }
+        }                
+Solution:
+
+        class Animal {
+          Animal(){
+            System.out.println("constructor of Animal class is being invoked");
+          }
+          
+          Animal(String name){
+            System.out.println("Parameterized constructor of Animal class is being invoked with name = " + name);
+          }
+
+          Animal(int speed){
+            System.out.println("Parameterized constructor of Animal class is being invoked with speed = " + speed);
+          }
+          
+          void description(){
+            System.out.println("I am from Animal class.");
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(){
+            super("fluffy");
+            System.out.println("constructor of Dog class is being invoked");
+          }
+          
+          Dog(String name){
+            super(30);
+            System.out.println("constructor of Dog class is being invoked with name = " + name);
+          }
+
+          Dog(int speed){
+            super("tuffy");
+            System.out.println("constructor of Dog class is being invoked with speed = " + speed);
+          }
+
+          void description(){
+            System.out.println("I am a dog.");
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog();
+            animal.description();
+            
+            Dog dog1 = new Dog("capsi");
+            dog1.description();
+
+            Dog dog2 = new Dog(25);
+            dog2.description();
+          }
+        }         
+        
+1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Inherit class *Dog*** from class **Animal** by using **extend** keyword.   
+Add **super(name);** as first statement in constructor **Dog(String name)**.   
+Add **super(speed)** as first statement in constructor **Dog(int speed)**. 
+Add **super(name, speed);** as first statement in constructor **Dog(String name, int speed)**.   
+Create object of type **Dog** via **Dog("fluffy")** and store it in variable **animal** of type **Animal** in main method.   
+Call method **printAnimalDetails()*** on **animal** object.   
+Create object **dog1** of type **Dog** with parameterized constructor **Dog(20)** in main method.   
+Call method **printAnimalDetails()*** on **dog1** object.   
+Create object **dog2** of type **Dog** with parameterized constructor **Dog("tuffy", 10)** in main method.   
+Call method **printAnimalDetails()*** on **dog2** object.   
+Question:
+
+        class Animal {
+          String name;
+          int speed;
+
+          Animal(String name){
+            this.name = name;
+          }
+
+          Animal(int speed){
+            this.speed = speed;
+          }
+
+          Animal(String name, int speed){
+            this.name = name;
+            this.speed = speed;
+          }
+
+          void printAnimalDetails(){
+            System.out.println("Animal details: name = " + name + ", speed = " + speed);
+          }
+        }
+
+        class Dog {
+          Dog(String name){
+          }
+
+          Dog(int speed){
+          }
+
+          Dog(String name, int speed){
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+          }
+        }                   
+Solution:
+
+        class Animal {
+          String name;
+          int speed;
+
+          Animal(String name){
+            this.name = name;
+          }
+
+          Animal(int speed){
+            this.speed = speed;
+          }
+
+          Animal(String name, int speed){
+            this.name = name;
+            this.speed = speed;
+          }
+
+          void printAnimalDetails(){
+            System.out.println("Animal details: name = " + name + ", speed = " + speed);
+          }
+        }
+
+        class Dog extends Animal{
+          Dog(String name){
+            super(name);
+          }
+
+          Dog(int speed){
+            super(speed);
+          }
+
+          Dog(String name, int speed){
+            super(name, speed);
+          }
+        }
+
+        class MainProgram{
+          public static void main(String[] args) {
+            Animal animal = new Dog("fluffy");
+            animal.printAnimalDetails();
+
+            Dog dog1 = new Dog(20);
+            dog1.printAnimalDetails();
+
+            Dog dog2 = new Dog("tuffy", 10);
+            dog2.printAnimalDetails();
+          }
+        }            
+        
         
 
      
