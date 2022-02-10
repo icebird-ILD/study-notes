@@ -6761,6 +6761,339 @@ Solution:
           }
         }             
 
+#### Interfaces {-}
+
+45. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+interface introduction.   
+
+45. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use interfaces.   
+
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create empty interface **Animal**.   
+Question:
+       
+Solution:
+
+        interface Animal {
+          
+        }
+        
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Add abstract method **displayProperties()** in interface **Animal**.   
+Question:
+
+        interface Animal {
+          
+        }
+Solution:
+
+        interface Animal {
+          abstract void displayProperties();
+        }     
+        
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Delete keyword **abstract** from method **displayProperties()** in interface **Animal**. Don't provide method body.      
+Question:
+
+        interface Animal {
+          abstract void displayProperties();
+        }
+Solution:
+
+        interface Animal {
+          void displayProperties();
+        }    
+        
+45. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+By default all abstract methods are **public** in an interface.   
+
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Delete keyword **abstract** from method **displayProperties()** in interface **Animal**. Don't provide method body.      
+Question:
+
+        interface Animal {
+          abstract void displayProperties();
+        }
+Solution:
+
+        interface Animal {
+          void displayProperties();
+        }  
+        
+45. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+abstract method can never be **static**.   
+
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Implement class **Dog** from interface **Animal** by using keyword **implements**.   
+Declare method **displayProperties()** as *public* in class **Dog**.   
+Question:
+
+        interface Animal {
+          void displayProperties();
+        }  
+        
+        class Dog {
+          void displayProperties() {
+              System.out.println("Color of dog is brown");
+          }
+        }
+Solution:
+
+        interface Animal {
+          void displayProperties();
+        }  
+        
+        class Dog implements Animal{
+          public void displayProperties() {
+              System.out.println("Color of dog is brown");
+          }
+        }
+        
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Implement class **Dog** from interface **Animal** by using keyword **implements**.   
+Declare method **displayProperties()** as *public* in class **Dog**.   
+Implement class **Fish** from interface **Animal** by using keyword **implements**.   
+Declare method **displayProperties()** as *public* in class **Fish**.   
+Question:
+
+        interface Animal {
+          void displayProperties();
+        }  
+        
+        class Dog {
+          void displayProperties() {
+              System.out.println("Color of dog is brown");
+          }
+        }
+        
+        class Fish {
+          void displayProperties() {
+              System.out.println("Color of Fish is golden");
+          }
+        }
+Solution:
+
+        interface Animal {
+          void displayProperties();
+        }  
+        
+        class Dog implements Animal{
+          public void displayProperties() {
+              System.out.println("Color of dog is brown");
+          }
+        }
+        
+        class Fish implements Animal{
+          public void displayProperties() {
+              System.out.println("Color of Fish is golden");
+          }
+        }
+        
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Implement class **Bird** from interface **FlyBehavior** by using keyword **implements**.   
+Implement class **Bird** from interface **EatBehavior**.   
+Declare method **fly()** as *public* in class **Bird**.   
+Declare method **eat()** as *public* in class **Bird**.   
+Question:
+
+        interface FlyBehavior {
+          void fly();
+        } 
+        
+        interface EatBehavior {
+          void eat();
+        } 
+        
+        class Bird {
+          void fly() {
+              System.out.println("Bird can fly");
+          }
+          
+          void eat() {
+              System.out.println("Bird can eat");
+          }
+        }    
+Solution:
+
+        interface FlyBehavior {
+          void fly();
+        } 
+        
+        interface EatBehavior {
+          void eat();
+        } 
+        
+        class Bird implements FlyBehavior, EatBehavior{
+          public void fly() {
+              System.out.println("Bird can fly");
+          }
+          
+          public void eat() {
+              System.out.println("Bird can eat");
+          }
+        }   
+        
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Implement class **Bird** from interface **FlyBehavior** by using keyword **implements**.   
+Implement class **Bird** from interface **EatBehavior**.   
+Declare method **fly()** as *public* in class **Bird**.   
+Declare method **eat()** as *public* in class **Bird**.   
+Create method **description()** in class **Bird**.   
+Print **Birds are beautiful creature** in method **description()**.   
+Question:
+
+        interface FlyBehavior {
+          void fly();
+        } 
+        
+        interface EatBehavior {
+          void eat();
+        } 
+        
+        class Bird {
+          void fly() {
+              System.out.println("Bird can fly");
+          }
+          
+          void eat() {
+              System.out.println("Bird can eat");
+          }
+        }    
+Solution:
+
+        interface FlyBehavior {
+          void fly();
+        } 
+        
+        interface EatBehavior {
+          void eat();
+        } 
+        
+        class Bird implements FlyBehavior, EatBehavior{
+          public void fly() {
+              System.out.println("Bird can fly");
+          }
+          
+          public void eat() {
+              System.out.println("Bird can eat");
+          }
+          
+          void description(){
+            System.out.println("Birds are beautiful creature");
+          }
+        }   
+        
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Extend interface **Puller** from interface **ShippingHelper** by using keyword **extends**.   
+Extend interface **CargoCarrier** from interface **ShippingHelper** by using keyword **extends**.   
+Implement class **Ox** from interface **Puller** by using keyword **implements**.   
+Declare method **canShip()** as *public* in class **Ox**.   
+Declare method **canPull()** as *public* in class **Ox**.   
+Implement class **Horse** from interface **CargoCarrier** by using keyword **implements**.   
+Implement class **Horse** from interface **Racer**.   
+Declare method **canShip()** as *public* in class **Horse**.   
+Declare method **canRace()** as *public* in class **Horse**.   
+Implement class **Elephant** from interface **CargoCarrier** by using keyword **implements**.   
+Declare method **canShip()** as *public* in class **Elephant**.   
+Question:
+
+        interface ShippingHelper{
+          void canShip();
+        }
+
+        interface Puller {
+          void canPull();
+        }
+
+        interface CargoCarrier {
+        }
+
+        interface Racer{
+          void canRace();
+        }
+
+        class Ox {
+          void canShip() {
+            System.out.println("Ox can ship the stuff");
+          }
+
+          void canPull() {
+            System.out.println("Ox can pull the cart");
+          }
+        }
+
+        class Horse implements CargoCarrier, Racer{
+          void canShip() {
+            System.out.println("Horse can ship the stuff");
+          }
+
+          void canRace() {
+            System.out.println("Horse can participate in race");
+          }
+        }
+
+        class Elephant implements CargoCarrier{
+          public void canShip() {
+            System.out.println("Elephant can ship the stuff");
+          }
+        } 
+Solution:
+
+        interface ShippingHelper{
+          void canShip();
+        }
+
+        interface Puller extends ShippingHelper{
+          void canPull();
+        }
+
+        interface CargoCarrier extends ShippingHelper{
+        }
+
+        interface Racer{
+          void canRace();
+        }
+
+        class Ox implements Puller{
+          public void canShip() {
+            System.out.println("Ox can ship the stuff");
+          }
+
+          public void canPull() {
+            System.out.println("Ox can pull the cart");
+          }
+        }
+
+        class Horse implements CargoCarrier, Racer{
+          public void canShip() {
+            System.out.println("Horse can ship the stuff");
+          }
+
+          public void canRace() {
+            System.out.println("Horse can participate in race");
+          }
+        }
+
+        class Elephant implements CargoCarrier{
+          public void canShip() {
+            System.out.println("Elephant can ship the stuff");
+          }
+        }     
+        
+45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create variable **x** in interface **MyInterface**.   
+Question:
+
+        interface MyInterface{
+          
+        }
+Solution:
+
+        interface MyInterface{
+          int x = 10;
+        }            
+
 
 
      
