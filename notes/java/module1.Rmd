@@ -7095,8 +7095,306 @@ Solution:
         }            
 
 
+#### final keyword {-}
 
+56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+final class can never be inherited.      
+
+56. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+How to use final with class...   
+
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create empty class **Animal**.   
+Declare class **Animal** as **final**.   
+Question:
+       
+Solution:
+
+        final class Animal {
+          
+        }
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **final**.   
+Print **I am in Animal class** in method **displayProperties()** in **Animal** class.   
+Question:
+
+        class Animal {
+          void displayProperties(){
+            
+          }
+        }
+Solution:
+
+        final class Animal {
+          void displayProperties(){
+            System.out.println("I am in Animal class");
+          }
+        }  
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare class **Animal** as **final**.   
+Try to inherit class **Dog** from **Animal** class by using **extends** keyword.   
+Question:
+
+        class Animal {
+          void displayProperties(){
+            System.out.println("I am in Animal class");
+          }
+        }  
+        
+        class Dog {
+          
+        }
+Solution:
+
+        final class Animal {
+          void displayProperties(){
+            System.out.println("I am in Animal class");
+          }
+        }  
+        
+        class Dog extends Animal{
+          
+        }
      
+56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+final methods can never be overridden.      
+
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Declare method **displayProperties()** as **final** in **Animal** class.   
+Inherit class **Dog** from **Animal** class by using **extends** keyword.   
+Try to create method **displayProperties()** with same signature in **Dog** class.   
+Question:
+
+        class Animal {
+          void displayProperties(){
+            System.out.println("I am in Animal class");
+          }
+        }  
+        
+        class Dog {
+          
+        }
+Solution:
+
+        class Animal {
+          final void displayProperties(){
+            System.out.println("I am in Animal class");
+          }
+        }  
+        
+        class Dog extends Animal{
+          
+        }
+        
+56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+final data member
+
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **speed** of **int** type in **Animal** class.   
+Initialize data member **speed** with value **10**.   
+Declare data member **speed** as **final**.   
+Try to implement method **modifySpeed(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
+Question:
+
+        class Animal {
+          final int speed = 10;
+          
+          void modifySpeed(int speed){
+          }
+        }  
+Solution:
+
+        class Animal {
+          final int speed = 10;
+          
+          void modifySpeed(int speed){
+            //this.speed = speed;
+          }
+        }  
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **speed** of **int** type in **Animal** class.   
+Initialize data member **speed** with value **10**.   
+Declare data member **speed** as **final**.   
+Try to implement constructor **Animal(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
+Question:
+
+        class Animal {
+          final int speed = 10;
+          
+          Animal(int speed){
+          }
+        } 
+Solution:
+
+        class Animal {
+          final int speed = 10;
+          
+          Animal(int speed){
+            //this.speed = speed;
+          }
+        }       
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **speed** of **int** type in **Animal** class.   
+Do not initialize data member **speed**.   
+try to declare data member **speed** as **final**.   
+Question:
+
+        class Animal {
+          
+        }    
+Solution:
+
+        class Animal {
+          final int speed;
+        }  
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **speed** of **int** type in **Animal** class.   
+Do not initialize data member **speed**.   
+Implement method **modifySpeed(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
+Try to declare data member **speed** as **final**.   
+Question:
+
+        class Animal {
+          
+          void modifySpeed(int speed){
+            
+          }
+        }     
+Solution:
+
+        class Animal {
+          final int speed;
+          
+          void modifySpeed(int speed){
+            //this.speed = speed;
+          }
+        }      
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **speed** of **int** type in **Animal** class.   
+Do not initialize data member **speed**.   
+Declare data member **speed** as **final**.   
+Implement constructor **Animal(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
+Question:
+
+        class Animal {
+          
+          Animal(int speed){
+            
+          }
+        }     
+Solution:
+
+        class Animal {
+          final int speed;
+          
+          Animal(int speed){
+            this.speed = speed;
+          }
+        }        
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **speed** of **int** type in **Animal** class.   
+Do not initialize data member **speed**.   
+Declare data member **speed** as **final**.   
+Implement constructor **Animal(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
+Try to add statement **speed++** in constructor **Animal(int speed)**.   
+Question:
+
+        class Animal {
+          
+          Animal(int speed){
+            
+          }
+        }     
+Solution:
+
+        class Animal {
+          final int speed;
+          
+          Animal(int speed){
+            this.speed = speed;
+          }
+        }                
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create data member **speed** of **int** type in **Animal** class.   
+Do not initialize data member **speed**.   
+Declare data member **speed** as **final**.   
+Implement constructor **Animal(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
+Try to create constructor **Animal()**.   
+Try to create constructor **Animal(String name)**.   
+Question:
+
+        class Animal {
+          
+          Animal(int speed){
+            
+          }
+        }     
+Solution:
+
+        class Animal {
+          final int speed;
+          
+          Animal(int speed){
+            this.speed = speed;
+          }
+        }   
+        
+56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Static data member as final   
+        
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Create static data member **speed** of **int** type in **Animal** class.   
+Do not initialize data member **speed**.   
+Declare data member **speed** as **final**.   
+Try to implement constructor **Animal(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
+Question:
+
+        class Animal {
+          
+          Animal(int speed){
+            
+          }
+        }     
+Solution:
+
+        class Animal {
+          static final int speed;
+          
+          Animal(int speed){
+            this.speed = speed;
+          }
+        }                   
+
+56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Local variable as final   
+
+56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+Try to add statement **x=speed** in method **modifySpeed(int speed)**.   
+Question:
+
+        class Animal {
+          void modifySpeed(int speed){
+            final int x = 10;
+            
+          }
+        }     
+Solution:
+
+        class Animal {
+          void modifySpeed(int speed){
+            final int x = 10;
+            //x = speed;
+          }
+        }            
+
 
 
 
