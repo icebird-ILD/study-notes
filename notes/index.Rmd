@@ -14,6 +14,7 @@ dir=paste(getwd())
 cats_udemy_topic_file=paste(dir, "cats-udemy/udemy.Rmd", sep = "/")
 kafka_udemy_topic_file=paste(dir, "kafka-udemy/udemy.Rmd", sep = "/")
 java_topic_file=paste(dir, "java/index.Rmd", sep = "/")
+kafka_course_file=paste(dir, "kafka/index.Rmd", sep = "/")
 docker_topic_file=paste(dir, "docker/index.Rmd", sep = "/")
 ```
 
@@ -25,6 +26,10 @@ docker_topic_file=paste(dir, "docker/index.Rmd", sep = "/")
 
 ```{r child = java_topic_file}
 ```
+
+```{r child = kafka_course_file}
+```
+
 
 ```{r child = docker_topic_file}
 ```

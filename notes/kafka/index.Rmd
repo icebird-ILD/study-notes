@@ -1,0 +1,16 @@
+# Kafka {-}
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+dir=paste(getwd())
+module1_file=paste(dir, "module1.Rmd", sep = "/")
+module2_file=paste(dir, "module2.Rmd", sep = "/")
+```
+
+
+```{r child = module1_file}
+```
+
+```{r child = module2_file}
+```
+

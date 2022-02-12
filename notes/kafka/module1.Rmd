@@ -1,0 +1,12 @@
+
+## Kafka CommandLine {-}
+
+### Module 01: Introduction {-}
+
+#### Producer, Kafka, Consumer {-}
+
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Overview of Kafka.  
+
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+Sbt Start Kafka Cluster

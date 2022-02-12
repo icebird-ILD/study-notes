@@ -1,0 +1,12 @@
+
+## Kafka Java {-}
+
+### Module 01: Introduction {-}
+
+#### Kafka Java Api {-}
+
+1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+Overview of Kafka.  
+
+1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+Start Kafka Cluster Using Sbt
