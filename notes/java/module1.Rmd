@@ -431,7 +431,6 @@ How to do String concatenation.
                 System.out.println(firstName + score);  
 
 10. **Exercise**:    `r fmt_todo()`       
-Addition: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=10, b=20, c=a+b. Print value variable c.    
     - **Description**:    `r fmt_todo()`   
         **Objective:**   
         Objective is to perform addition of two numbers. Store the result in third number. Print the addition result.   
@@ -440,7 +439,7 @@ Addition: Write a Program in jShell file which declares 3 `r text_spec("int", co
         1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(10)` to it.   
         1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(20)` to it.     
         1. Create variable `r fmt_variable("additionResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` + `r fmt_variable("number2")` to it.     
-        1. Print `r fmt_output("Addition reuslt is=")` and variable `r fmt_variable("additionResult")` in a single line.   
+        1. Print `r fmt_output("Addition result is=")` and variable `r fmt_variable("additionResult")` in a single line.   
         <br/>
     - **Question**:       `r fmt_todo()`   
 
@@ -450,16 +449,70 @@ Addition: Write a Program in jShell file which declares 3 `r text_spec("int", co
                 int number1 = 10;
                 int number2 = 20;
                 int additionResult = number1 + number2;
-                System.out.println("Addition reuslt is=" + additionResult);  
+                System.out.println("Addition result is=" + additionResult);  
 
 10. **Exercise**:    `r fmt_todo()`       
-Subtraction: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=100, b=40, c=a-b. Print value variable c.   
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to perform subtraction of two numbers. Store the result in third number. Print the subtraction result.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(100)` to it.   
+        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(80)` to it.     
+        1. Create variable `r fmt_variable("subtractionResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` - `r fmt_variable("number2")` to it.     
+        1. Print `r fmt_output("Subtraction result is=")` and variable `r fmt_variable("subtractionResult")` in a single line.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();
+    - **Solution**:
+
+                int number1 = 10;
+                int number2 = 20;
+                int subtractionResult = number1 - number2;
+                System.out.println("Subtraction result is=" + subtractionResult);  
 
 10. **Exercise**:    `r fmt_todo()`       
-Multiplication: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=10, b=20, c=a*b. Print value variable c.    
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to perform multiplication of two numbers. Store the result in third number. Print the multiplication result.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(100)` to it.   
+        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(80)` to it.     
+        1. Create variable `r fmt_variable("multiplicationResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` * `r fmt_variable("number2")` to it.     
+        1. Print `r fmt_output("Multiplication result is=")` and variable `r fmt_variable("multiplicationResult")` in a single line.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();
+    - **Solution**:
+
+                int number1 = 10;
+                int number2 = 20;
+                int multiplicationResult = number1 * number2;
+                System.out.println("Multiplication result is=" + multiplicationResult);  
 
 10. **Exercise**:    `r fmt_todo()`       
-Division: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=20, b=10, c=a/b. Print value variable c.    
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to perform division of two numbers. Store the result in third decimal number. Print the division result.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(100)` to it.   
+        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(80)` to it.     
+        1. Create variable `r fmt_variable("divisionResult")` of `r fmt_keyword("double")` type and assign result of `r fmt_variable("number1")` / `r fmt_variable("number2")` to it.     
+        1. Print `r fmt_output("Division result is=")` and variable `r fmt_variable("divisionResult")` in a single line.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();
+    - **Solution**:
+
+                int number1 = 10;
+                int number2 = 20;
+                double divisionResult = number1 / number2;
+                System.out.println("Division result is=" + divisionResult);  
 
 10. **Theory**:    `r fmt_todo()`         
 Importance of comments.   
@@ -468,13 +521,113 @@ Importance of comments.
 How to comment and uncomment.   
 
 10. **Exercise**:    `r fmt_todo()`       
-Comment few lines in given program such that it gives output 20.    
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to get the desired result by commenting few lines.   
+        <br/>
+        **Steps to perform:**   
+        1. You can not change the code.   
+        1. You can only un-comment the code.   
+        1. Comment few lines in code such that it prints `r fmt_output(30)`   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                int x = 10;
+                int y = 20;
+                
+                x = x + 30;
+                x = x + y;
+                x = x * y;
+                y = y - x;
+                
+                System.out.println(x);
+                System.out.println(y);  
+    - **Solution**:
+
+                int x = 10;
+                int y = 20;
+                
+                //x = x + 30;
+                x = x + y;
+                //x = x * y;
+                y = y - x;
+                
+                System.out.println(x);
+                //System.out.println(y);   
 
 10. **Exercise**:    `r fmt_todo()`       
-Uncomment few lines in given program such that it gives output 30.    
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to get the desired result by un-commenting few lines.   
+        <br/>
+        **Steps to perform:**   
+        1. You can not change the code.   
+        1. You can only un-comment the code.   
+        1. Un-comment few lines in code such that it prints `r fmt_output(600)`   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                //int x = 10;
+                //int y = 20;
+                
+                //x = x + 30;
+                //x = x + y;
+                //x = x * y;
+                //y = y - x;
+                
+                //System.out.println(x);
+                //System.out.println(y);  
+    - **Solution**:
+
+                int x = 10;
+                int y = 20;
+                
+                //x = x + 30;
+                x = x + y;
+                x = x * y;
+                y = y - x;
+                
+                System.out.println(x);
+                //System.out.println(y);   
 
 10. **Exercise**:    `r fmt_todo()`       
-Comment/Uncomment few lines in given program such that it gives output "I love my country and I am proud of it."    
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to get the desired result by un-commenting few lines.   
+        <br/>
+        **Steps to perform:**   
+        1. You can not change the code.   
+        1. You can only un-comment the code.   
+        1. Un-comment few lines in code such that it prints `r fmt_output("I love my country a lot")`   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                //String s1 = "I love";
+                //s1 = "I  love";
+                //s1 = "I love ";
+                //String s2 = "my country ";
+                //s2 = " my  country";
+                //String s3 = "a lot";
+                //s3 = " a lott";
+                //String s4 = " a ";
+                //String s5 = " lot";
+
+                //System.out.println(s1 + s2 + s3);
+                //System.out.println(s1 + s2 + s4 + s5);
+    - **Solution**:
+
+                String s1 = "I love";
+                //s1 = "I  love";
+                s1 = "I love ";
+                String s2 = "my country ";
+                //s2 = " my  country";
+                String s3 = "a lot";
+                //s3 = " a lott";
+                String s4 = " a ";
+                String s5 = " lot";
+
+                System.out.println(s1 + s2 + s3);
+                //System.out.println(s1 + s2 + s4 + s5);   
 
 10. **Exercise**:    `r fmt_todo()`       
 Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree Celsius temperature."    
@@ -499,14 +652,44 @@ Switch to .java fie.
 How to create empty class in java file.   
 
 1. **Exercise**:    `r fmt_todo()`       
-Write a java program which contains an empty class file.    
-Create `r text_spec("class", color = "red")` **MyFirsClass**.   
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to write empty java class.   
+        <br/>
+        **Steps to perform:**   
+        1. Create `r fmt_keyword("class")` `r fmt_class("MyFirstClass")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-        class MyFirsClass {
-        }
+                
+    - **Solution**:
+
+                class MyFirstClass{
+                  
+                }   
 
 1. **Example**:    `r fmt_todo()`        
 How to create empty main method in java file.   
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to write a java class which can be executed but does nothing on execution.   
+        <br/>
+        **Steps to perform:**   
+        1. Create `r fmt_keyword("class")` `r fmt_class("MyFirstClass")`.   
+        1. Create `r fmt_keyword("class")` `r fmt_class("MyFirstClass")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                class MyFirstClass{
+                  
+                } 
+    - **Solution**:
+
+                class MyFirstClass{
+                  public static void main(String[] args){
+                    
+                  }
+                }   
   
 1. **Exercise**:    `r fmt_todo()`       
 Write a java program which contains an class file, in which an empty main method is created.    
