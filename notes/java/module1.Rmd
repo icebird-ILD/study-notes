@@ -1,149 +1,497 @@
 
 ## Core Java {-}
 
+```{r}
+fmt_todo <- function() {
+  text_spec("TODO", color = "red", bold = TRUE)
+}
+
+fmt_done <- function() {
+  text_spec("TODO", color = "green", bold = TRUE)
+}
+
+fmt_output <- function(text) {
+  text_spec(text, color = "green", bold = TRUE)
+}
+
+fmt_keyword <- function(text) {
+  text_spec(text, color = "blue")
+}
+
+fmt_class <- function(text) {
+  text_spec(text, color= "maroon", bold = TRUE)
+}
+
+fmt_method <- function(text) {
+  text_spec(text, color= "orange", bold = TRUE)
+}
+
+fmt_variable <- function(text) {
+  text_spec(text, color= "navy", bold = TRUE)
+}
+
+fmt_data_member <- function(text) {
+  text_spec(text, color= "teal", bold = TRUE)
+}
+
+```
+
 ### Module 01: jShell {-}
 
 #### Display Output {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+1. **Theory**:    `r fmt_todo()`         
 Overview of Java.  
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to print output in java.     
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program to display "My first java program" in jShell file.    
+1. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display text.   
+        <br/>
+        **Steps to perform:**
+        1. Print `r fmt_output("My first java program")` in given jShell file.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program to display "I am loving coding" in jShell file.     
+                System.out.println("");   
+    - **Solution**:
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program to display "I am loving coding" in jShell file in 3 times in 3 lines.     
+                System.out.println("My first java program");         
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which displays multiple line as follows: "I am loving coding" and "Programming is amazing"     
+1. **Exercise**:    `r fmt_todo()`   
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display text.   
+        <br/>
+        **Steps to perform:**
+        1. Print `r fmt_output("I am loving coding")` in given jShell file.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which displays value 10.     
+                System.out.println("");   
+    - **Solution**:
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which displays value 37.4.     
+                System.out.println("I am loving coding");  
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which displays multiple lines as follows: "I am loving coding" and integer value 10.    
+1. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display text multiple times in multiple lines.   
+        <br/>
+        **Steps to perform:**
+        1. Print `r fmt_output("I am loving coding")`.   
+        1. Print `r fmt_output("I am loving coding")`.   
+        1. Print `r fmt_output("I am loving coding")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println("");   
+                System.out.println("");   
+                System.out.println("");   
+    - **Solution**:
+
+                System.out.println("I am loving coding");  
+                System.out.println("I am loving coding");  
+                System.out.println("I am loving coding");  
+
+1. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display text in multiple lines.   
+        <br/>
+        **Steps to perform:**
+        1. Print `r fmt_output("I am loving coding")`.   
+        1. Print `r fmt_output("Programming is amazing")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println("");   
+                System.out.println("");   
+    - **Solution**:
+
+                System.out.println("I am loving coding");  
+                System.out.println("Programming is amazing");  
+
+1. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display number.   
+        <br/>
+        **Steps to perform:**
+        1. Print `r fmt_output(10)`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();   
+    - **Solution**:
+
+                System.out.println(10);  
+
+1. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display decimal number.   
+        <br/>
+        **Steps to perform:**
+        1. Print `r fmt_output(37.4)`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();   
+    - **Solution**:
+
+                System.out.println(37.4);  
+
+1. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display text and number in separate lines.   
+        <br/>
+        **Steps to perform:**   
+        1. Print `r fmt_output("I am loving coding")`.   
+        1. Print `r fmt_output(10)`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println("");   
+                System.out.println();   
+    - **Solution**:
+
+                System.out.println("I am loving coding"); 
+                System.out.println(10); 
 
 #### Variables, Data types {-}
 
-10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+10. **Theory**:    `r fmt_todo()`         
 Variable introduction.     
 
-10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create variable of type String and display its value..    
+10. **Example**:    `r fmt_todo()`        
+How to create variable of type `r fmt_keyword("String")` and display its value.    
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares String type variable with value "Hollywood" and display its value.     
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create a variable of `r fmt_keyword("String")` type and display its value.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_output("John")` to variable `r fmt_variable("name")`.   
+        1. Print variable `r fmt_variable("name")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares 2 String type variables with value "John" and "Marry" and display their values.    
+                System.out.println();   
+    - **Solution**:
 
-10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create variable of type int and display its value.    
+                String name = "John";
+                System.out.println(name); 
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares int type variable with value 10 and display its value.     
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create two variables of `r fmt_keyword("String")` type and display their values.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("boyName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("John")` to variable `r fmt_variable("boyName")`.   
+        1. Create variable `r fmt_variable("girlName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Maria")` to variable `r fmt_variable("girlName")`.   
+        1. Print variable `r fmt_variable("boyName")`.   
+        1. Print variable `r fmt_variable("girlName")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares 2 int type variables with value 10 and 20 and display their values.   
+                System.out.println();   
+    - **Solution**:
 
-10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to create variable of type float and display its value.    
+                String boyName = "John";   
+                String girlName = "Maria";   
+                System.out.println(boyName); 
+                System.out.println(girlName);    
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares float type variable with value 37.4 and display its value.    
+10. **Example**:    `r fmt_todo()`        
+How to create variable of type `r fmt_keyword("int")` and display its value.    
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares 2 float type variables with value 37.4 and 98.6 and display their values.   
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create a variable of `r fmt_keyword("int")` type and display its value.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_output(21)` to variable `r fmt_variable("age")`.   
+        1. Print variable `r fmt_variable("age")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares 3 variables of types String, int and float respectively with values "John", 10 and 7.8 respectively and display their values.    
+                System.out.println();   
+    - **Solution**:
 
-10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
-What is String concatenation.   
+                int age = 21;   
+                System.out.println(age);  
 
-10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create two variables of `r fmt_keyword("int")` type and display their values.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("boyAge")` of `r fmt_keyword("int")` type and assign value `r fmt_output(21)` to variable `r fmt_variable("boyAge")`.   
+        1. Create variable `r fmt_variable("girlAge")` of `r fmt_keyword("int")` type and assign value `r fmt_output(23)` to variable `r fmt_variable("girlAge")`.   
+        1. Print variable `r fmt_variable("boyAge")`.   
+        1. Print variable `r fmt_variable("girlAge")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();   
+                System.out.println();   
+    - **Solution**:
+
+                int boyAge = 21;   
+                int girlAage = 23;   
+                System.out.println(boyAge);  
+                System.out.println(girlAge);  
+
+10. **Example**:    `r fmt_todo()`        
+How to create variable of type `r fmt_keyword("float")` and display its value.    
+
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create a variable of `r fmt_keyword("float")` type and display its value.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(7.1)` to variable `r fmt_variable("marks")`.   
+        1. Print variable `r fmt_variable("marks")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();   
+    - **Solution**:
+
+                float marks = 7.1;   
+                System.out.println(marks);  
+
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create two variables of `r fmt_keyword("float")` type and display their values.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("boyMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(7.1)` to variable `r fmt_variable("boyMarks")`.  
+        1. Create variable `r fmt_variable("girlMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(8.3)` to variable `r fmt_variable("girlMarks")`.  
+        1. Print variable `r fmt_variable("boyMarks")`.   
+        1. Print variable `r fmt_variable("girlMarks")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();   
+                System.out.println();   
+    - **Solution**:
+
+                float boyMarks = 7.1;   
+                float girlMarks = 8.3;   
+                System.out.println(boyMarks);  
+                System.out.println(girlMarks);  
+
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create three variables of different types and display their values.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to variable `r fmt_variable("name")`.  
+        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_output(22)` to variable `r fmt_variable("age")`.  
+        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(7.9)` to variable `r fmt_variable("marks")`.  
+        1. Print variable `r fmt_variable("name")`.   
+        1. Print variable `r fmt_variable("age")`.   
+        1. Print variable `r fmt_variable("marks")`.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println();   
+                System.out.println();   
+                System.out.println();   
+    - **Solution**:
+
+                String name = "Shawn";
+                float age = 22;   
+                float marks = 7.9;   
+                System.out.println(name);  
+                System.out.println(age);  
+                System.out.println(marks);  
+
+10. **Theory**:    `r fmt_todo()`         
+What String concatenation.   
+
+10. **Example**:    `r fmt_todo()`        
 How to do String concatenation.   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which concatenates 2 String literlas in print statement.   
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to concatenate two `r fmt_keyword("String")` literals in print statement.    
+        <br/>
+        **Steps to perform:**   
+        1. Concatenate `r fmt_output("I love my country.")` and `r fmt_output("And, I mean every bit of it.")` in print statement.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which concatenates 3 String literlas in print statement.   
+                System.out.println("" + "");   
+    - **Solution**:
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares 2 String variables with some values and concatenates these variables in print statement.    
+                System.out.println("I love my country." + "And, I mean every bit of it.");  
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares 3 String variables with some values and concatenates these variables in print statement.    
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to concatenate three `r fmt_keyword("String")` literals in print statement.    
+        <br/>
+        **Steps to perform:**   
+        1. Concatenate `r fmt_output("I love ")` and `r fmt_output("my country ")` and `r fmt_output("very much.")` in print statement.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which concatenates 1 String literla and 1 int literal in print statement.    
+                System.out.println("" + "");   
+    - **Solution**:
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Write a Program in jShell file which declares 2 variables of types String and int with some values and concatenates these variables in print statement.   
+                System.out.println("I love " + "my country " + "very much.");  
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Addition: Write a Program in jShell file which declares 3 int variables such as a=10, b=20, c=a+b. Print value variable c.    
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create variables and concatenate their values in print statement.     
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to variable `r fmt_variable("firstName")`.  
+        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Michael")` to variable `r fmt_variable("lastName")`.  
+        1. Concatenate variables `r fmt_variable("firstName")` and `r fmt_variable("lastName")` in print statement.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Subtraction: Write a Program in jShell file which declares 3 int variables such as a=100, b=40, c=a-b. Print value variable c.   
+                System.out.println(firstName + lastName);   
+    - **Solution**:
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Multiplication: Write a Program in jShell file which declares 3 int variables such as a=10, b=20, c=a*b. Print value variable c.    
+                String firstName = "Shawn";   
+                String lastName = "Michael";   
+                System.out.println(firstName + lastName);  
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Division: Write a Program in jShell file which declares 3 int variables such as a=20, b=10, c=a/b. Print value variable c.    
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create variables and concatenate their values in print statement.     
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to variable `r fmt_variable("firstName")`.  
+        1. Create variable `r fmt_variable("middleName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Ray")` to variable `r fmt_variable("middleName")`.  
+        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Michael")` to variable `r fmt_variable("lastName")`.  
+        1. Concatenate variables `r fmt_variable("firstName")` and `r fmt_variable("middleName")` and `r fmt_variable("lastName")` in print statement.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+                System.out.println(firstName + middleName + lastName);   
+    - **Solution**:
+
+                String firstName = "Shawn";   
+                String middleName = "Ray";   
+                String lastName = "Michael";   
+                System.out.println(firstName + middleName + lastName);  
+
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to concatenate two literals of different types in print statement.    
+        <br/>
+        **Steps to perform:**   
+        1. Concatenate `r fmt_output("My score is = ")` and `r fmt_output(7.8)` in print statement.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println("" + );   
+    - **Solution**:
+
+                System.out.println("My score is = " + 7.8);  
+
+10. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to create variables of different types and concatenate their values in print statement.     
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to variable `r fmt_variable("name")`.  
+        1. Create variable `r fmt_variable("score")` of `r fmt_keyword("float")` type and assign value `r fmt_output(8.1)` to variable `r fmt_variable("score")`.  
+        1. Concatenate variables `r fmt_variable("name")` and `r fmt_variable("score")` in print statement.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println(name + score);   
+    - **Solution**:
+
+                String name = "Shawn";   
+                float score = 8.1;   
+                System.out.println(firstName + score);  
+
+10. **Exercise**:    `r fmt_todo()`       
+Addition: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=10, b=20, c=a+b. Print value variable c.    
+
+10. **Exercise**:    `r fmt_todo()`       
+Subtraction: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=100, b=40, c=a-b. Print value variable c.   
+
+10. **Exercise**:    `r fmt_todo()`       
+Multiplication: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=10, b=20, c=a*b. Print value variable c.    
+
+10. **Exercise**:    `r fmt_todo()`       
+Division: Write a Program in jShell file which declares 3 `r text_spec("int", color = "red")` variables such as a=20, b=10, c=a/b. Print value variable c.    
+
+10. **Theory**:    `r fmt_todo()`         
 Importance of comments.   
 
-10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+10. **Example**:    `r fmt_todo()`        
 How to comment and uncomment.   
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Comment few lines in given program such that it gives output 20.    
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Uncomment few lines in given program such that it gives output 30.    
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Comment/Uncomment few lines in given program such that it gives output "I love my country and I am proud of it."    
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree Celsius temperature."    
+
+
+#### Packages {-}
 
 ### Module 02: Class, Main Method, Static Method, Static Block, Static Data Member {-}
 
 #### Classes {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+##### class creation {-}
+##### main methodc creation {-}
+##### execute class {-}
+##### output display {-}
+##### variables, data types {-}
+
+1. **Theory**:    `r fmt_todo()`         
 Switch to .java fie.    
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to create empty class in java file.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Write a java program which contains an empty class file.    
-Create class **MyFirsClass**.   
+Create `r text_spec("class", color = "red")` **MyFirsClass**.   
 
         class MyFirsClass {
         }
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to create empty main method in java file.   
   
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Write a java program which contains an class file, in which an empty main method is created.    
-Create class **MyClass**.   
+Create `r text_spec("class", color = "red")` **MyClass**.   
 Create empty **main** method.   
 
         class SampleClass {
@@ -151,10 +499,10 @@ Create empty **main** method.
           }
         }
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to print "Hello world" in main method in java file.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Print **I am loving coding**.    
 Print **Programming is amazing**.  
 Question:
@@ -174,7 +522,7 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Print **10**.    
 Question:
 
@@ -191,7 +539,7 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Print **37.4**.    
 Question:
 
@@ -208,8 +556,8 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create variable **String** **name** = *"John"*.   
+1. **Exercise**:    `r fmt_todo()`       
+Create variable `r text_spec("String", color = "red")` **name** = *"John"*.   
 Create variable **int** **age** = *10*.   
 Create variable **float** **grade** = *7.8*.   
 Print value of **name**.   
@@ -240,7 +588,7 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Addition:    
 Create variable **int** **a** = *10*.   
 Create variable **int** **b** = *20*.   
@@ -297,19 +645,23 @@ Solution:
 
 #### Static Methods {-}
 
-12. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+##### static methods creation {-}
+##### static methods calling {-}
+##### return types {-}
+
+12. **Theory**:    `r fmt_todo()`         
 Importance of methods.    
 
-12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+12. **Example**:    `r fmt_todo()`        
 How to create method in java file.    
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r fmt_todo()`       
 Addition:   
-Implement static method "addition(int number1, int number2)" which prints addition of given arguments.    
+Implement `r text_spec("static", color = "red")` method "addition(int number1, int number2)" which prints addition of given arguments.    
 Question:
 
         class MyOperation {
-          void addition(int number1, int number2){
+          static void addition(int number1, int number2){
             
           }
 
@@ -320,7 +672,7 @@ Question:
 Solution:
 
         class MyOperation {
-          void addition(int number1, int number2){
+          static void addition(int number1, int number2){
             int result = number1 + number2;
             System.out.println(result);
           }
@@ -330,9 +682,9 @@ Solution:
           }
         }
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r fmt_todo()`       
 Subtraction:    
-Implement static method "subtraction(int number1, int number2)" which prints subtraction of given arguments.   
+Implement `r text_spec("static", color = "red")` method "subtraction(int number1, int number2)" which prints subtraction of given arguments.   
 Question:
 
         class MyOperation {
@@ -358,9 +710,9 @@ Solution:
           }
         }
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r fmt_todo()`       
 Square:    
-Implement static method "square(int number)" which prints square of given argument.   
+Implement `r text_spec("static", color = "red")` method "square(int number)" which prints square of given argument.   
 Question:
 
         class MyOperations {
@@ -386,9 +738,9 @@ Solution:
           }
         }
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r fmt_todo()`       
 Cube:     
-Implement static method "cube(int number)" which prints cube of given argument.    
+Implement `r text_spec("static", color = "red")` method "cube(int number)" which prints cube of given argument.    
 Question:
 
         class MyOperations {
@@ -414,11 +766,11 @@ Solution:
           }
         }
 
-12. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+12. **Example**:    `r fmt_todo()`        
 How to create method with return type.   
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create static method "echo(int number)" which returns the same number passed as argument.    
+12. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("static", color = "red")` method "echo(int number)" which returns the same number passed as argument.    
 Question:
 
         class EchoMyNumber {
@@ -444,8 +796,8 @@ Solution:
           }
         }
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create static method "echo(string message)" which returns the same message passed as argument.    
+12. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("static", color = "red")` method "echo(string message)" which returns the same message passed as argument.    
 Question:
 
         class EchoMyMessage {
@@ -471,7 +823,7 @@ Solution:
           }
         }
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r fmt_todo()`       
 Implement custom static method "main(string message)" which returns the same message passed as argument.  Question:  
 
         class Student {
@@ -497,7 +849,7 @@ Solution:
           }
         }      
 
-12. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+12. **Exercise**:    `r fmt_todo()`       
 Create instance method **printFullName()** which prints full name by calling **getFirstName()** and **getLastName()** methods and appending them such as final result is *John Marshal*.   
 Question:
 
@@ -540,13 +892,13 @@ Solution:
 
 #### Static Block {-}
 
-23. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+23. **Theory**:    `r fmt_todo()`         
 Importance of static block.    
 
-23. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+23. **Example**:    `r fmt_todo()`        
 How to create static block in java file.
 
-23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+23. **Exercise**:    `r fmt_todo()`       
 Create static block in java file which prints "In static block" message. Try execute this file.   
 Question:
 
@@ -563,7 +915,7 @@ Solution:
           }
         }        
 
-23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+23. **Exercise**:    `r fmt_todo()`       
 Create first static blocks which prints "In first static block" message.    
 Create second static blocks which prints "In second static block" message. Try execute this java file.    
 Question:
@@ -589,7 +941,7 @@ Solution:
           }
         }        
 
-23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+23. **Exercise**:    `r fmt_todo()`       
 The first static block shall print "In first static block" message.    
 The second static block shall print "In second static block" message.    
 Create main method, which shall print "In main method". Try execute this java file.   
@@ -624,10 +976,10 @@ Solution:
           }
         }        
 
-23. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+23. **Theory**:    `r fmt_todo()`         
 Importance of order of static block.   
 
-23. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+23. **Exercise**:    `r fmt_todo()`       
 The first static block shall print "In first static block" message.    
 Create main method, which shall print "In main method".   
 The second static block shall print "In second static block" message.    
@@ -665,14 +1017,14 @@ Solution:
 
 #### Static Data Members {-}
 
-30. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+30. **Theory**:    `r fmt_todo()`         
 Importance of static data members.    
 
-30. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+30. **Example**:    `r fmt_todo()`        
 How to create static data member and its usage in java file.    
 
-30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create static data member **companyName** of type String.    
+30. **Exercise**:    `r fmt_todo()`       
+Create static data member **companyName** of type `r text_spec("String", color = "red")`.    
 Assign value *Folks* to **companyName** in main method.  
 Question:
 
@@ -695,7 +1047,7 @@ Solution:
           }
         }        
 
-30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+30. **Exercise**:    `r fmt_todo()`       
 Assign value *Folks* to **companyName** in main method.    
 Implement **displayCompanyName** such that it prints value of **companyName**.   
 Question:
@@ -725,7 +1077,7 @@ Solution:
           }
         }
 
-30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+30. **Exercise**:    `r fmt_todo()`       
 Implement **displayCompanyName** such that it prints value of **companyName**.   
 Implement **displayCompanyNameDuplicate** such that it prints value of **companyName**.   
 Question:
@@ -765,9 +1117,9 @@ Solution:
           }
         }        
 
-30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement static method **doubleCompanyRating()** which doubles the value of **companyRating**.   
-Implement static method **printCompanyRating()** which prints the value of **companyRating**.   
+30. **Exercise**:    `r fmt_todo()`       
+Implement `r text_spec("static", color = "red")` method **doubleCompanyRating()** which doubles the value of **companyRating**.   
+Implement `r text_spec("static", color = "red")` method **printCompanyRating()** which prints the value of **companyRating**.   
 Question:
 
         class Employee {
@@ -805,13 +1157,13 @@ Solution:
           }
         }        
 
-30. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+30. **Theory**:    `r fmt_todo()`       
 How to refer static data member with class name.   
 
-30. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+30. **Example**:    `r fmt_todo()`        
 How to refer static data member with class name.   
 
-30. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+30. **Exercise**:    `r fmt_todo()`       
 Print value of **companyName** in main method by referring through class name.  
 Question:
 
@@ -836,16 +1188,16 @@ Solution:
 
 ### Module 03: Control Flow Statements {-}
 
-#### if else {-}
+#### if-else {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
-if else introduction   
+1. **Theory**:    `r fmt_todo()`         
+`r text_spec("if", color = "red")` `r text_spec("else", color = "red")` introduction   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
-How to use if else.   
+1. **Example**:    `r fmt_todo()`        
+How to use `r text_spec("if", color = "red")` `r text_spec("else", color = "red")`.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **isEligibleForVoting**. Add condition in **if** block such as value of **age** is greater than 18 then returns true.    
+1. **Exercise**:    `r fmt_todo()`       
+Implement **isEligibleForVoting**. Add condition in `r text_spec("if", color = "red")` block such as value of **age** is greater than 18 then returns true.    
 Question:
 
         public class Conditions {
@@ -880,8 +1232,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **calculateGreaterNumber**. Add condition in **if** block such as value of **number1** is greater than or equal to value of **number2** then returns **number1** otherwise return **number2**.    
+1. **Exercise**:    `r fmt_todo()`       
+Implement **calculateGreaterNumber**. Add condition in `r text_spec("if", color = "red")` block such as value of **number1** is greater than or equal to value of **number2** then returns **number1** otherwise return **number2**.    
 Question:
 
         public class GreaterNumber {
@@ -918,8 +1270,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **calculateSmallerNumber**. Add condition in **if** block such as value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
+1. **Exercise**:    `r fmt_todo()`       
+Implement **calculateSmallerNumber**. Add condition in `r text_spec("if", color = "red")` block such as value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
 Question:
 
         public class SmallerNumber {
@@ -956,8 +1308,8 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **calculateSmallerNumber**. Print **number1** and *number2* in same line. Add condition in **if** block such that if value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
+1. **Exercise**:    `r fmt_todo()`       
+Implement **calculateSmallerNumber**. Print **number1** and *number2* in same line. Add condition in `r text_spec("if", color = "red")` block such that if value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
 Question:
 
         public class SmallerNumber {
@@ -992,8 +1344,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+1. **Exercise**:    `r fmt_todo()`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1042,8 +1394,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+1. **Exercise**:    `r fmt_todo()`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1100,8 +1452,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+1. **Exercise**:    `r fmt_todo()`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1155,8 +1507,8 @@ Solution:
           }
         }        
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested if else statements to check largest number.     
+1. **Exercise**:    `r fmt_todo()`       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1208,13 +1560,13 @@ Solution:
           }
         }
         
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+1. **Theory**:    `r fmt_todo()`         
 Ternary introduction.   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to use ternary operations.   
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Implement **calculateLargestNumber**. Use ternary operator to check greater number.     
 Question:
 
@@ -1251,7 +1603,7 @@ Solution:
           }
         } 
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Implement **calculateLargestNumber**. Use ternary operator to check greater number.     
 Question:
 
@@ -1285,7 +1637,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. User ternary operations to check largest number.     
 Question:
 
@@ -1323,13 +1675,13 @@ Solution:
         
 #### Loops {-}
 
-16. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+16. **Theory**:    `r fmt_todo()`         
 for loop introduction.    
 
-16. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+16. **Example**:    `r fmt_todo()`        
 How to use for loop.   
 
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Print **Java is going to be on my tips with practice.** 5 times in main method.   
 Question:
 
@@ -1356,7 +1708,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Print **Java is going to be on my tips with practice.** 5 times using for loop in main method.   
 Question:
 
@@ -1379,7 +1731,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Print **Practice makes programming perfect.** 10 times using for loop in main method.   
 Question:
 
@@ -1402,7 +1754,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Print loop number **j** inside for loop block in main method.   
 Question:
 
@@ -1425,7 +1777,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Print message **"loop iteration="** and loop number **k** in same line, inside for loop block in main method.   
 Question:
 
@@ -1448,7 +1800,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Call **square** method 7 times with parameter 0 to 6 in main method.   
 Question:
 
@@ -1483,7 +1835,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Call **square** method in for loop starting from 0 to max value 6 in main method. Pass for loop iteration value as argument of **square** method.   
 Question:
 
@@ -1514,7 +1866,7 @@ Solution:
           }
         }  
         
-16. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+16. **Exercise**:    `r fmt_todo()`       
 Call **square** method in for loop starting from 0 to max value 6 in main method. Add sqaure value to **total** variable such that it contains the value addition of all squared values.   
 Question:
 
@@ -1560,13 +1912,13 @@ Solution:
 
 #### Objects {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+1. **Theory**:    `r fmt_todo()`         
 Object introduction   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to create object of a class   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Create object **emp** of **Employee** in main method.  
 Print **emp**.   
 Question:
@@ -1588,7 +1940,7 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Create object **emp1** of **Employee** in main method.  
 Print **emp1**.   
 Create object **emp2** of **Employee** in main method.   
@@ -1618,7 +1970,7 @@ Solution:
           }
         }        
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Create object **emp** of **Employee** in main method.  
 Print **emp**.   
 Create another object of **Employee** class and assign it to already created **emp**.     
@@ -1648,13 +2000,13 @@ Solution:
           }
         }        
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+1. **Theory**:    `r fmt_todo()`         
 Anonymous object introduction   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to create anonymous object of a class   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Create anonymous object of **Employee** in main method.   
 Question:
 
@@ -1673,7 +2025,7 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+1. **Exercise**:    `r fmt_todo()`       
 Create anonymous object of **Employee** in print statement in main method and print its value.   
 Question:
 
@@ -1694,13 +2046,13 @@ Solution:
 
 #### Instance Data Members {-}
 
-10. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+10. **Theory**:    `r fmt_todo()`         
 Importance of Instance data members.    
 
-10. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+10. **Example**:    `r fmt_todo()`        
 How to create Instance data member and its usage in java file.    
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Create object of **Student** class **student** in main method.   
 Print **name** of **student** in main method.   
 Question:
@@ -1724,7 +2076,7 @@ Question:
           }
         }        
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Create object of **Student** class **student** in main method.   
 Print **name** of **student** in main method.   
 Assign value *Jack* to **name**.   
@@ -1756,7 +2108,7 @@ Solution:
           }
         }        
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Print **name** of **student1** in main method.   
 Print **name** of **student2** in main method.   
 Assign value *Jack* to **name** of **student1**.   
@@ -1801,7 +2153,7 @@ Question:
           }
         }
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Print **name** of **student1** in main method.   
 Print **marks** of **student1** in main method.   
 Print **name** of **student2** in main method.   
@@ -1873,7 +2225,7 @@ Solution:
           }
         }        
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Print **name** of **student1** in main method.   
 Print **marks** of **student1** in main method.   
 Print **schoolName** of **student1** in main method.   
@@ -1967,7 +2319,7 @@ Solution:
           }
         }        
 
-10. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+10. **Exercise**:    `r fmt_todo()`       
 Create anonymous object of **Person** in print statement and print value of **salary** on it, in main method.   
 Question:
 
@@ -1990,13 +2342,13 @@ Solution:
 
 #### Instance Methods {-}
 
-18. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+18. **Theory**:    `r fmt_todo()`         
 Instance/Non-static method introduction   
 
-18. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+18. **Example**:    `r fmt_todo()`        
 How to create Instance/Non-static method in a class   
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r fmt_todo()`       
 Create instance method **displayValue()** which prints the value of **name**.   
 Create object **person** of **Person** class  in main method.   
 Call **displayValue()** on **person** in main method.    
@@ -2029,7 +2381,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r fmt_todo()`       
 Create instance method **setValue(string newName)** which assigns the variable **newName** to **name**.   
 Create object **person** of **Person** class  in main method.   
 Call **setValue("Jack")** on **person** in main method.   
@@ -2073,7 +2425,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r fmt_todo()`       
 Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**.   
 Create instance method **print()** which prints the value of **name** and **age**.   
 Create object **person** of **Person** class  in main method.    
@@ -2124,7 +2476,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r fmt_todo()`       
 Call **person1**.**setValues("Jack", 21)** in main method.   
 Call **person2**.**setValues("Diana", 19)** in main method.   
 Call **person1**.**displayValues()** in main method.     
@@ -2184,7 +2536,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r fmt_todo()`       
 Call **student**.**displayValues()** in main method.    
 Call **student**.**modifyValues("Jack", 7)** in main method.    
 Call **student**.**displayValues()** in main method.    
@@ -2253,7 +2605,7 @@ Question:
           }
         }
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r fmt_todo()`       
 Call **student1**.**displayValues()** in main method.    
 Call **student2**.**displayValues()** in main method.    
 Call **student1**.**modifyValues("Jack" , 22, "Shawn")** in main method.    
@@ -2327,7 +2679,7 @@ Solution:
           }
         }
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+18. **Exercise**:    `r fmt_todo()`       
 Create instance method **setName(String newName)** which will assign **newName** to **name**.   
 Create instance method **setSalary(int newSalary)** which will assign **newSalary** to **salary**.   
 Create object **emp1** of **Employee** class in main method.   
@@ -2453,8 +2805,8 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
+18. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **Employee**.   
 Create instance data member **name**.   
 Create instance data member **salary** with default value *10000*.   
 Create instance method **displayName()** which will display value of **name**.   
@@ -2500,8 +2852,8 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
+18. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **Employee**.   
 Create instance data member **firstName**.   
 Create instance data member **lastName**.   
 Create instance method **getFirstName()** which returns value of **firstName**.   
@@ -2558,16 +2910,16 @@ Solution:
 
 #### Method Overloading {-}
 
-29. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+29. **Theory**:    `r fmt_todo()`         
 Method overloading introduction      
 
-29. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+29. **Example**:    `r fmt_todo()`        
 How to do method overloading   
 
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **MethodOverloadingSample**.   
-Create static method **getSquareArea(int number)** which returns area of square.   
-Create static method **getRectangleArea(int length, int width)** which returns area of rectangle.   
+29. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
+Create `r text_spec("static", color = "red")` method **getSquareArea(int number)** which returns area of square.   
+Create `r text_spec("static", color = "red")` method **getRectangleArea(int length, int width)** which returns area of rectangle.   
 Call **getSquareArea(5)** in main method.   
 Call **getRectangleArea(5, 7)** in main method.   
 Question:
@@ -2609,10 +2961,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **MethodOverloadingSample**.   
-Create static method **getArea(int number)** which returns area of square.   
-Create static method **getArea(int length, int width)** which returns area of rectangle.   
+29. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
+Create `r text_spec("static", color = "red")` method **getArea(int number)** which returns area of square.   
+Create `r text_spec("static", color = "red")` method **getArea(int length, int width)** which returns area of rectangle.   
 Call **getArea(5)** in main method.   
 Call **getArea(5, 7)** in main method.   
 Question:
@@ -2654,10 +3006,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **MethodOverloadingSample**.   
-Create static method **printInt(int number)** which prints the provided integer number.   
-Create static method **printString(String message)** which prints the provided message.
+29. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
+Create `r text_spec("static", color = "red")` method **printInt(int number)** which prints the provided integer number.   
+Create `r text_spec("static", color = "red")` method **printString(String message)** which prints the provided message.
 Call **printInt(5)** in main method.   
 Call **printString("so  many print methods")** in main method.  
 Question:
@@ -2713,10 +3065,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **MethodOverloadingSample**.   
-Create static method **print(int number)** which prints the provided integer number.   
-Create static method **print(String message)** which prints the provided message.
+29. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
+Create `r text_spec("static", color = "red")` method **print(int number)** which prints the provided integer number.   
+Create `r text_spec("static", color = "red")` method **print(String message)** which prints the provided message.
 Call **print(5)** in main method.   
 Call **print("so  many print methods")** in main method.   
 Question:
@@ -2752,12 +3104,12 @@ Solution:
           }
         }
 
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **MethodOverloadingSample**.   
-Create static method **print(char ch)** which prints the provided integer number.   
-Create static method **print(int number)** which prints the provided integer number.   
-Create static method **print(float number)** which prints the provided integer number.   
-Create static method **print(String message)** which prints the provided message.   
+29. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
+Create `r text_spec("static", color = "red")` method **print(char ch)** which prints the provided integer number.   
+Create `r text_spec("static", color = "red")` method **print(int number)** which prints the provided integer number.   
+Create `r text_spec("static", color = "red")` method **print(float number)** which prints the provided integer number.   
+Create `r text_spec("static", color = "red")` method **print(String message)** which prints the provided message.   
 Call **print(5)** in main method.   
 Call **print("method overloading is fun. no need to remember so many method names")** in main method.   
 Call **print(20.03f)** in main method.  
@@ -2815,10 +3167,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **MethodOverloadingSample**.   
-Create static method **print(int x, float y)** which prints the provided integer number and float number.   
-Create static method **print(float x, int y)** which prints the provided float number and integer number.   
+29. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
+Create `r text_spec("static", color = "red")` method **print(int x, float y)** which prints the provided integer number and float number.   
+Create `r text_spec("static", color = "red")` method **print(float x, int y)** which prints the provided float number and integer number.   
 Call **print(10, 10.9f)** in main method.   
 Call **print(10.9f, 10)** in main method.       
 Call **print(10, 10)** in main method.    
@@ -2863,16 +3215,16 @@ Solution:
 
 #### Constructors {-}
 
-37. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+37. **Theory**:    `r fmt_todo()`         
 Constructors introduction.         
 
-37. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+37. **Example**:    `r fmt_todo()`        
 How to use constructors.   
 
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
+37. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **Employee**.   
 Create empty constructor **Employee()**.   
-Create static method **greeting()** which prints *"Welcome partners..!!"*.   
+Create `r text_spec("static", color = "red")` method **greeting()** which prints *"Welcome partners..!!"*.   
 Call **greeting()** in main method.     
 Question:
 
@@ -2907,8 +3259,8 @@ Solution:
           }
         }        
 
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
+37. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **Employee**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
 Create object **emp** of **Employee** class in main method.   
@@ -2948,8 +3300,8 @@ Solution:
           }
         }        
 
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.   
+37. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **Employee**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
 Create anonymous object of **Employee** class and call **greeting()** in main method.   
@@ -2986,8 +3338,8 @@ Solution:
           }
         }        
 
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
-Create class **Employee**.  
+37. **Exercise**:    `r fmt_todo()`       
+Create `r text_spec("class", color = "red")` **Employee**.  
 Create instance data member **name**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create constructor **Employee(String empName)** which prints *"New employee "+empName+" joined"*.   
@@ -3049,7 +3401,7 @@ Question:
           }
         }        
 
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+37. **Exercise**:    `r fmt_todo()`       
 Create object **emp** of **Employee** class with **Employee("Shane")** in main method.   
 Call **emp**.**greeting()** in main method.     
 Question:
@@ -3091,8 +3443,8 @@ Solution:
           }
         }
         
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Create static method with same name as class.   
+37. **Exercise**:    `r fmt_todo()`   
+Create `r text_spec("static", color = "red")` method with same name as class.   
 Call this method in main method.   
 Question:
 
@@ -3149,7 +3501,7 @@ Solution:
           }
         }
         
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+37. **Exercise**:    `r fmt_todo()`   
 Create instance method **commonTasksForEveryObject()**.   
 Call **commonTasksForEveryObject()** in every constructor.   
 Question:
@@ -3201,7 +3553,7 @@ Solution:
           }
         }
         
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+37. **Exercise**:    `r fmt_todo()`   
 Create instance method **commonTasksForEveryObject()**.   
 Call **commonTasksForEveryObject()** in every constructor as first line, if not present.   
 Question:
@@ -3254,7 +3606,7 @@ Solution:
           }
         }
 
-37. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+37. **Exercise**:    `r fmt_todo()`   
 Create instance method **Employee()**.   
 Call **Employee()** in every constructor as first line, if not present.   
 Question:
@@ -3310,13 +3662,13 @@ Solution:
         
 #### Initialize Block {-}   
 
-48. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+48. **Theory**:    `r fmt_todo()`         
 Importance of initialize block.    
 
-48. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+48. **Example**:    `r fmt_todo()`        
 How to create initialize block in java file.
 
-48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+48. **Exercise**:    `r fmt_todo()`       
 Create initialize block in java file which prints "In initialize block" message. Try execute this file.   
 Question:
 
@@ -3339,7 +3691,7 @@ Solution:
           }
         }  
         
-48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+48. **Exercise**:    `r fmt_todo()`       
 Create first initialize block in java file which prints "In first initialize block" message.    
 Create first initialize block in java file which prints "In second initialize block" message. Try execute this file.   
 Question:
@@ -3373,7 +3725,7 @@ Solution:
           }
         } 
         
-48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`       
+48. **Exercise**:    `r fmt_todo()`       
 Create anonymous object with constructor **InitializeBlockExample()** in main method.   
 Create anonymous object with constructor **InitializeBlockExample("coding is iterative process")** in main method.   
 Question:
@@ -3425,9 +3777,9 @@ Solution:
           }
         }   
         
-48. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+48. **Exercise**:    `r fmt_todo()`   
 Calculate number of objects created.   
-Create static data member **objectsCount** of type int.   
+Create static data member **objectsCount** of type `r text_spec("int", color = "red")`.   
 Increment **objectsCount** by 1 in initialize block.   
 Print *"No. of objects created: " + objectsCount* in last line of main method.   
 Question:
@@ -3495,13 +3847,13 @@ Solution:
         
 #### this keyword  {-}  
 
-54. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+54. **Theory**:    `r fmt_todo()`         
 Importance of this keyword as constructor in constructor chaining.     
 
-54. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+54. **Example**:    `r fmt_todo()`        
 How to use this keyword as constructor in constructor chaining in java file.   
         
-54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+54. **Exercise**:    `r fmt_todo()`   
 Constructor chaining.
 Add *this()* as first statement in every constructor except **ConstructorChaining()**.   
 Question:
@@ -3553,7 +3905,7 @@ Solution:
           }
         }    
         
-54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+54. **Exercise**:    `r fmt_todo()`   
 Constructor chaining.
 Add *this(10)* as first statement in **ConstructorChaining()**.   
 Add *this()* as first statement in **ConstructorChaining(String message)**.   
@@ -3606,13 +3958,13 @@ Solution:
           }
         }    
 
-54. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+54. **Theory**:    `r fmt_todo()`         
 Importance of this keyword as a reference to current object.   
 
-54. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+54. **Example**:    `r fmt_todo()`        
 How to use this keyword as a reference to current object in java file.   
 
-54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+54. **Exercise**:    `r fmt_todo()`   
 Print *this* as first statement in **takeCharge()**.   
 Print *this* as first statement in **moveCharge()**.     
 Call **player4**.**moveCharge()** as last statement in **takeCharge()**.   
@@ -3689,7 +4041,7 @@ Solution:
           }
         } 
         
-54. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+54. **Exercise**:    `r fmt_todo()`   
 Assign value of local variable **ranking** to data member **ranking** in  **modifyValue(int ranking)** with help of **this** keyword.   
 Question:
 
@@ -3740,13 +4092,13 @@ Solution:
         
 #### Nested Classes  {-}          
 
-62. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+62. **Theory**:    `r fmt_todo()`         
 Importance of  Nested Class.      
 
-62. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+62. **Example**:    `r fmt_todo()`        
 How to create Nested Classes.   
 
-62. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+62. **Exercise**:    `r fmt_todo()`   
 Assign value of local variable **ranking** to data member **ranking** in  **modifyValue(int ranking)** with help of **this** keyword.   
 Question:
 
@@ -3777,10 +4129,10 @@ Solution:
         
 #### Association  {-}    
 
-65. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+65. **Theory**:    `r fmt_todo()`         
 Importance of association.   
 
-65. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+65. **Exercise**:    `r fmt_todo()`   
 Create data member **rearLeftWheel** of type **Wheel** class in **Car** class with same values as front wheels.   
 Create data member **rearRightWheel** of type **Wheel** class in **Car** class with same values as front wheels.   
 Create data member **seatTwo** of type **Seat** class in **Car** class with same values of **seatOne**.   
@@ -3813,9 +4165,9 @@ Question:
 
           static class Wheel{
             int size;
-            String type;
+            `r text_spec("String", color = "red")` type;
 
-            Wheel(int size, String type){
+            Wheel(int size, `r text_spec("String", color = "red")` type){
               this.size = size;
               this.type = type;
             }
@@ -3824,10 +4176,10 @@ Question:
           static class Seat{
             int size;
             String color;
-            String type;
+            `r text_spec("String", color = "red")` type;
             int price;
 
-            Seat(int size, String color, String type, int price){
+            Seat(int size, String color, `r text_spec("String", color = "red")` type, int price){
               this.size = size;
               this.color = color;
               this.type = type;
@@ -3878,9 +4230,9 @@ Solution:
 
           static class Wheel{
             int size;
-            String type;
+            `r text_spec("String", color = "red")` type;
 
-            Wheel(int size, String type){
+            Wheel(int size, `r text_spec("String", color = "red")` type){
               this.size = size;
               this.type = type;
             }
@@ -3889,10 +4241,10 @@ Solution:
           static class Seat{
             int size;
             String color;
-            String type;
+            `r text_spec("String", color = "red")` type;
             int price;
 
-            Seat(int size, String color, String type, int price){
+            Seat(int size, String color, `r text_spec("String", color = "red")` type, int price){
               this.size = size;
               this.color = color;
               this.type = type;
@@ -3918,7 +4270,7 @@ Solution:
           }
         }
         
-65. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+65. **Exercise**:    `r fmt_todo()`   
 Create data member **spouse** of type **Woman** class in **Man** class.   
 Create data member **spouse** of type **Man** class in **Woman** class.   
 Implement method **weddingCeremony**. Assign object **woman** to **spouse** data member of **man** object. Assign object **man** to **spouse** data member of **woman** object.   
@@ -4008,15 +4360,15 @@ Solution:
 
 #### Input from user  {-}   
 
-68. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+68. **Theory**:    `r fmt_todo()`         
 Importance of input from user.   
 
-68. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+68. **Example**:    `r fmt_todo()`        
 How to read inputs from use.   
         
-68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+68. **Exercise**:    `r fmt_todo()`   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
-Create variable **nameFromUser** of type **String** class and store the name entered by user in this.   
+Create variable **nameFromUser** of type `r text_spec("String", color = "red")` class and store the name entered by user in this.   
 Question:
 
         class Girl {
@@ -4055,9 +4407,9 @@ Solution:
           }
         }        
         
-68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+68. **Exercise**:    `r fmt_todo()`   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
-Create variable **nameFromUser** of type **String** class and store the name entered by user in this.   
+Create variable **nameFromUser** of type `r text_spec("String", color = "red")` class and store the name entered by user in this.   
 Again read value in variable **nameFromUser** for 2nd object of **Girl* class.   
 Question:
 
@@ -4116,7 +4468,7 @@ Solution:
           }
         }  
         
-68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+68. **Exercise**:    `r fmt_todo()`   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
 Store the name of **student1** entered by user in **studentName** variable.   
 Store the name of **student2** entered by user in **studentName** variable.   
@@ -4213,11 +4565,11 @@ Solution:
           }
         }
         
-68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+68. **Exercise**:    `r fmt_todo()`   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
 Store the name entered by user in **athleteName** variable.   
 Store the age entered by user in **ageInString** variable.   
-Parse **ageInString** to int type and store result in **age** variable.   
+Parse **ageInString** to type `r text_spec("int", color = "red")` and store result in **age** variable.   
 Store the weight entered by user in **weightInString** variable.   
 Question:
 
@@ -4328,7 +4680,7 @@ Solution:
           }
         }
         
-68. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+68. **Exercise**:    `r fmt_todo()`   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
 Store the 1st number entered by user in **number1** variable. Read and parse in a single line without assigning to intermediate variable.   
 Store the 2nd number entered by user in **number2** variable. Read and parse in a single line without assigning to intermediate variable.   
@@ -4379,13 +4731,13 @@ Solution:
 
 #### Inheritance {-}
 
-1. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+1. **Theory**:    `r fmt_todo()`         
 Inheritance introduction.   
 
-1. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+1. **Example**:    `r fmt_todo()`        
 How to inherit class.   
 
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Create object **animal** of type **Animal** in main method.   
 Call method **makeSound()** on **animal** object in main method.   
 Question:
@@ -4417,7 +4769,7 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4457,7 +4809,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4511,7 +4863,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4565,7 +4917,7 @@ Solution:
           }
         }  
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Implement method **setSpeed(int speed)** such that it sets the value of parameter **speed** to data member **speed**.    
 Create object **dog** of type **Dog** in main method.   
@@ -4628,7 +4980,7 @@ Solution:
           }
         }      
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4690,9 +5042,9 @@ Solution:
           }
         } 
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Implement method **printParentSpeed()** in class **Dog** such that it prints the data member **speed** of class **Animal**.   
+Implement method **printParentSpeed()** in `r text_spec("class", color = "red")` **Dog** such that it prints the data member **speed** of class **Animal**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -4763,9 +5115,9 @@ Solution:
           }
         }         
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Implement method **callParentMethod()** in class **Dog** such that it calls the method **printSpeed()** of class **Animal**.   
+Implement method **callParentMethod()** in `r text_spec("class", color = "red")` **Dog** such that it calls the method **printSpeed()** of class **Animal**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -4844,9 +5196,9 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Implement method **printSpeed()** in class **Dog** such that it calls the method **printSpeed()** of class **Animal** and it prints the data member **speed** of class **Animal**.      
+Implement method **printSpeed()** in `r text_spec("class", color = "red")` **Dog** such that it calls the method **printSpeed()** of class **Animal** and it prints the data member **speed** of class **Animal**.      
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -4921,9 +5273,9 @@ Solution:
           }
         }  
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Modify method **printSpeed()** in class **Dog** such that it has return type **int** instead of **void**. Return data member **speed**.   
+Modify method **printSpeed()** in `r text_spec("class", color = "red")` **Dog** such that it has return type **int** instead of **void**. Return data member **speed**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
 Question:
@@ -4977,9 +5329,9 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Override method **getAnimal()** in class **Dog** such that it has return type **Dog**. Create and return new object of class **Dog**.   
+Override method **getAnimal()** in `r text_spec("class", color = "red")` **Dog** such that it has return type **Dog**. Create and return new object of class **Dog**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **getAnimal()** on **dog** object and store it in another variable **anotherDog** of type ***Dog* in main method.   
 Call method **printSpeed()*** on **anotherDog** object.   
@@ -5036,7 +5388,7 @@ Solution:
           }
         }          
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5080,7 +5432,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5134,7 +5486,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5194,7 +5546,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5266,7 +5618,7 @@ Solution:
           }
         }            
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5310,7 +5662,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **description()*** on **dog** object.   
@@ -5370,7 +5722,7 @@ Solution:
           }
         } 
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **description()*** on **dog** object.   
@@ -5446,7 +5798,7 @@ Solution:
           }
         }  
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5522,7 +5874,7 @@ Solution:
           }
         }       
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super()** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
@@ -5601,7 +5953,7 @@ Solution:
           }
         }     
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super("fluffy")** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
@@ -5680,7 +6032,7 @@ Solution:
           }
         }     
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(30)** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
@@ -5759,7 +6111,7 @@ Solution:
           }
         }     
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5861,7 +6213,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(name)** as first statement in constructor **Dog(String name)**.   
 Add **super(speed)** as first statement in constructor **Dog(int speed)**.   
@@ -5969,7 +6321,7 @@ Solution:
           }
         }      
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super("fluffy");** as first statement in constructor **Dog()**.   
 Add **super(30);** as first statement in constructor **Dog(String name)**.   
@@ -6079,7 +6431,7 @@ Solution:
           }
         }         
         
-1. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+1. **Exercise**:    `r fmt_todo()`   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(name);** as first statement in constructor **Dog(String name)**.   
 Add **super(speed)** as first statement in constructor **Dog(int speed)**. 
@@ -6182,14 +6534,14 @@ Solution:
         
 #### Abstract Class {-}
 
-29. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+29. **Theory**:    `r fmt_todo()`         
 Abstraction introduction.   
 
-29. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+29. **Example**:    `r fmt_todo()`        
 How to use abstract class.      
 
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Try to create method **displayColor()** without body in class **Animal**.   
+29. **Exercise**:    `r fmt_todo()`   
+Try to create method **displayColor()** without body in `r text_spec("class", color = "red")` **Animal**.   
 Question:
 
         class Animal {
@@ -6209,8 +6561,8 @@ Solution:
           //void displayColor();
         }
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Try to create method **displayColor()** as **abstract** and without body in class **Animal**.     
+29. **Exercise**:    `r fmt_todo()`   
+Try to create method **displayColor()** as **abstract** and without body in `r text_spec("class", color = "red")` **Animal**.     
 Question:
 
         class Animal {
@@ -6230,8 +6582,8 @@ Solution:
           // abstract void displayColor();
         }  
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Try to create method **displayColor()** as **abstract** and without body in class **Animal**.   
+29. **Exercise**:    `r fmt_todo()`   
+Try to create method **displayColor()** as **abstract** and without body in `r text_spec("class", color = "red")` **Animal**.   
 Declare class **Animal** as **abstract**.   
 Question:
 
@@ -6252,9 +6604,9 @@ Solution:
           abstract void displayColor();
         }   
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**.   
-Try to create method **displayColor()** without body in class **Animal**.   
+Try to create method **displayColor()** without body in `r text_spec("class", color = "red")` **Animal**.   
 Question:
 
         class Animal {
@@ -6274,9 +6626,9 @@ Solution:
           //void displayColor();
         }      
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**.   
-Create method **description()** in class **Animal** which prints **I am an animal**.   
+Create method **description()** in `r text_spec("class", color = "red")` **Animal** which prints **I am an animal**.   
 Question:
 
         class Animal {
@@ -6292,11 +6644,11 @@ Solution:
           }
         }         
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**.   
-Create method **description()** in class **Animal** which prints **I am an animal**.   
-Create static method **generalDescription()** in class **Animal** which prints **Every animal breathes**.   
-Create abstract method **displayColor()** in class **Animal**.      
+Create method **description()** in `r text_spec("class", color = "red")` **Animal** which prints **I am an animal**.   
+Create `r text_spec("static", color = "red")` method **generalDescription()** in `r text_spec("class", color = "red")` **Animal** which prints **Every animal breathes**.   
+Create abstract method **displayColor()** in `r text_spec("class", color = "red")` **Animal**.      
 Question:
 
         class Animal {
@@ -6316,12 +6668,12 @@ Solution:
           abstract void displayColor();
         }     
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**.   
-Create method **description()** in class **Animal** which prints **I am an animal**.   
-Create static method **generalDescription()** in class **Animal** which prints **Every animal breathes**.   
-Create abstract method **displayColor()** in class **Animal**.  
-Create empty **main** method in class **Animal**.   
+Create method **description()** in `r text_spec("class", color = "red")` **Animal** which prints **I am an animal**.   
+Create `r text_spec("static", color = "red")` method **generalDescription()** in `r text_spec("class", color = "red")` **Animal** which prints **Every animal breathes**.   
+Create abstract method **displayColor()** in `r text_spec("class", color = "red")` **Animal**.  
+Create empty **main** method in `r text_spec("class", color = "red")` **Animal**.   
 Question:
 
         class Animal {
@@ -6345,7 +6697,7 @@ Solution:
           }
         }        
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**.   
 Try to create object of **Animal** class.   
 Question:
@@ -6387,7 +6739,7 @@ Solution:
           }
         }
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**. 
 Delete **abstract** method **displayColor()**.   
 Now, try to create object of **Animal** class.   
@@ -6430,7 +6782,7 @@ Solution:
           }
         }      
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**. 
 Make **abstract** method **displayColor()** as static as well.   
 Now, try to call **displayColor()** directly via class name in main method.   
@@ -6473,7 +6825,7 @@ Solution:
           }
         }      
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**. 
 Create data member **speed** in **Animal** class.   
 Question:
@@ -6517,7 +6869,7 @@ Solution:
           }
         }  
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**. 
 Inherit class **Dog** from **Animal** by using **extend** keyword.   
 Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
@@ -6575,7 +6927,7 @@ Solution:
           }
         }        
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**. 
 Inherit class **Dog** from **Animal** by using **extend** keyword.   
 Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
@@ -6658,7 +7010,7 @@ Solution:
           }
         }     
         
-29. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+29. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **abstract**. 
 Inherit class **Dog** from **Animal** by using **extend** keyword.   
 Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
@@ -6763,13 +7115,13 @@ Solution:
 
 #### Interfaces {-}
 
-45. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+45. **Theory**:    `r fmt_todo()`         
 interface introduction.   
 
-45. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+45. **Example**:    `r fmt_todo()`        
 How to use interfaces.   
 
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+45. **Exercise**:    `r fmt_todo()`   
 Create empty interface **Animal**.   
 Question:
        
@@ -6779,7 +7131,7 @@ Solution:
           
         }
         
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+45. **Exercise**:    `r fmt_todo()`   
 Add abstract method **displayProperties()** in interface **Animal**.   
 Question:
 
@@ -6792,7 +7144,7 @@ Solution:
           abstract void displayProperties();
         }     
         
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+45. **Exercise**:    `r fmt_todo()`   
 Delete keyword **abstract** from method **displayProperties()** in interface **Animal**. Don't provide method body.      
 Question:
 
@@ -6805,10 +7157,10 @@ Solution:
           void displayProperties();
         }    
         
-45. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-By default all abstract methods are **public** in an interface.   
+45. **Theory**:    `r fmt_todo()`   
+By default all abstract methods are `r text_spec("public", color = "red")` in an interface.   
 
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+45. **Exercise**:    `r fmt_todo()`   
 Delete keyword **abstract** from method **displayProperties()** in interface **Animal**. Don't provide method body.      
 Question:
 
@@ -6821,12 +7173,12 @@ Solution:
           void displayProperties();
         }  
         
-45. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+45. **Theory**:    `r fmt_todo()`   
 abstract method can never be **static**.   
 
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Implement class **Dog** from interface **Animal** by using keyword **implements**.   
-Declare method **displayProperties()** as *public* in class **Dog**.   
+45. **Exercise**:    `r fmt_todo()`   
+Implement `r text_spec("class", color = "red")` **Dog** from `r text_spec("interface", color = "red")` **Animal** by using keyword `r text_spec("implements", color = "red")`.   
+Declare method **displayProperties()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Dog**.   
 Question:
 
         interface Animal {
@@ -6850,11 +7202,11 @@ Solution:
           }
         }
         
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Implement class **Dog** from interface **Animal** by using keyword **implements**.   
-Declare method **displayProperties()** as *public* in class **Dog**.   
-Implement class **Fish** from interface **Animal** by using keyword **implements**.   
-Declare method **displayProperties()** as *public* in class **Fish**.   
+45. **Exercise**:    `r fmt_todo()`   
+Implement `r text_spec("class", color = "red")` **Dog** from `r text_spec("interface", color = "red")` **Animal** by using keyword `r text_spec("implements", color = "red")`.   
+Declare method **displayProperties()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Dog**.   
+Implement `r text_spec("class", color = "red")` **Fish** from `r text_spec("interface", color = "red")` **Animal** by using keyword `r text_spec("implements", color = "red")`.   
+Declare method **displayProperties()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Fish**.   
 Question:
 
         interface Animal {
@@ -6890,11 +7242,11 @@ Solution:
           }
         }
         
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Implement class **Bird** from interface **FlyBehavior** by using keyword **implements**.   
-Implement class **Bird** from interface **EatBehavior**.   
-Declare method **fly()** as *public* in class **Bird**.   
-Declare method **eat()** as *public* in class **Bird**.   
+45. **Exercise**:    `r fmt_todo()`   
+Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **FlyBehavior** by using keyword `r text_spec("implements", color = "red")`.   
+Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **EatBehavior**.   
+Declare method **fly()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
+Declare method **eat()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
 Question:
 
         interface FlyBehavior {
@@ -6934,12 +7286,12 @@ Solution:
           }
         }   
         
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Implement class **Bird** from interface **FlyBehavior** by using keyword **implements**.   
-Implement class **Bird** from interface **EatBehavior**.   
-Declare method **fly()** as *public* in class **Bird**.   
-Declare method **eat()** as *public* in class **Bird**.   
-Create method **description()** in class **Bird**.   
+45. **Exercise**:    `r fmt_todo()`   
+Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **FlyBehavior** by using keyword `r text_spec("implements", color = "red")`.   
+Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **EatBehavior**.   
+Declare method **fly()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
+Declare method **eat()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
+Create method **description()** in `r text_spec("class", color = "red")` **Bird**.   
 Print **Birds are beautiful creature** in method **description()**.   
 Question:
 
@@ -6984,18 +7336,46 @@ Solution:
           }
         }   
         
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
-Extend interface **Puller** from interface **ShippingHelper** by using keyword **extends**.   
-Extend interface **CargoCarrier** from interface **ShippingHelper** by using keyword **extends**.   
-Implement class **Ox** from interface **Puller** by using keyword **implements**.   
-Declare method **canShip()** as *public* in class **Ox**.   
-Declare method **canPull()** as *public* in class **Ox**.   
-Implement class **Horse** from interface **CargoCarrier** by using keyword **implements**.   
-Implement class **Horse** from interface **Racer**.   
-Declare method **canShip()** as *public* in class **Horse**.   
-Declare method **canRace()** as *public* in class **Horse**.   
-Implement class **Elephant** from interface **CargoCarrier** by using keyword **implements**.   
-Declare method **canShip()** as *public* in class **Elephant**.   
+45. **Exercise**:    `r fmt_todo()`   
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        Objective is to display text.   
+        <br/>
+        **Steps to perform:**
+        1. Print `r text_spec("My first java program", color = "orange", bold = TRUE)` in given jShell file.
+        1. Extend `r text_spec("interface", color = "red")` `r text_spec("Puller", color = "brown", bold = TRUE)` from `r text_spec("interface", color = "red")` `r text_spec("ShippingHelper", color = "brown", bold = TRUE)` by using keyword `r text_spec("extends", color = "red")`.
+        1. Extend `r text_spec("interface", color = "red")` **CargoCarrier** from `r text_spec("interface", color = "red")` **ShippingHelper** by using keyword `r text_spec("extends", color = "red")`.   
+        1. Implement `r text_spec("class", color = "red")` **Ox** from `r text_spec("interface", color = "red")` **Puller** by using keyword `r text_spec("implements", color = "red")`.   
+        1. Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
+        1. Declare method **canPull()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
+        1. Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
+        1. Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **Racer**.   
+        1. Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
+        1. Declare method **canRace()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
+        1. Implement `r text_spec("class", color = "red")` **Elephant** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
+        1. Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Elephant**.   
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                System.out.println("");   
+    - **Solution**:
+
+                System.out.println("My first java program");     
+
+
+
+
+Extend `r text_spec("interface", color = "red")` **Puller** from `r text_spec("interface", color = "red")` **ShippingHelper** by using keyword `r text_spec("extends", color = "red")`.   
+Extend `r text_spec("interface", color = "red")` **CargoCarrier** from `r text_spec("interface", color = "red")` **ShippingHelper** by using keyword `r text_spec("extends", color = "red")`.   
+Implement `r text_spec("class", color = "red")` **Ox** from `r text_spec("interface", color = "red")` **Puller** by using keyword `r text_spec("implements", color = "red")`.   
+Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
+Declare method **canPull()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
+Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
+Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **Racer**.   
+Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
+Declare method **canRace()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
+Implement `r text_spec("class", color = "red")` **Elephant** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
+Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Elephant**.   
 Question:
 
         interface ShippingHelper{
@@ -7081,7 +7461,7 @@ Solution:
           }
         }     
         
-45. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+45. **Exercise**:    `r fmt_todo()`   
 Create variable **x** in interface **MyInterface**.   
 Question:
 
@@ -7097,13 +7477,13 @@ Solution:
 
 #### final keyword {-}
 
-56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+56. **Theory**:    `r fmt_todo()`         
 final class can never be inherited.      
 
-56. **Example**:    `r text_spec("TODO", color = "red", bold = TRUE)`        
+56. **Example**:    `r fmt_todo()`        
 How to use final with class...   
 
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create empty class **Animal**.   
 Declare class **Animal** as **final**.   
 Question:
@@ -7114,7 +7494,7 @@ Solution:
           
         }
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **final**.   
 Print **I am in Animal class** in method **displayProperties()** in **Animal** class.   
 Question:
@@ -7132,7 +7512,7 @@ Solution:
           }
         }  
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Declare class **Animal** as **final**.   
 Try to inherit class **Dog** from **Animal** class by using **extends** keyword.   
 Question:
@@ -7158,10 +7538,10 @@ Solution:
           
         }
      
-56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+56. **Theory**:    `r fmt_todo()`         
 final methods can never be overridden.      
 
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Declare method **displayProperties()** as **final** in **Animal** class.   
 Inherit class **Dog** from **Animal** class by using **extends** keyword.   
 Try to create method **displayProperties()** with same signature in **Dog** class.   
@@ -7188,10 +7568,10 @@ Solution:
           
         }
         
-56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+56. **Theory**:    `r fmt_todo()`         
 final data member
 
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create data member **speed** of **int** type in **Animal** class.   
 Initialize data member **speed** with value **10**.   
 Declare data member **speed** as **final**.   
@@ -7214,7 +7594,7 @@ Solution:
           }
         }  
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create data member **speed** of **int** type in **Animal** class.   
 Initialize data member **speed** with value **10**.   
 Declare data member **speed** as **final**.   
@@ -7237,7 +7617,7 @@ Solution:
           }
         }       
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 try to declare data member **speed** as **final**.   
@@ -7252,7 +7632,7 @@ Solution:
           final int speed;
         }  
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Implement method **modifySpeed(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
@@ -7275,7 +7655,7 @@ Solution:
           }
         }      
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7298,7 +7678,7 @@ Solution:
           }
         }        
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7322,7 +7702,7 @@ Solution:
           }
         }                
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7347,10 +7727,10 @@ Solution:
           }
         }   
         
-56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+56. **Theory**:    `r fmt_todo()`         
 Static data member as final   
         
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Create static data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7373,10 +7753,10 @@ Solution:
           }
         }                   
 
-56. **Theory**:    `r text_spec("TODO", color = "red", bold = TRUE)`         
+56. **Theory**:    `r fmt_todo()`         
 Local variable as final   
 
-56. **Exercise**:    `r text_spec("TODO", color = "red", bold = TRUE)`   
+56. **Exercise**:    `r fmt_todo()`   
 Try to add statement **x=speed** in method **modifySpeed(int speed)**.   
 Question:
 
