@@ -2,9 +2,106 @@
 ## Module 01: {-}
 
 
+```{r, eval=TRUE}
+txt_styling = function(htmlText, htmlDisplayColor){
+  paste0("<span style='color:", htmlDisplayColor, ";font-weight:bold'>", htmlText, "</span>")
+}
+```
 
-1. **Theory**:    
-Overview of Kafka.  
+```{r, eval=TRUE}
+leafType = function(text, textColor){
+  paste0( txt_styling(text, textColor) )
+}
+```
 
-1. **Example**:    
-Detailed Overview of Kafka.  
+```{r, eval=TRUE}
+theory_todo = function(){
+  paste0(leafType("Theory", "red"))
+}
+```
+
+```{r, eval=TRUE}
+theory_complete = function(){
+  paste0(leafType("Theory", "green"))
+}
+```
+
+```{r, eval=TRUE}
+example_todo = function(){
+  paste0(leafType("Example", "red"))
+}
+```
+
+```{r, eval=TRUE}
+example_complete = function(){
+  paste0(leafType("Example", "green"))
+}
+```
+
+```{r, eval=TRUE}
+description_todo = function(){
+  paste0(leafType("Description", "red"))
+}
+```
+
+```{r, eval=TRUE}
+description_complete = function(){
+  paste0(leafType("Description", "green"))
+}
+```
+
+```{r, eval=TRUE}
+code_todo = function(){
+  paste0(leafType("Code", "red"))
+}
+```
+
+```{r, eval=TRUE}
+code_complete = function(){
+  paste0(leafType("Code", "green"))
+}
+```
+
+```{r, eval=TRUE}
+exercise_todo = function(){
+  paste0(leafType("Excercise", "red"))
+}
+```
+
+```{r, eval=TRUE}
+exercise_complete = function(){
+  paste0(leafType("Excercise", "green"))
+}
+```
+
+1. `r theory_todo()`   
+Overview of Kafka.
+
+
+1. `r example_todo()`   
+Detailed Overview of Kafka.
+    - `r description_complete()`
+    - `r code_todo()`
+
+
+
+1. `r example_todo()`   
+Detailed Overview of Kafka.
+    - `r description_todo()`
+    - `r code_complete()`
+
+1. `r theory_complete()`   
+Overview of Kafka.
+
+1. `r exercise_todo()`   
+Detailed Overview of Kafka.
+    - `r description_todo()`
+    - `r code_complete()`
+    
+1. `r exercise_complete()`   
+Detailed Overview of Kafka.
+    - `r description_todo()`
+    - `r code_complete()`    
+
+
+
