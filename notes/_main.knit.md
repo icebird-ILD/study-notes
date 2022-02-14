@@ -1,100 +1,251 @@
+--- 
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+description: study notes in sharing mode
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+
+
+
+# cats udemy {-}
+
+
+
+
+
+## Section 1 {-}
+
+### Summary {-}
+
+1. companion objects are the best place for default instance   
+   for type-classes.    
+
+
+2. Ops classes should use value class for performance reasons
+
+
+### Questions {-}
+
+1. context bound implicits   
+   Note : Implement is where ever you find it in current example.   
+   As of now, I can find it here :-
+
+```
+  override def write[A](e: A)(implicit byteEncoder: ByteEncoder[A]): Unit = {
+    val bytes: Array[Byte] = byteEncoder.encode(e)
+    Using(new FileOutputStream("target/obj.codec")) { os =>
+      os.write(bytes)
+      os.flush()
+    }
+  }
+```
+
+2. implicit resolution from companion object scope
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/quiz/5145060#questions/16388800  
+
+
+
+### Topics to work on {-}
+
+1. automatic resolution for Option[A], when encoder for A is given 
+```
+implicit def optionEncoder[A](implicit encoder: ByteEncoder[A]): ByteEncoder[Option[A]] = new ByteEncoder[Option[A]] {
+  override def encode(mayBe: Option[A]): Array[Byte] = {
+    mayBe match {
+      case Some(e) => encoder.encode(e)
+      case None => Array()
+    }
+  }
+}
+```
+
+Also refer :-   
+https://www.udemy.com/course/functional-programming-with-scala-cats/learn/quiz/5145060#questions/14728112
+
+2. Best place to put **ByteEncoderOps**
+
+### Pending {-}
+
+1. Laws (Theory, Example and Practice)   
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/lecture/25327908#questions/14728112   
+
+
+3. Exercise :-   
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/lecture/25808130#questions/14728112
+
+
+## Section 2 {-}
+
+### Summary {-}
+
+1. companion objects are the best place for default instance   
+   for type-classes.    
+
+
+2. Ops classes should use value class for performance reasons
+
+
+### Questions {-}
+
+1. context bound implicits   
+   Note : Implement is where ever you find it in current example.   
+   As of now, I can find it here :-
+
+```
+  override def write[A](e: A)(implicit byteEncoder: ByteEncoder[A]): Unit = {
+    val bytes: Array[Byte] = byteEncoder.encode(e)
+    Using(new FileOutputStream("target/obj.codec")) { os =>
+      os.write(bytes)
+      os.flush()
+    }
+  }
+```
+
+2. implicit resolution from companion object scope
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/quiz/5145060#questions/16388800  
+
+
+
+### Topics to work on {-}
+
+1. automatic resolution for Option[A], when encoder for A is given 
+```
+implicit def optionEncoder[A](implicit encoder: ByteEncoder[A]): ByteEncoder[Option[A]] = new ByteEncoder[Option[A]] {
+  override def encode(mayBe: Option[A]): Array[Byte] = {
+    mayBe match {
+      case Some(e) => encoder.encode(e)
+      case None => Array()
+    }
+  }
+}
+```
+
+Also refer :-   
+https://www.udemy.com/course/functional-programming-with-scala-cats/learn/quiz/5145060#questions/14728112
+
+2. Best place to put **ByteEncoderOps**
+
+### Pending {-}
+
+1. Laws (Theory, Example and Practice)   
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/lecture/25327908#questions/14728112   
+
+
+3. Exercise :-   
+   https://www.udemy.com/course/functional-programming-with-scala-cats/learn/lecture/25808130#questions/14728112
+
+
+
+# Kafka Udemy {-}
+
+
+
+
+
+## Section 1 {-}
+
+### Summary {-}
+
+Sample summary
+
+### Questions {-}
+
+sample questions
+
+### Topics to work on {-}
+
+sample topics
+
+### Pending {-}
+
+pending
+
+
+## Section 2 {-}
+
+### Summary {-}
+
+Sample summary
+
+### Questions {-}
+
+sample questions
+
+### Topics to work on {-}
+
+sample topics
+
+### Pending {-}
+
+pending
+
+
+
+# Java {-}
+
+
+
+
+
 
 ## Core Java {-}
 
-```{r}
-fmt_todo <- function() {
-  text_spec("TODO", color = "red", bold = TRUE)
-}
 
-fmt_done <- function() {
-  text_spec("TODO", color = "green", bold = TRUE)
-}
-
-fmt_output <- function(text) {
-  text_spec(text, color = "green", bold = TRUE)
-}
-
-fmt_keyword <- function(text) {
-  text_spec(text, color = "blue")
-}
-
-fmt_class <- function(text) {
-  text_spec(text, color= "maroon", bold = TRUE)
-}
-
-fmt_method <- function(text) {
-  text_spec(text, color= "orange", bold = TRUE)
-}
-
-fmt_argument <- function(text) {
-  text_spec(text, color= "brown", bold = TRUE)
-}
-
-fmt_variable <- function(text) {
-  text_spec(text, color= "navy", bold = TRUE)
-}
-
-fmt_value <- function(text) {
-  text_spec(text, color= "purple", bold = TRUE)
-}
-
-fmt_data_member <- function(text) {
-  text_spec(text, color= "teal", bold = TRUE)
-}
-
-```
 
 ### Module 01: jShell {-}
 
 #### Display Output {-}
 
-1. **Theory**:    `r fmt_todo()`         
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Overview of Java.  
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to print output in java.     
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display text.   
         <br/>
         **Steps to perform:**
-        1. Print `r fmt_output("My first java program")` in given jShell file.   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >My first java program</span> in given jShell file.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("");   
     - **Solution**:
 
                 System.out.println("My first java program");         
 
-1. **Exercise**:    `r fmt_todo()`   
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display text.   
         <br/>
         **Steps to perform:**
-        1. Print `r fmt_output("I am loving coding")` in given jShell file.   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >I am loving coding</span> in given jShell file.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("");   
     - **Solution**:
 
                 System.out.println("I am loving coding");  
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display text multiple times in multiple lines.   
         <br/>
         **Steps to perform:**
-        1. Print `r fmt_output("I am loving coding")`   
-        1. Print `r fmt_output("I am loving coding")`   
-        1. Print `r fmt_output("I am loving coding")`   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >I am loving coding</span>   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >I am loving coding</span>   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >I am loving coding</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("");   
                 System.out.println("");   
@@ -105,16 +256,16 @@ How to print output in java.
                 System.out.println("I am loving coding");  
                 System.out.println("I am loving coding");  
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display text in multiple lines.   
         <br/>
         **Steps to perform:**
-        1. Print `r fmt_output("I am loving coding")`   
-        1. Print `r fmt_output("Programming is amazing")`   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >I am loving coding</span>   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >Programming is amazing</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("");   
                 System.out.println("");   
@@ -123,46 +274,46 @@ How to print output in java.
                 System.out.println("I am loving coding");  
                 System.out.println("Programming is amazing");  
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display number.   
         <br/>
         **Steps to perform:**
-        1. Print `r fmt_output(10)`   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >10</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
     - **Solution**:
 
                 System.out.println(10);  
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display decimal number.   
         <br/>
         **Steps to perform:**
-        1. Print `r fmt_output(37.4)`   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >37.4</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
     - **Solution**:
 
                 System.out.println(37.4);  
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display text and number in separate lines.   
         <br/>
         **Steps to perform:**   
-        1. Print `r fmt_output("I am loving coding")`   
-        1. Print `r fmt_output(10)`   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >I am loving coding</span>   
+        1. Print <span style=" font-weight: bold;    color: green !important;" >10</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("");   
                 System.out.println();   
@@ -173,22 +324,22 @@ How to print output in java.
 
 #### Variables, Data types {-}
 
-10. **Theory**:    `r fmt_todo()`         
+10. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Variable introduction.     
 
-10. **Example**:    `r fmt_todo()`        
-How to create variable of type `r fmt_keyword("String")` and display its value.    
+10. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
+How to create variable of type <span style="     color: blue !important;" >String</span> and display its value.    
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to create a variable of `r fmt_keyword("String")` type and display its value.   
+        Objective is to create a variable of <span style="     color: blue !important;" >String</span> type and display its value.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_value("John")` to it.   
-        1. Print variable `r fmt_variable("name")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >name</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >John</span> to it.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >name</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
     - **Solution**:
@@ -196,18 +347,18 @@ How to create variable of type `r fmt_keyword("String")` and display its value.
                 String name = "John";
                 System.out.println(name); 
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to create two variables of `r fmt_keyword("String")` type and display their values.   
+        Objective is to create two variables of <span style="     color: blue !important;" >String</span> type and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("boyName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("John")` to it.   
-        1. Create variable `r fmt_variable("girlName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Maria")` to it.   
-        1. Print variable `r fmt_variable("boyName")`.   
-        1. Print variable `r fmt_variable("girlName")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >boyName</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >John</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >girlName</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Maria</span> to it.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >boyName</span>.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >girlName</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
     - **Solution**:
@@ -217,19 +368,19 @@ How to create variable of type `r fmt_keyword("String")` and display its value.
                 System.out.println(boyName); 
                 System.out.println(girlName);    
 
-10. **Example**:    `r fmt_todo()`        
-How to create variable of type `r fmt_keyword("int")` and display its value.    
+10. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
+How to create variable of type <span style="     color: blue !important;" >int</span> and display its value.    
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to create a variable of `r fmt_keyword("int")` type and display its value.   
+        Objective is to create a variable of <span style="     color: blue !important;" >int</span> type and display its value.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_value(21)` to it.   
-        1. Print variable `r fmt_variable("age")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >age</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >21</span> to it.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >age</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
     - **Solution**:
@@ -237,18 +388,18 @@ How to create variable of type `r fmt_keyword("int")` and display its value.
                 int age = 21;   
                 System.out.println(age);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to create two variables of `r fmt_keyword("int")` type and display their values.   
+        Objective is to create two variables of <span style="     color: blue !important;" >int</span> type and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("boyAge")` of `r fmt_keyword("int")` type and assign value `r fmt_value(21)` to it.   
-        1. Create variable `r fmt_variable("girlAge")` of `r fmt_keyword("int")` type and assign value `r fmt_value(23)` to it.   
-        1. Print variable `r fmt_variable("boyAge")`.   
-        1. Print variable `r fmt_variable("girlAge")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >boyAge</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >21</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >girlAge</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >23</span> to it.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >boyAge</span>.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >girlAge</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
                 System.out.println();   
@@ -259,19 +410,19 @@ How to create variable of type `r fmt_keyword("int")` and display its value.
                 System.out.println(boyAge);  
                 System.out.println(girlAge);  
 
-10. **Example**:    `r fmt_todo()`        
-How to create variable of type `r fmt_keyword("float")` and display its value.    
+10. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
+How to create variable of type <span style="     color: blue !important;" >float</span> and display its value.    
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to create a variable of `r fmt_keyword("float")` type and display its value.   
+        Objective is to create a variable of <span style="     color: blue !important;" >float</span> type and display its value.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(7.1)` to it.   
-        1. Print variable `r fmt_variable("marks")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >marks</span> of <span style="     color: blue !important;" >float</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >7.1</span> to it.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >marks</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
     - **Solution**:
@@ -279,18 +430,18 @@ How to create variable of type `r fmt_keyword("float")` and display its value.
                 float marks = 7.1;   
                 System.out.println(marks);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to create two variables of `r fmt_keyword("float")` type and display their values.   
+        Objective is to create two variables of <span style="     color: blue !important;" >float</span> type and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("boyMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(7.1)` to it.  
-        1. Create variable `r fmt_variable("girlMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(8.3)` to it.  
-        1. Print variable `r fmt_variable("boyMarks")`.   
-        1. Print variable `r fmt_variable("girlMarks")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >boyMarks</span> of <span style="     color: blue !important;" >float</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >7.1</span> to it.  
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >girlMarks</span> of <span style="     color: blue !important;" >float</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >8.3</span> to it.  
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >boyMarks</span>.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >girlMarks</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
                 System.out.println();   
@@ -301,20 +452,20 @@ How to create variable of type `r fmt_keyword("float")` and display its value.
                 System.out.println(boyMarks);  
                 System.out.println(girlMarks);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to create three variables of different types and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
-        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_value(22)` to it.  
-        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(7.9)` to it.  
-        1. Print variable `r fmt_variable("name")`.   
-        1. Print variable `r fmt_variable("age")`.   
-        1. Print variable `r fmt_variable("marks")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >name</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Shawn</span> to it.  
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >age</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >22</span> to it.  
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >marks</span> of <span style="     color: blue !important;" >float</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >7.9</span> to it.  
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >name</span>.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >age</span>.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >marks</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();   
                 System.out.println();   
@@ -328,53 +479,53 @@ How to create variable of type `r fmt_keyword("float")` and display its value.
                 System.out.println(age);  
                 System.out.println(marks);  
 
-10. **Theory**:    `r fmt_todo()`         
+10. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 What String concatenation.   
 
-10. **Example**:    `r fmt_todo()`        
+10. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to do String concatenation.   
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to concatenate two `r fmt_keyword("String")` literals in print statement.    
+        Objective is to concatenate two <span style="     color: blue !important;" >String</span> literals in print statement.    
         <br/>
         **Steps to perform:**   
-        1. Concatenate `r fmt_output("I love my country.")` and `r fmt_output("And, I mean every bit of it.")` in print statement.   
+        1. Concatenate <span style=" font-weight: bold;    color: green !important;" >I love my country.</span> and <span style=" font-weight: bold;    color: green !important;" >And, I mean every bit of it.</span> in print statement.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("" + "");   
     - **Solution**:
 
                 System.out.println("I love my country." + "And, I mean every bit of it.");  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
-        Objective is to concatenate three `r fmt_keyword("String")` literals in print statement.    
+        Objective is to concatenate three <span style="     color: blue !important;" >String</span> literals in print statement.    
         <br/>
         **Steps to perform:**   
-        1. Concatenate `r fmt_output("I love ")` and `r fmt_output("my country ")` and `r fmt_output("very much.")` in print statement.   
+        1. Concatenate <span style=" font-weight: bold;    color: green !important;" >I love </span> and <span style=" font-weight: bold;    color: green !important;" >my country </span> and <span style=" font-weight: bold;    color: green !important;" >very much.</span> in print statement.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("" + "");   
     - **Solution**:
 
                 System.out.println("I love " + "my country " + "very much.");  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to create variables and concatenate their values in print statement.     
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
-        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Michael")` to it.  
-        1. Concatenate variables `r fmt_variable("firstName")` and `r fmt_variable("lastName")` in print statement.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >firstName</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Shawn</span> to it.  
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >lastName</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Michael</span> to it.  
+        1. Concatenate variables <span style=" font-weight: bold;    color: navy !important;" >firstName</span> and <span style=" font-weight: bold;    color: navy !important;" >lastName</span> in print statement.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println(firstName + lastName);   
     - **Solution**:
@@ -383,18 +534,18 @@ How to do String concatenation.
                 String lastName = "Michael";   
                 System.out.println(firstName + lastName);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to create variables and concatenate their values in print statement.     
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
-        1. Create variable `r fmt_variable("middleName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Ray")` to it.  
-        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Michael")` to it.  
-        1. Concatenate variables `r fmt_variable("firstName")` and `r fmt_variable("middleName")` and `r fmt_variable("lastName")` in print statement.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >firstName</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Shawn</span> to it.  
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >middleName</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Ray</span> to it.  
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >lastName</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Michael</span> to it.  
+        1. Concatenate variables <span style=" font-weight: bold;    color: navy !important;" >firstName</span> and <span style=" font-weight: bold;    color: navy !important;" >middleName</span> and <span style=" font-weight: bold;    color: navy !important;" >lastName</span> in print statement.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println(firstName + middleName + lastName);   
     - **Solution**:
@@ -404,32 +555,32 @@ How to do String concatenation.
                 String lastName = "Michael";   
                 System.out.println(firstName + middleName + lastName);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to concatenate two literals of different types in print statement.    
         <br/>
         **Steps to perform:**   
-        1. Concatenate `r fmt_output("My score is = ")` and `r fmt_output(7.8)` in print statement.   
+        1. Concatenate <span style=" font-weight: bold;    color: green !important;" >My score is = </span> and <span style=" font-weight: bold;    color: green !important;" >7.8</span> in print statement.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("" + );   
     - **Solution**:
 
                 System.out.println("My score is = " + 7.8);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to create variables of different types and concatenate their values in print statement.     
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
-        1. Create variable `r fmt_variable("score")` of `r fmt_keyword("float")` type and assign value `r fmt_value(8.1)` to it.  
-        1. Concatenate variables `r fmt_variable("name")` and `r fmt_variable("score")` in print statement.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >name</span> of <span style="     color: blue !important;" >String</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >Shawn</span> to it.  
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >score</span> of <span style="     color: blue !important;" >float</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >8.1</span> to it.  
+        1. Concatenate variables <span style=" font-weight: bold;    color: navy !important;" >name</span> and <span style=" font-weight: bold;    color: navy !important;" >score</span> in print statement.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println(name + score);   
     - **Solution**:
@@ -438,18 +589,18 @@ How to do String concatenation.
                 float score = 8.1;   
                 System.out.println(firstName + score);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to perform addition of two numbers. Store the result in third number. Print the addition result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(10)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(20)` to it.     
-        1. Create variable `r fmt_variable("additionResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` + `r fmt_variable("number2")` to it.     
-        1. Print `r fmt_output("Addition result is=")` and variable `r fmt_variable("additionResult")` in a single line.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number1</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >10</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number2</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >20</span> to it.     
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >additionResult</span> of <span style="     color: blue !important;" >int</span> type and assign result of <span style=" font-weight: bold;    color: navy !important;" >number1</span> + <span style=" font-weight: bold;    color: navy !important;" >number2</span> to it.     
+        1. Print <span style=" font-weight: bold;    color: green !important;" >Addition result is=</span> and variable <span style=" font-weight: bold;    color: navy !important;" >additionResult</span> in a single line.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();
     - **Solution**:
@@ -459,18 +610,18 @@ How to do String concatenation.
                 int additionResult = number1 + number2;
                 System.out.println("Addition result is=" + additionResult);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to perform subtraction of two numbers. Store the result in third number. Print the subtraction result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(100)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(80)` to it.     
-        1. Create variable `r fmt_variable("subtractionResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` - `r fmt_variable("number2")` to it.     
-        1. Print `r fmt_output("Subtraction result is=")` and variable `r fmt_variable("subtractionResult")` in a single line.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number1</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >100</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number2</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >80</span> to it.     
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >subtractionResult</span> of <span style="     color: blue !important;" >int</span> type and assign result of <span style=" font-weight: bold;    color: navy !important;" >number1</span> - <span style=" font-weight: bold;    color: navy !important;" >number2</span> to it.     
+        1. Print <span style=" font-weight: bold;    color: green !important;" >Subtraction result is=</span> and variable <span style=" font-weight: bold;    color: navy !important;" >subtractionResult</span> in a single line.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();
     - **Solution**:
@@ -480,18 +631,18 @@ How to do String concatenation.
                 int subtractionResult = number1 - number2;
                 System.out.println("Subtraction result is=" + subtractionResult);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to perform multiplication of two numbers. Store the result in third number. Print the multiplication result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(100)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(80)` to it.     
-        1. Create variable `r fmt_variable("multiplicationResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` * `r fmt_variable("number2")` to it.     
-        1. Print `r fmt_output("Multiplication result is=")` and variable `r fmt_variable("multiplicationResult")` in a single line.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number1</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >100</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number2</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >80</span> to it.     
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >multiplicationResult</span> of <span style="     color: blue !important;" >int</span> type and assign result of <span style=" font-weight: bold;    color: navy !important;" >number1</span> * <span style=" font-weight: bold;    color: navy !important;" >number2</span> to it.     
+        1. Print <span style=" font-weight: bold;    color: green !important;" >Multiplication result is=</span> and variable <span style=" font-weight: bold;    color: navy !important;" >multiplicationResult</span> in a single line.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();
     - **Solution**:
@@ -501,18 +652,18 @@ How to do String concatenation.
                 int multiplicationResult = number1 * number2;
                 System.out.println("Multiplication result is=" + multiplicationResult);  
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to perform division of two numbers. Store the result in third decimal number. Print the division result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(100)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(80)` to it.     
-        1. Create variable `r fmt_variable("divisionResult")` of `r fmt_keyword("double")` type and assign result of `r fmt_variable("number1")` / `r fmt_variable("number2")` to it.     
-        1. Print `r fmt_output("Division result is=")` and variable `r fmt_variable("divisionResult")` in a single line.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number1</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >100</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >number2</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >80</span> to it.     
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >divisionResult</span> of <span style="     color: blue !important;" >double</span> type and assign result of <span style=" font-weight: bold;    color: navy !important;" >number1</span> / <span style=" font-weight: bold;    color: navy !important;" >number2</span> to it.     
+        1. Print <span style=" font-weight: bold;    color: green !important;" >Division result is=</span> and variable <span style=" font-weight: bold;    color: navy !important;" >divisionResult</span> in a single line.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println();
     - **Solution**:
@@ -522,23 +673,23 @@ How to do String concatenation.
                 double divisionResult = number1 / number2;
                 System.out.println("Division result is=" + divisionResult);  
 
-10. **Theory**:    `r fmt_todo()`         
+10. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of comments.   
 
-10. **Example**:    `r fmt_todo()`        
+10. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to comment and uncomment.   
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to get the desired result by commenting few lines.   
         <br/>
         **Steps to perform:**   
         1. You can not change the code.   
         1. You can only un-comment the code.   
-        1. Comment few lines in code such that it prints `r fmt_output(30)`   
+        1. Comment few lines in code such that it prints <span style=" font-weight: bold;    color: green !important;" >30</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 int x = 10;
                 int y = 20;
@@ -563,17 +714,17 @@ How to comment and uncomment.
                 System.out.println(x);
                 //System.out.println(y);   
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to get the desired result by un-commenting few lines.   
         <br/>
         **Steps to perform:**   
         1. You can not change the code.   
         1. You can only un-comment the code.   
-        1. Un-comment few lines in code such that it prints `r fmt_output(600)`   
+        1. Un-comment few lines in code such that it prints <span style=" font-weight: bold;    color: green !important;" >600</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 //int x = 10;
                 //int y = 20;
@@ -598,17 +749,17 @@ How to comment and uncomment.
                 System.out.println(x);
                 //System.out.println(y);   
 
-10. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to get the desired result by un-commenting few lines.   
         <br/>
         **Steps to perform:**   
         1. You can not change the code.   
         1. You can only un-comment the code.   
-        1. Un-comment few lines in code such that it prints `r fmt_output("I love my country a lot")`   
+        1. Un-comment few lines in code such that it prints <span style=" font-weight: bold;    color: green !important;" >I love my country a lot</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 //String s1 = "I love";
                 //s1 = "I  love";
@@ -637,7 +788,7 @@ How to comment and uncomment.
                 System.out.println(s1 + s2 + s3);
                 //System.out.println(s1 + s2 + s4 + s5);   
 
-10. **Exercise**:    `r fmt_todo()`       
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Comment/Uncomment few lines in given program such that it gives output "Water boils at 100 degree Celsius temperature."    
 
 
@@ -653,21 +804,21 @@ Comment/Uncomment few lines in given program such that it gives output "Water bo
 ##### output display {-}
 ##### variables, data types {-}
 
-1. **Theory**:    `r fmt_todo()`         
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Switch to .java fie.    
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create empty class in java file.   
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to write empty java class.   
         <br/>
         **Steps to perform:**   
-        1. Create `r fmt_keyword("class")` `r fmt_class("MyFirstClass")`.   
+        1. Create <span style="     color: blue !important;" >class</span> <span style=" font-weight: bold;    color: maroon !important;" >MyFirstClass</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 
     - **Solution**:
@@ -676,18 +827,18 @@ How to create empty class in java file.
                   
                 }   
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create empty main method in java file.  
   
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to write a java class which can be executed but does nothing on execution.   
         <br/>
         **Steps to perform:**   
-        1. Create `r fmt_method("main")` method in `r fmt_class("ExecutableClass")`.   
+        1. Create <span style=" font-weight: bold;    color: orange !important;" >main</span> method in <span style=" font-weight: bold;    color: maroon !important;" >ExecutableClass</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class ExecutableClass{
                   
@@ -701,19 +852,19 @@ How to create empty main method in java file.
                 }   
         
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to print "Hello world" in main method in java file.   
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want to print some text lines as output.   
         <br/>
         **Steps to perform:**   
-        1. Print `r fmt_output("I am loving coding")`    
-        1. Print `r fmt_output("Programming is amazing")`    
+        1. Print <span style=" font-weight: bold;    color: green !important;" >I am loving coding</span>    
+        1. Print <span style=" font-weight: bold;    color: green !important;" >Programming is amazing</span>    
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class PrintText {
                   public static void main(String[] args) {
@@ -730,16 +881,16 @@ How to print "Hello world" in main method in java file.
                   }
                 }           
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want to print some numbers in separate lines as output.   
         <br/>
         **Steps to perform:**   
-        1. Print `r fmt_output(10)`    
-        1. Print `r fmt_output(90)`    
+        1. Print <span style=" font-weight: bold;    color: green !important;" >10</span>    
+        1. Print <span style=" font-weight: bold;    color: green !important;" >90</span>    
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class PrintNumbers {
                   public static void main(String[] args) {
@@ -756,16 +907,16 @@ How to print "Hello world" in main method in java file.
                   }
                 }        
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want to print some decimal numbers in separate lines as output.   
         <br/>
         **Steps to perform:**   
-        1. Print `r fmt_output(10.8)`    
-        1. Print `r fmt_output(90.29)`    
+        1. Print <span style=" font-weight: bold;    color: green !important;" >10.8</span>    
+        1. Print <span style=" font-weight: bold;    color: green !important;" >90.29</span>    
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class PrintDecimals {
                   public static void main(String[] args) {
@@ -782,23 +933,23 @@ How to print "Hello world" in main method in java file.
                   }
                 }        
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want you to create some variables of different types, assign them some values and finally, print those variables.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type.   
-        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type.   
-        1. Create variable `r fmt_variable("score")` of `r fmt_keyword("double")` type.   
-        1. Assign value `r fmt_value("Kristen")` to variable `r fmt_variable("name")`.   
-        1. Assign value `r fmt_value(24)` to variable `r fmt_variable("age")`.   
-        1. Assign value `r fmt_value(9.1)` to variable `r fmt_variable("score")`.   
-        1. Print variable `r fmt_variable("name")`.      
-        1. Print variable `r fmt_variable("age")`.      
-        1. Print variable `r fmt_variable("score")`.      
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >name</span> of <span style="     color: blue !important;" >String</span> type.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >age</span> of <span style="     color: blue !important;" >int</span> type.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >score</span> of <span style="     color: blue !important;" >double</span> type.   
+        1. Assign value <span style=" font-weight: bold;    color: purple !important;" >Kristen</span> to variable <span style=" font-weight: bold;    color: navy !important;" >name</span>.   
+        1. Assign value <span style=" font-weight: bold;    color: purple !important;" >24</span> to variable <span style=" font-weight: bold;    color: navy !important;" >age</span>.   
+        1. Assign value <span style=" font-weight: bold;    color: purple !important;" >9.1</span> to variable <span style=" font-weight: bold;    color: navy !important;" >score</span>.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >name</span>.      
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >age</span>.      
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >score</span>.      
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class PrintVariables {
                   public static void main(String[] args) {
@@ -827,26 +978,26 @@ How to print "Hello world" in main method in java file.
                   }
                 }                
 
-1. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want you to addition of two numbers and display the result. Repeat this addition 3 times.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("a")` of `r fmt_keyword("int")` type and assign value `r fmt_value(10)` to it.   
-        1. Create variable `r fmt_variable("b")` of `r fmt_keyword("int")` type and assign value `r fmt_value(20)` to it.   
-        1. Create variable `r fmt_variable("c")` of `r fmt_keyword("int")` type and assign addition result of variables `r fmt_variable("a")` and `r fmt_variable("b")` to it.  
-        1. Print variable `r fmt_variable("c")`.   
-        1. Create variable `r fmt_variable("p")` of `r fmt_keyword("int")` type and assign value `r fmt_value(11)` to it.   
-        1. Create variable `r fmt_variable("q")` of `r fmt_keyword("int")` type and assign value `r fmt_value(22)` to it.   
-        1. Create variable `r fmt_variable("r")` of `r fmt_keyword("int")` type and assign addition result of variables `r fmt_variable("p")` and `r fmt_variable("q")` to it.   
-        1. Print variable `r fmt_variable("r")`.   
-        1. Create variable `r fmt_variable("x")` of `r fmt_keyword("int")` type and assign value `r fmt_value(50)` to it.   
-        1. Create variable `r fmt_variable("y")` of `r fmt_keyword("int")` type and assign value `r fmt_value(150)` to it.   
-        1. Create variable `r fmt_variable("z")` of `r fmt_keyword("int")` type and assign addition result of variables `r fmt_variable("x")` and `r fmt_variable("y")` to it.   
-        1. Print variable `r fmt_variable("z")`.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >a</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >10</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >b</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >20</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >c</span> of <span style="     color: blue !important;" >int</span> type and assign addition result of variables <span style=" font-weight: bold;    color: navy !important;" >a</span> and <span style=" font-weight: bold;    color: navy !important;" >b</span> to it.  
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >c</span>.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >p</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >11</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >q</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >22</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >r</span> of <span style="     color: blue !important;" >int</span> type and assign addition result of variables <span style=" font-weight: bold;    color: navy !important;" >p</span> and <span style=" font-weight: bold;    color: navy !important;" >q</span> to it.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >r</span>.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >x</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >50</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >y</span> of <span style="     color: blue !important;" >int</span> type and assign value <span style=" font-weight: bold;    color: purple !important;" >150</span> to it.   
+        1. Create variable <span style=" font-weight: bold;    color: navy !important;" >z</span> of <span style="     color: blue !important;" >int</span> type and assign addition result of variables <span style=" font-weight: bold;    color: navy !important;" >x</span> and <span style=" font-weight: bold;    color: navy !important;" >y</span> to it.   
+        1. Print variable <span style=" font-weight: bold;    color: navy !important;" >z</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class RepetitiveAddition {
                   public static void main(String[] args) {
@@ -887,24 +1038,24 @@ How to print "Hello world" in main method in java file.
 ##### static methods calling {-}
 ##### return types {-}
 
-12. **Theory**:    `r fmt_todo()`         
+12. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of methods.    
 
-12. **Example**:    `r fmt_todo()`        
+12. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create method in java file.    
 
-12. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want you to provide the implementation of a method which performs addition of two numbers and prints the result.   
         <br/>
         **Steps to perform:**   
-        1. Make changes in method `r fmt_method("additionAndPrint(")``r fmt_keyword("int ")``r fmt_argument("number1")``r fmt_method(", ")``r fmt_keyword("int ")``r fmt_argument("number2")``r fmt_method(")")` as follows:
-            1. Create variable `r fmt_variable("result")` of `r fmt_keyword("int")` type.   
-            1. Perform addition of arguments `r fmt_argument("number1")` and `r fmt_argument("number2")` and assign result to variable `r fmt_variable("result")`.  
-            1. Print variable `r fmt_variable("result")`.   
+        1. Make changes in method <span style=" font-weight: bold;    color: orange !important;" >additionAndPrint(</span><span style="     color: blue !important;" >int </span><span style=" font-weight: bold;    color: brown !important;" >number1</span><span style=" font-weight: bold;    color: orange !important;" >, </span><span style="     color: blue !important;" >int </span><span style=" font-weight: bold;    color: brown !important;" >number2</span><span style=" font-weight: bold;    color: orange !important;" >)</span> as follows:
+            1. Create variable <span style=" font-weight: bold;    color: navy !important;" >result</span> of <span style="     color: blue !important;" >int</span> type.   
+            1. Perform addition of arguments <span style=" font-weight: bold;    color: brown !important;" >number1</span> and <span style=" font-weight: bold;    color: brown !important;" >number2</span> and assign result to variable <span style=" font-weight: bold;    color: navy !important;" >result</span>.  
+            1. Print variable <span style=" font-weight: bold;    color: navy !important;" >result</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class MathOperations {
                   static void additionAndPrint(int number1, int number2){
@@ -929,17 +1080,17 @@ How to create method in java file.
                   }
                 }        
 
-12. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want you to provide the implementation of a method which performs subtraction of two numbers and prints the result.   
         <br/>
         **Steps to perform:**   
-        1. Make changes in method `r fmt_method("subtractionAndPrint(")``r fmt_keyword("int ")``r fmt_argument("number1")``r fmt_method(", ")``r fmt_keyword("int ")``r fmt_argument("number2")``r fmt_method(")")` as follows:
-            1. Create variable `r fmt_variable("result")` of `r fmt_keyword("int")` type and initialize it with subtraction result of arguments `r fmt_argument("number1")` and `r fmt_argument("number2")`.  
-            1. Print `r fmt_output("Subtraction result is=")``r fmt_variable("result")`.   
+        1. Make changes in method <span style=" font-weight: bold;    color: orange !important;" >subtractionAndPrint(</span><span style="     color: blue !important;" >int </span><span style=" font-weight: bold;    color: brown !important;" >number1</span><span style=" font-weight: bold;    color: orange !important;" >, </span><span style="     color: blue !important;" >int </span><span style=" font-weight: bold;    color: brown !important;" >number2</span><span style=" font-weight: bold;    color: orange !important;" >)</span> as follows:
+            1. Create variable <span style=" font-weight: bold;    color: navy !important;" >result</span> of <span style="     color: blue !important;" >int</span> type and initialize it with subtraction result of arguments <span style=" font-weight: bold;    color: brown !important;" >number1</span> and <span style=" font-weight: bold;    color: brown !important;" >number2</span>.  
+            1. Print <span style=" font-weight: bold;    color: green !important;" >Subtraction result is=</span><span style=" font-weight: bold;    color: navy !important;" >result</span>.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class MathOperations {
                   static void subtractionAndPrint(int number1, int number2){
@@ -963,17 +1114,17 @@ How to create method in java file.
                   }
                 }   
 
-12. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want you to provide the implementation of a method which performs square of a number and prints the result.   
         <br/>
         **Steps to perform:**   
-        1. Make changes in method `r fmt_method("squareAndPrint(")``r fmt_keyword("int ")``r fmt_argument("number")``r fmt_method(")")` as follows:
-            1. Create variable `r fmt_variable("result")` of `r fmt_keyword("int")` type and initialize it with square result of argument `r fmt_argument("number")`.  
-            1. Print `r fmt_output("Square of ")``r fmt_argument("number")``r fmt_output(" is=")``r fmt_variable("result")`    
+        1. Make changes in method <span style=" font-weight: bold;    color: orange !important;" >squareAndPrint(</span><span style="     color: blue !important;" >int </span><span style=" font-weight: bold;    color: brown !important;" >number</span><span style=" font-weight: bold;    color: orange !important;" >)</span> as follows:
+            1. Create variable <span style=" font-weight: bold;    color: navy !important;" >result</span> of <span style="     color: blue !important;" >int</span> type and initialize it with square result of argument <span style=" font-weight: bold;    color: brown !important;" >number</span>.  
+            1. Print <span style=" font-weight: bold;    color: green !important;" >Square of </span><span style=" font-weight: bold;    color: brown !important;" >number</span><span style=" font-weight: bold;    color: green !important;" > is=</span><span style=" font-weight: bold;    color: navy !important;" >result</span>    
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class MathOperations {
                   static void squareAndPrint(int number){
@@ -997,21 +1148,21 @@ How to create method in java file.
                   }
                 }           
 
-12. **Exercise**:    `r fmt_todo()`       
-    - **Description**:    `r fmt_todo()`   
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         We want you to provide the implementation of a method which performs cube of a number and prints the result.   
         <br/>
         **Steps to perform:**   
-        1. Make changes in method `r fmt_method("cubeAndPrint(")``r fmt_keyword("int ")``r fmt_argument("number")``r fmt_method(")")` as follows:
-            1. Print `r fmt_output("Input is=")``r fmt_argument("number")`   
-            1. Create variable `r fmt_variable("result")` of `r fmt_keyword("int")` type and initialize it with cubic result of argument `r fmt_argument("number")`.  
-            1. Print `r fmt_output("Cube of ")``r fmt_argument("number")``r fmt_output(" is=")``r fmt_variable("result")`    
-        1. Make changes in method `r fmt_method("main(")``r fmt_keyword("String[] ")``r fmt_argument("args")``r fmt_method(")")` as follows:
-            1. Call method `r fmt_method("cubeAndPrint(")``r fmt_value(4)``r fmt_method(")")`   
-            1. Call method `r fmt_method("cubeAndPrint(")``r fmt_value(10)``r fmt_method(")")`   
+        1. Make changes in method <span style=" font-weight: bold;    color: orange !important;" >cubeAndPrint(</span><span style="     color: blue !important;" >int </span><span style=" font-weight: bold;    color: brown !important;" >number</span><span style=" font-weight: bold;    color: orange !important;" >)</span> as follows:
+            1. Print <span style=" font-weight: bold;    color: green !important;" >Input is=</span><span style=" font-weight: bold;    color: brown !important;" >number</span>   
+            1. Create variable <span style=" font-weight: bold;    color: navy !important;" >result</span> of <span style="     color: blue !important;" >int</span> type and initialize it with cubic result of argument <span style=" font-weight: bold;    color: brown !important;" >number</span>.  
+            1. Print <span style=" font-weight: bold;    color: green !important;" >Cube of </span><span style=" font-weight: bold;    color: brown !important;" >number</span><span style=" font-weight: bold;    color: green !important;" > is=</span><span style=" font-weight: bold;    color: navy !important;" >result</span>    
+        1. Make changes in method <span style=" font-weight: bold;    color: orange !important;" >main(</span><span style="     color: blue !important;" >String[] </span><span style=" font-weight: bold;    color: brown !important;" >args</span><span style=" font-weight: bold;    color: orange !important;" >)</span> as follows:
+            1. Call method <span style=" font-weight: bold;    color: orange !important;" >cubeAndPrint(</span><span style=" font-weight: bold;    color: purple !important;" >4</span><span style=" font-weight: bold;    color: orange !important;" >)</span>   
+            1. Call method <span style=" font-weight: bold;    color: orange !important;" >cubeAndPrint(</span><span style=" font-weight: bold;    color: purple !important;" >10</span><span style=" font-weight: bold;    color: orange !important;" >)</span>   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 class MathOperations {
                   static void cubeAndPrint(int number){
@@ -1036,11 +1187,11 @@ How to create method in java file.
                   }
                 }            
 
-12. **Example**:    `r fmt_todo()`        
+12. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create method with return type.   
 
-12. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("static", color = "red")` method "echo(int number)" which returns the same number passed as argument.    
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >static</span> method "echo(int number)" which returns the same number passed as argument.    
 Question:
 
         class EchoMyNumber {
@@ -1066,8 +1217,8 @@ Solution:
           }
         }
 
-12. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("static", color = "red")` method "echo(string message)" which returns the same message passed as argument.    
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >static</span> method "echo(string message)" which returns the same message passed as argument.    
 Question:
 
         class EchoMyMessage {
@@ -1093,7 +1244,7 @@ Solution:
           }
         }
 
-12. **Exercise**:    `r fmt_todo()`       
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Implement custom static method "main(string message)" which returns the same message passed as argument.  Question:  
 
         class Student {
@@ -1119,7 +1270,7 @@ Solution:
           }
         }      
 
-12. **Exercise**:    `r fmt_todo()`       
+12. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create instance method **printFullName()** which prints full name by calling **getFirstName()** and **getLastName()** methods and appending them such as final result is *John Marshal*.   
 Question:
 
@@ -1163,14 +1314,14 @@ Solution:
 
 #### Static Data Members {-}
 
-30. **Theory**:    `r fmt_todo()`         
+30. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of static data members.    
 
-30. **Example**:    `r fmt_todo()`        
+30. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create static data member and its usage in java file.    
 
-30. **Exercise**:    `r fmt_todo()`       
-Create static data member **companyName** of type `r text_spec("String", color = "red")`.    
+30. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create static data member **companyName** of type <span style="     color: red !important;" >String</span>.    
 Assign value *Folks* to **companyName** in main method.  
 Question:
 
@@ -1193,7 +1344,7 @@ Solution:
           }
         }        
 
-30. **Exercise**:    `r fmt_todo()`       
+30. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Assign value *Folks* to **companyName** in main method.    
 Implement **displayCompanyName** such that it prints value of **companyName**.   
 Question:
@@ -1223,7 +1374,7 @@ Solution:
           }
         }
 
-30. **Exercise**:    `r fmt_todo()`       
+30. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Implement **displayCompanyName** such that it prints value of **companyName**.   
 Implement **displayCompanyNameDuplicate** such that it prints value of **companyName**.   
 Question:
@@ -1263,9 +1414,9 @@ Solution:
           }
         }        
 
-30. **Exercise**:    `r fmt_todo()`       
-Implement `r text_spec("static", color = "red")` method **doubleCompanyRating()** which doubles the value of **companyRating**.   
-Implement `r text_spec("static", color = "red")` method **printCompanyRating()** which prints the value of **companyRating**.   
+30. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement <span style="     color: red !important;" >static</span> method **doubleCompanyRating()** which doubles the value of **companyRating**.   
+Implement <span style="     color: red !important;" >static</span> method **printCompanyRating()** which prints the value of **companyRating**.   
 Question:
 
         class Employee {
@@ -1303,13 +1454,13 @@ Solution:
           }
         }        
 
-30. **Theory**:    `r fmt_todo()`       
+30. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 How to refer static data member with class name.   
 
-30. **Example**:    `r fmt_todo()`        
+30. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to refer static data member with class name.   
 
-30. **Exercise**:    `r fmt_todo()`       
+30. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print value of **companyName** in main method by referring through class name.  
 Question:
 
@@ -1336,14 +1487,14 @@ Solution:
 
 #### if-else {-}
 
-1. **Theory**:    `r fmt_todo()`         
-`r text_spec("if", color = "red")` `r text_spec("else", color = "red")` introduction   
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
+<span style="     color: red !important;" >if</span> <span style="     color: red !important;" >else</span> introduction   
 
-1. **Example**:    `r fmt_todo()`        
-How to use `r text_spec("if", color = "red")` `r text_spec("else", color = "red")`.   
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
+How to use <span style="     color: red !important;" >if</span> <span style="     color: red !important;" >else</span>.   
 
-1. **Exercise**:    `r fmt_todo()`       
-Implement **isEligibleForVoting**. Add condition in `r text_spec("if", color = "red")` block such as value of **age** is greater than 18 then returns true.    
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **isEligibleForVoting**. Add condition in <span style="     color: red !important;" >if</span> block such as value of **age** is greater than 18 then returns true.    
 Question:
 
         public class Conditions {
@@ -1378,8 +1529,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r fmt_todo()`       
-Implement **calculateGreaterNumber**. Add condition in `r text_spec("if", color = "red")` block such as value of **number1** is greater than or equal to value of **number2** then returns **number1** otherwise return **number2**.    
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **calculateGreaterNumber**. Add condition in <span style="     color: red !important;" >if</span> block such as value of **number1** is greater than or equal to value of **number2** then returns **number1** otherwise return **number2**.    
 Question:
 
         public class GreaterNumber {
@@ -1416,8 +1567,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r fmt_todo()`       
-Implement **calculateSmallerNumber**. Add condition in `r text_spec("if", color = "red")` block such as value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **calculateSmallerNumber**. Add condition in <span style="     color: red !important;" >if</span> block such as value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
 Question:
 
         public class SmallerNumber {
@@ -1454,8 +1605,8 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r fmt_todo()`       
-Implement **calculateSmallerNumber**. Print **number1** and *number2* in same line. Add condition in `r text_spec("if", color = "red")` block such that if value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **calculateSmallerNumber**. Print **number1** and *number2* in same line. Add condition in <span style="     color: red !important;" >if</span> block such that if value of **number1** is smaller than value of **number2** then returns **number1** otherwise return **number2**.    
 Question:
 
         public class SmallerNumber {
@@ -1490,8 +1641,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r fmt_todo()`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested <span style="     color: red !important;" >if</span> <span style="     color: red !important;" >else</span> statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1540,8 +1691,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r fmt_todo()`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested <span style="     color: red !important;" >if</span> <span style="     color: red !important;" >else</span> statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1598,8 +1749,8 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r fmt_todo()`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested <span style="     color: red !important;" >if</span> <span style="     color: red !important;" >else</span> statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1653,8 +1804,8 @@ Solution:
           }
         }        
 
-1. **Exercise**:    `r fmt_todo()`       
-Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested `r text_spec("if", color = "red")` `r text_spec("else", color = "red")` statements to check largest number.     
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. Add logic in nested <span style="     color: red !important;" >if</span> <span style="     color: red !important;" >else</span> statements to check largest number.     
 Question:
 
         public class LargestNumber {
@@ -1706,13 +1857,13 @@ Solution:
           }
         }
         
-1. **Theory**:    `r fmt_todo()`         
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Ternary introduction.   
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use ternary operations.   
         
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Implement **calculateLargestNumber**. Use ternary operator to check greater number.     
 Question:
 
@@ -1749,7 +1900,7 @@ Solution:
           }
         } 
         
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Implement **calculateLargestNumber**. Use ternary operator to check greater number.     
 Question:
 
@@ -1783,7 +1934,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Implement **calculateLargestNumber**. Print **number1**, **number2** and **number3** in same line. User ternary operations to check largest number.     
 Question:
 
@@ -1821,13 +1972,13 @@ Solution:
         
 #### Loops {-}
 
-16. **Theory**:    `r fmt_todo()`         
+16. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 for loop introduction.    
 
-16. **Example**:    `r fmt_todo()`        
+16. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use for loop.   
 
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print **Java is going to be on my tips with practice.** 5 times in main method.   
 Question:
 
@@ -1854,7 +2005,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print **Java is going to be on my tips with practice.** 5 times using for loop in main method.   
 Question:
 
@@ -1877,7 +2028,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print **Practice makes programming perfect.** 10 times using for loop in main method.   
 Question:
 
@@ -1900,7 +2051,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print loop number **j** inside for loop block in main method.   
 Question:
 
@@ -1923,7 +2074,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print message **"loop iteration="** and loop number **k** in same line, inside for loop block in main method.   
 Question:
 
@@ -1946,7 +2097,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Call **square** method 7 times with parameter 0 to 6 in main method.   
 Question:
 
@@ -1981,7 +2132,7 @@ Solution:
           }
         }
         
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Call **square** method in for loop starting from 0 to max value 6 in main method. Pass for loop iteration value as argument of **square** method.   
 Question:
 
@@ -2012,7 +2163,7 @@ Solution:
           }
         }  
         
-16. **Exercise**:    `r fmt_todo()`       
+16. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Call **square** method in for loop starting from 0 to max value 6 in main method. Add sqaure value to **total** variable such that it contains the value addition of all squared values.   
 Question:
 
@@ -2058,13 +2209,13 @@ Solution:
 
 #### Objects {-}
 
-1. **Theory**:    `r fmt_todo()`         
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Object introduction   
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create object of a class   
 
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create object **emp** of **Employee** in main method.  
 Print **emp**.   
 Question:
@@ -2086,7 +2237,7 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create object **emp1** of **Employee** in main method.  
 Print **emp1**.   
 Create object **emp2** of **Employee** in main method.   
@@ -2116,7 +2267,7 @@ Solution:
           }
         }        
 
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create object **emp** of **Employee** in main method.  
 Print **emp**.   
 Create another object of **Employee** class and assign it to already created **emp**.     
@@ -2146,13 +2297,13 @@ Solution:
           }
         }        
 
-1. **Theory**:    `r fmt_todo()`         
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Anonymous object introduction   
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create anonymous object of a class   
 
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create anonymous object of **Employee** in main method.   
 Question:
 
@@ -2171,7 +2322,7 @@ Solution:
           }
         }
 
-1. **Exercise**:    `r fmt_todo()`       
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create anonymous object of **Employee** in print statement in main method and print its value.   
 Question:
 
@@ -2192,13 +2343,13 @@ Solution:
 
 #### Instance Data Members {-}
 
-10. **Theory**:    `r fmt_todo()`         
+10. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of Instance data members.    
 
-10. **Example**:    `r fmt_todo()`        
+10. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create Instance data member and its usage in java file.    
 
-10. **Exercise**:    `r fmt_todo()`       
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create object of **Student** class **student** in main method.   
 Print **name** of **student** in main method.   
 Question:
@@ -2222,7 +2373,7 @@ Question:
           }
         }        
 
-10. **Exercise**:    `r fmt_todo()`       
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create object of **Student** class **student** in main method.   
 Print **name** of **student** in main method.   
 Assign value *Jack* to **name**.   
@@ -2254,7 +2405,7 @@ Solution:
           }
         }        
 
-10. **Exercise**:    `r fmt_todo()`       
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print **name** of **student1** in main method.   
 Print **name** of **student2** in main method.   
 Assign value *Jack* to **name** of **student1**.   
@@ -2299,7 +2450,7 @@ Question:
           }
         }
 
-10. **Exercise**:    `r fmt_todo()`       
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print **name** of **student1** in main method.   
 Print **marks** of **student1** in main method.   
 Print **name** of **student2** in main method.   
@@ -2371,7 +2522,7 @@ Solution:
           }
         }        
 
-10. **Exercise**:    `r fmt_todo()`       
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Print **name** of **student1** in main method.   
 Print **marks** of **student1** in main method.   
 Print **schoolName** of **student1** in main method.   
@@ -2465,7 +2616,7 @@ Solution:
           }
         }        
 
-10. **Exercise**:    `r fmt_todo()`       
+10. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create anonymous object of **Person** in print statement and print value of **salary** on it, in main method.   
 Question:
 
@@ -2488,13 +2639,13 @@ Solution:
 
 #### Instance Methods {-}
 
-18. **Theory**:    `r fmt_todo()`         
+18. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Instance/Non-static method introduction   
 
-18. **Example**:    `r fmt_todo()`        
+18. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create Instance/Non-static method in a class   
 
-18. **Exercise**:    `r fmt_todo()`       
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create instance method **displayValue()** which prints the value of **name**.   
 Create object **person** of **Person** class  in main method.   
 Call **displayValue()** on **person** in main method.    
@@ -2527,7 +2678,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r fmt_todo()`       
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create instance method **setValue(string newName)** which assigns the variable **newName** to **name**.   
 Create object **person** of **Person** class  in main method.   
 Call **setValue("Jack")** on **person** in main method.   
@@ -2571,7 +2722,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r fmt_todo()`       
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create instance method **setValues(String newName, int newAge)** which assigns the variable **newName** to **name** and **newAge** to **age**.   
 Create instance method **print()** which prints the value of **name** and **age**.   
 Create object **person** of **Person** class  in main method.    
@@ -2622,7 +2773,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r fmt_todo()`       
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Call **person1**.**setValues("Jack", 21)** in main method.   
 Call **person2**.**setValues("Diana", 19)** in main method.   
 Call **person1**.**displayValues()** in main method.     
@@ -2682,7 +2833,7 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r fmt_todo()`       
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Call **student**.**displayValues()** in main method.    
 Call **student**.**modifyValues("Jack", 7)** in main method.    
 Call **student**.**displayValues()** in main method.    
@@ -2751,7 +2902,7 @@ Question:
           }
         }
 
-18. **Exercise**:    `r fmt_todo()`       
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Call **student1**.**displayValues()** in main method.    
 Call **student2**.**displayValues()** in main method.    
 Call **student1**.**modifyValues("Jack" , 22, "Shawn")** in main method.    
@@ -2825,7 +2976,7 @@ Solution:
           }
         }
 
-18. **Exercise**:    `r fmt_todo()`       
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create instance method **setName(String newName)** which will assign **newName** to **name**.   
 Create instance method **setSalary(int newSalary)** which will assign **newSalary** to **salary**.   
 Create object **emp1** of **Employee** class in main method.   
@@ -2951,8 +3102,8 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **Employee**.   
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **Employee**.   
 Create instance data member **name**.   
 Create instance data member **salary** with default value *10000*.   
 Create instance method **displayName()** which will display value of **name**.   
@@ -2998,8 +3149,8 @@ Solution:
           }
         }        
 
-18. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **Employee**.   
+18. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **Employee**.   
 Create instance data member **firstName**.   
 Create instance data member **lastName**.   
 Create instance method **getFirstName()** which returns value of **firstName**.   
@@ -3056,16 +3207,16 @@ Solution:
 
 #### Method Overloading {-}
 
-29. **Theory**:    `r fmt_todo()`         
+29. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Method overloading introduction      
 
-29. **Example**:    `r fmt_todo()`        
+29. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to do method overloading   
 
-29. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
-Create `r text_spec("static", color = "red")` method **getSquareArea(int number)** which returns area of square.   
-Create `r text_spec("static", color = "red")` method **getRectangleArea(int length, int width)** which returns area of rectangle.   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **MethodOverloadingSample**.   
+Create <span style="     color: red !important;" >static</span> method **getSquareArea(int number)** which returns area of square.   
+Create <span style="     color: red !important;" >static</span> method **getRectangleArea(int length, int width)** which returns area of rectangle.   
 Call **getSquareArea(5)** in main method.   
 Call **getRectangleArea(5, 7)** in main method.   
 Question:
@@ -3107,10 +3258,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
-Create `r text_spec("static", color = "red")` method **getArea(int number)** which returns area of square.   
-Create `r text_spec("static", color = "red")` method **getArea(int length, int width)** which returns area of rectangle.   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **MethodOverloadingSample**.   
+Create <span style="     color: red !important;" >static</span> method **getArea(int number)** which returns area of square.   
+Create <span style="     color: red !important;" >static</span> method **getArea(int length, int width)** which returns area of rectangle.   
 Call **getArea(5)** in main method.   
 Call **getArea(5, 7)** in main method.   
 Question:
@@ -3152,10 +3303,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
-Create `r text_spec("static", color = "red")` method **printInt(int number)** which prints the provided integer number.   
-Create `r text_spec("static", color = "red")` method **printString(String message)** which prints the provided message.
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **MethodOverloadingSample**.   
+Create <span style="     color: red !important;" >static</span> method **printInt(int number)** which prints the provided integer number.   
+Create <span style="     color: red !important;" >static</span> method **printString(String message)** which prints the provided message.
 Call **printInt(5)** in main method.   
 Call **printString("so  many print methods")** in main method.  
 Question:
@@ -3211,10 +3362,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
-Create `r text_spec("static", color = "red")` method **print(int number)** which prints the provided integer number.   
-Create `r text_spec("static", color = "red")` method **print(String message)** which prints the provided message.
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **MethodOverloadingSample**.   
+Create <span style="     color: red !important;" >static</span> method **print(int number)** which prints the provided integer number.   
+Create <span style="     color: red !important;" >static</span> method **print(String message)** which prints the provided message.
 Call **print(5)** in main method.   
 Call **print("so  many print methods")** in main method.   
 Question:
@@ -3250,12 +3401,12 @@ Solution:
           }
         }
 
-29. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
-Create `r text_spec("static", color = "red")` method **print(char ch)** which prints the provided integer number.   
-Create `r text_spec("static", color = "red")` method **print(int number)** which prints the provided integer number.   
-Create `r text_spec("static", color = "red")` method **print(float number)** which prints the provided integer number.   
-Create `r text_spec("static", color = "red")` method **print(String message)** which prints the provided message.   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **MethodOverloadingSample**.   
+Create <span style="     color: red !important;" >static</span> method **print(char ch)** which prints the provided integer number.   
+Create <span style="     color: red !important;" >static</span> method **print(int number)** which prints the provided integer number.   
+Create <span style="     color: red !important;" >static</span> method **print(float number)** which prints the provided integer number.   
+Create <span style="     color: red !important;" >static</span> method **print(String message)** which prints the provided message.   
 Call **print(5)** in main method.   
 Call **print("method overloading is fun. no need to remember so many method names")** in main method.   
 Call **print(20.03f)** in main method.  
@@ -3313,10 +3464,10 @@ Solution:
           }
         }        
 
-29. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **MethodOverloadingSample**.   
-Create `r text_spec("static", color = "red")` method **print(int x, float y)** which prints the provided integer number and float number.   
-Create `r text_spec("static", color = "red")` method **print(float x, int y)** which prints the provided float number and integer number.   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **MethodOverloadingSample**.   
+Create <span style="     color: red !important;" >static</span> method **print(int x, float y)** which prints the provided integer number and float number.   
+Create <span style="     color: red !important;" >static</span> method **print(float x, int y)** which prints the provided float number and integer number.   
 Call **print(10, 10.9f)** in main method.   
 Call **print(10.9f, 10)** in main method.       
 Call **print(10, 10)** in main method.    
@@ -3361,16 +3512,16 @@ Solution:
 
 #### Constructors {-}
 
-37. **Theory**:    `r fmt_todo()`         
+37. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Constructors introduction.         
 
-37. **Example**:    `r fmt_todo()`        
+37. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use constructors.   
 
-37. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **Employee**.   
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **Employee**.   
 Create empty constructor **Employee()**.   
-Create `r text_spec("static", color = "red")` method **greeting()** which prints *"Welcome partners..!!"*.   
+Create <span style="     color: red !important;" >static</span> method **greeting()** which prints *"Welcome partners..!!"*.   
 Call **greeting()** in main method.     
 Question:
 
@@ -3405,8 +3556,8 @@ Solution:
           }
         }        
 
-37. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **Employee**.   
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **Employee**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
 Create object **emp** of **Employee** class in main method.   
@@ -3446,8 +3597,8 @@ Solution:
           }
         }        
 
-37. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **Employee**.   
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **Employee**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create instance method **greeting()** which prints *"Welcome partner..!!"*.   
 Create anonymous object of **Employee** class and call **greeting()** in main method.   
@@ -3484,8 +3635,8 @@ Solution:
           }
         }        
 
-37. **Exercise**:    `r fmt_todo()`       
-Create `r text_spec("class", color = "red")` **Employee**.  
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
+Create <span style="     color: red !important;" >class</span> **Employee**.  
 Create instance data member **name**.   
 Create constructor **Employee()** which prints *"New employee joined"*.   
 Create constructor **Employee(String empName)** which prints *"New employee "+empName+" joined"*.   
@@ -3547,7 +3698,7 @@ Question:
           }
         }        
 
-37. **Exercise**:    `r fmt_todo()`       
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create object **emp** of **Employee** class with **Employee("Shane")** in main method.   
 Call **emp**.**greeting()** in main method.     
 Question:
@@ -3589,8 +3740,8 @@ Solution:
           }
         }
         
-37. **Exercise**:    `r fmt_todo()`   
-Create `r text_spec("static", color = "red")` method with same name as class.   
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Create <span style="     color: red !important;" >static</span> method with same name as class.   
 Call this method in main method.   
 Question:
 
@@ -3647,7 +3798,7 @@ Solution:
           }
         }
         
-37. **Exercise**:    `r fmt_todo()`   
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create instance method **commonTasksForEveryObject()**.   
 Call **commonTasksForEveryObject()** in every constructor.   
 Question:
@@ -3699,7 +3850,7 @@ Solution:
           }
         }
         
-37. **Exercise**:    `r fmt_todo()`   
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create instance method **commonTasksForEveryObject()**.   
 Call **commonTasksForEveryObject()** in every constructor as first line, if not present.   
 Question:
@@ -3752,7 +3903,7 @@ Solution:
           }
         }
 
-37. **Exercise**:    `r fmt_todo()`   
+37. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create instance method **Employee()**.   
 Call **Employee()** in every constructor as first line, if not present.   
 Question:
@@ -3808,13 +3959,13 @@ Solution:
         
 #### Initialize Block {-}   
 
-48. **Theory**:    `r fmt_todo()`         
+48. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of initialize block.    
 
-48. **Example**:    `r fmt_todo()`        
+48. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create initialize block in java file.
 
-48. **Exercise**:    `r fmt_todo()`       
+48. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create initialize block in java file which prints "In initialize block" message. Try execute this file.   
 Question:
 
@@ -3837,7 +3988,7 @@ Solution:
           }
         }  
         
-48. **Exercise**:    `r fmt_todo()`       
+48. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create first initialize block in java file which prints "In first initialize block" message.    
 Create first initialize block in java file which prints "In second initialize block" message. Try execute this file.   
 Question:
@@ -3871,7 +4022,7 @@ Solution:
           }
         } 
         
-48. **Exercise**:    `r fmt_todo()`       
+48. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create anonymous object with constructor **InitializeBlockExample()** in main method.   
 Create anonymous object with constructor **InitializeBlockExample("coding is iterative process")** in main method.   
 Question:
@@ -3923,9 +4074,9 @@ Solution:
           }
         }   
         
-48. **Exercise**:    `r fmt_todo()`   
+48. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Calculate number of objects created.   
-Create static data member **objectsCount** of type `r text_spec("int", color = "red")`.   
+Create static data member **objectsCount** of type <span style="     color: red !important;" >int</span>.   
 Increment **objectsCount** by 1 in initialize block.   
 Print *"No. of objects created: " + objectsCount* in last line of main method.   
 Question:
@@ -3993,13 +4144,13 @@ Solution:
         
 #### this keyword  {-}  
 
-54. **Theory**:    `r fmt_todo()`         
+54. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of this keyword as constructor in constructor chaining.     
 
-54. **Example**:    `r fmt_todo()`        
+54. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use this keyword as constructor in constructor chaining in java file.   
         
-54. **Exercise**:    `r fmt_todo()`   
+54. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Constructor chaining.
 Add *this()* as first statement in every constructor except **ConstructorChaining()**.   
 Question:
@@ -4051,7 +4202,7 @@ Solution:
           }
         }    
         
-54. **Exercise**:    `r fmt_todo()`   
+54. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Constructor chaining.
 Add *this(10)* as first statement in **ConstructorChaining()**.   
 Add *this()* as first statement in **ConstructorChaining(String message)**.   
@@ -4104,13 +4255,13 @@ Solution:
           }
         }    
 
-54. **Theory**:    `r fmt_todo()`         
+54. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of this keyword as a reference to current object.   
 
-54. **Example**:    `r fmt_todo()`        
+54. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use this keyword as a reference to current object in java file.   
 
-54. **Exercise**:    `r fmt_todo()`   
+54. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Print *this* as first statement in **takeCharge()**.   
 Print *this* as first statement in **moveCharge()**.     
 Call **player4**.**moveCharge()** as last statement in **takeCharge()**.   
@@ -4187,7 +4338,7 @@ Solution:
           }
         } 
         
-54. **Exercise**:    `r fmt_todo()`   
+54. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Assign value of local variable **ranking** to data member **ranking** in  **modifyValue(int ranking)** with help of **this** keyword.   
 Question:
 
@@ -4238,13 +4389,13 @@ Solution:
         
 #### Nested Classes  {-}          
 
-62. **Theory**:    `r fmt_todo()`         
+62. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of  Nested Class.      
 
-62. **Example**:    `r fmt_todo()`        
+62. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create Nested Classes.   
 
-62. **Exercise**:    `r fmt_todo()`   
+62. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Assign value of local variable **ranking** to data member **ranking** in  **modifyValue(int ranking)** with help of **this** keyword.   
 Question:
 
@@ -4275,10 +4426,10 @@ Solution:
         
 #### Association  {-}    
 
-65. **Theory**:    `r fmt_todo()`         
+65. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of association.   
 
-65. **Exercise**:    `r fmt_todo()`   
+65. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **rearLeftWheel** of type **Wheel** class in **Car** class with same values as front wheels.   
 Create data member **rearRightWheel** of type **Wheel** class in **Car** class with same values as front wheels.   
 Create data member **seatTwo** of type **Seat** class in **Car** class with same values of **seatOne**.   
@@ -4311,9 +4462,9 @@ Question:
 
           static class Wheel{
             int size;
-            `r text_spec("String", color = "red")` type;
+            <span style="     color: red !important;" >String</span> type;
 
-            Wheel(int size, `r text_spec("String", color = "red")` type){
+            Wheel(int size, <span style="     color: red !important;" >String</span> type){
               this.size = size;
               this.type = type;
             }
@@ -4322,10 +4473,10 @@ Question:
           static class Seat{
             int size;
             String color;
-            `r text_spec("String", color = "red")` type;
+            <span style="     color: red !important;" >String</span> type;
             int price;
 
-            Seat(int size, String color, `r text_spec("String", color = "red")` type, int price){
+            Seat(int size, String color, <span style="     color: red !important;" >String</span> type, int price){
               this.size = size;
               this.color = color;
               this.type = type;
@@ -4376,9 +4527,9 @@ Solution:
 
           static class Wheel{
             int size;
-            `r text_spec("String", color = "red")` type;
+            <span style="     color: red !important;" >String</span> type;
 
-            Wheel(int size, `r text_spec("String", color = "red")` type){
+            Wheel(int size, <span style="     color: red !important;" >String</span> type){
               this.size = size;
               this.type = type;
             }
@@ -4387,10 +4538,10 @@ Solution:
           static class Seat{
             int size;
             String color;
-            `r text_spec("String", color = "red")` type;
+            <span style="     color: red !important;" >String</span> type;
             int price;
 
-            Seat(int size, String color, `r text_spec("String", color = "red")` type, int price){
+            Seat(int size, String color, <span style="     color: red !important;" >String</span> type, int price){
               this.size = size;
               this.color = color;
               this.type = type;
@@ -4416,7 +4567,7 @@ Solution:
           }
         }
         
-65. **Exercise**:    `r fmt_todo()`   
+65. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **spouse** of type **Woman** class in **Man** class.   
 Create data member **spouse** of type **Man** class in **Woman** class.   
 Implement method **weddingCeremony**. Assign object **woman** to **spouse** data member of **man** object. Assign object **man** to **spouse** data member of **woman** object.   
@@ -4506,15 +4657,15 @@ Solution:
 
 #### Input from user  {-}   
 
-68. **Theory**:    `r fmt_todo()`         
+68. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of input from user.   
 
-68. **Example**:    `r fmt_todo()`        
+68. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to read inputs from use.   
         
-68. **Exercise**:    `r fmt_todo()`   
+68. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
-Create variable **nameFromUser** of type `r text_spec("String", color = "red")` class and store the name entered by user in this.   
+Create variable **nameFromUser** of type <span style="     color: red !important;" >String</span> class and store the name entered by user in this.   
 Question:
 
         class Girl {
@@ -4553,9 +4704,9 @@ Solution:
           }
         }        
         
-68. **Exercise**:    `r fmt_todo()`   
+68. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
-Create variable **nameFromUser** of type `r text_spec("String", color = "red")` class and store the name entered by user in this.   
+Create variable **nameFromUser** of type <span style="     color: red !important;" >String</span> class and store the name entered by user in this.   
 Again read value in variable **nameFromUser** for 2nd object of **Girl* class.   
 Question:
 
@@ -4614,7 +4765,7 @@ Solution:
           }
         }  
         
-68. **Exercise**:    `r fmt_todo()`   
+68. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
 Store the name of **student1** entered by user in **studentName** variable.   
 Store the name of **student2** entered by user in **studentName** variable.   
@@ -4711,11 +4862,11 @@ Solution:
           }
         }
         
-68. **Exercise**:    `r fmt_todo()`   
+68. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
 Store the name entered by user in **athleteName** variable.   
 Store the age entered by user in **ageInString** variable.   
-Parse **ageInString** to type `r text_spec("int", color = "red")` and store result in **age** variable.   
+Parse **ageInString** to type <span style="     color: red !important;" >int</span> and store result in **age** variable.   
 Store the weight entered by user in **weightInString** variable.   
 Question:
 
@@ -4826,7 +4977,7 @@ Solution:
           }
         }
         
-68. **Exercise**:    `r fmt_todo()`   
+68. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create variable **reader** of type **BufferedReader** class in main method and read user input from keyboard.   
 Store the 1st number entered by user in **number1** variable. Read and parse in a single line without assigning to intermediate variable.   
 Store the 2nd number entered by user in **number2** variable. Read and parse in a single line without assigning to intermediate variable.   
@@ -4877,13 +5028,13 @@ Solution:
 
 #### Inheritance {-}
 
-1. **Theory**:    `r fmt_todo()`         
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Inheritance introduction.   
 
-1. **Example**:    `r fmt_todo()`        
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to inherit class.   
 
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create object **animal** of type **Animal** in main method.   
 Call method **makeSound()** on **animal** object in main method.   
 Question:
@@ -4915,7 +5066,7 @@ Solution:
           }
         }
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -4955,7 +5106,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -5009,7 +5160,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -5063,7 +5214,7 @@ Solution:
           }
         }  
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Implement method **setSpeed(int speed)** such that it sets the value of parameter **speed** to data member **speed**.    
 Create object **dog** of type **Dog** in main method.   
@@ -5126,7 +5277,7 @@ Solution:
           }
         }      
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
@@ -5188,9 +5339,9 @@ Solution:
           }
         } 
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Implement method **printParentSpeed()** in `r text_spec("class", color = "red")` **Dog** such that it prints the data member **speed** of class **Animal**.   
+Implement method **printParentSpeed()** in <span style="     color: red !important;" >class</span> **Dog** such that it prints the data member **speed** of class **Animal**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -5261,9 +5412,9 @@ Solution:
           }
         }         
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Implement method **callParentMethod()** in `r text_spec("class", color = "red")` **Dog** such that it calls the method **printSpeed()** of class **Animal**.   
+Implement method **callParentMethod()** in <span style="     color: red !important;" >class</span> **Dog** such that it calls the method **printSpeed()** of class **Animal**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -5342,9 +5493,9 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Implement method **printSpeed()** in `r text_spec("class", color = "red")` **Dog** such that it calls the method **printSpeed()** of class **Animal** and it prints the data member **speed** of class **Animal**.      
+Implement method **printSpeed()** in <span style="     color: red !important;" >class</span> **Dog** such that it calls the method **printSpeed()** of class **Animal** and it prints the data member **speed** of class **Animal**.      
 Create object **dog** of type **Dog** in main method.   
 Call method **makeSound()** on **dog** object in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
@@ -5419,9 +5570,9 @@ Solution:
           }
         }  
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Modify method **printSpeed()** in `r text_spec("class", color = "red")` **Dog** such that it has return type **int** instead of **void**. Return data member **speed**.   
+Modify method **printSpeed()** in <span style="     color: red !important;" >class</span> **Dog** such that it has return type **int** instead of **void**. Return data member **speed**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **printSpeed()** on **dog** object in main method.   
 Question:
@@ -5475,9 +5626,9 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
-Override method **getAnimal()** in `r text_spec("class", color = "red")` **Dog** such that it has return type **Dog**. Create and return new object of class **Dog**.   
+Override method **getAnimal()** in <span style="     color: red !important;" >class</span> **Dog** such that it has return type **Dog**. Create and return new object of class **Dog**.   
 Create object **dog** of type **Dog** in main method.   
 Call method **getAnimal()** on **dog** object and store it in another variable **anotherDog** of type ***Dog* in main method.   
 Call method **printSpeed()*** on **anotherDog** object.   
@@ -5534,7 +5685,7 @@ Solution:
           }
         }          
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5578,7 +5729,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5632,7 +5783,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5692,7 +5843,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5764,7 +5915,7 @@ Solution:
           }
         }            
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -5808,7 +5959,7 @@ Solution:
           }
         }    
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **description()*** on **dog** object.   
@@ -5868,7 +6019,7 @@ Solution:
           }
         } 
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object **dog** of type **Dog** in main method.   
 Call method **description()*** on **dog** object.   
@@ -5944,7 +6095,7 @@ Solution:
           }
         }  
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -6020,7 +6171,7 @@ Solution:
           }
         }       
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super()** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
@@ -6099,7 +6250,7 @@ Solution:
           }
         }     
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super("fluffy")** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
@@ -6178,7 +6329,7 @@ Solution:
           }
         }     
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(30)** as first statement in constructor **Dog()**.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
@@ -6257,7 +6408,7 @@ Solution:
           }
         }     
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Create object of type **Dog** and store it in variable **animal** of type **Animal** in main method.   
 Call method **description()*** on **animal** object.   
@@ -6359,7 +6510,7 @@ Solution:
           }
         }   
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(name)** as first statement in constructor **Dog(String name)**.   
 Add **super(speed)** as first statement in constructor **Dog(int speed)**.   
@@ -6467,7 +6618,7 @@ Solution:
           }
         }      
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super("fluffy");** as first statement in constructor **Dog()**.   
 Add **super(30);** as first statement in constructor **Dog(String name)**.   
@@ -6577,7 +6728,7 @@ Solution:
           }
         }         
         
-1. **Exercise**:    `r fmt_todo()`   
+1. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Inherit class **Dog** from class **Animal** by using **extend** keyword.   
 Add **super(name);** as first statement in constructor **Dog(String name)**.   
 Add **super(speed)** as first statement in constructor **Dog(int speed)**. 
@@ -6680,14 +6831,14 @@ Solution:
         
 #### Abstract Class {-}
 
-29. **Theory**:    `r fmt_todo()`         
+29. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Abstraction introduction.   
 
-29. **Example**:    `r fmt_todo()`        
+29. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use abstract class.      
 
-29. **Exercise**:    `r fmt_todo()`   
-Try to create method **displayColor()** without body in `r text_spec("class", color = "red")` **Animal**.   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Try to create method **displayColor()** without body in <span style="     color: red !important;" >class</span> **Animal**.   
 Question:
 
         class Animal {
@@ -6707,8 +6858,8 @@ Solution:
           //void displayColor();
         }
         
-29. **Exercise**:    `r fmt_todo()`   
-Try to create method **displayColor()** as **abstract** and without body in `r text_spec("class", color = "red")` **Animal**.     
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Try to create method **displayColor()** as **abstract** and without body in <span style="     color: red !important;" >class</span> **Animal**.     
 Question:
 
         class Animal {
@@ -6728,8 +6879,8 @@ Solution:
           // abstract void displayColor();
         }  
         
-29. **Exercise**:    `r fmt_todo()`   
-Try to create method **displayColor()** as **abstract** and without body in `r text_spec("class", color = "red")` **Animal**.   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Try to create method **displayColor()** as **abstract** and without body in <span style="     color: red !important;" >class</span> **Animal**.   
 Declare class **Animal** as **abstract**.   
 Question:
 
@@ -6750,9 +6901,9 @@ Solution:
           abstract void displayColor();
         }   
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**.   
-Try to create method **displayColor()** without body in `r text_spec("class", color = "red")` **Animal**.   
+Try to create method **displayColor()** without body in <span style="     color: red !important;" >class</span> **Animal**.   
 Question:
 
         class Animal {
@@ -6772,9 +6923,9 @@ Solution:
           //void displayColor();
         }      
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**.   
-Create method **description()** in `r text_spec("class", color = "red")` **Animal** which prints **I am an animal**.   
+Create method **description()** in <span style="     color: red !important;" >class</span> **Animal** which prints **I am an animal**.   
 Question:
 
         class Animal {
@@ -6790,11 +6941,11 @@ Solution:
           }
         }         
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**.   
-Create method **description()** in `r text_spec("class", color = "red")` **Animal** which prints **I am an animal**.   
-Create `r text_spec("static", color = "red")` method **generalDescription()** in `r text_spec("class", color = "red")` **Animal** which prints **Every animal breathes**.   
-Create abstract method **displayColor()** in `r text_spec("class", color = "red")` **Animal**.      
+Create method **description()** in <span style="     color: red !important;" >class</span> **Animal** which prints **I am an animal**.   
+Create <span style="     color: red !important;" >static</span> method **generalDescription()** in <span style="     color: red !important;" >class</span> **Animal** which prints **Every animal breathes**.   
+Create abstract method **displayColor()** in <span style="     color: red !important;" >class</span> **Animal**.      
 Question:
 
         class Animal {
@@ -6814,12 +6965,12 @@ Solution:
           abstract void displayColor();
         }     
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**.   
-Create method **description()** in `r text_spec("class", color = "red")` **Animal** which prints **I am an animal**.   
-Create `r text_spec("static", color = "red")` method **generalDescription()** in `r text_spec("class", color = "red")` **Animal** which prints **Every animal breathes**.   
-Create abstract method **displayColor()** in `r text_spec("class", color = "red")` **Animal**.  
-Create empty **main** method in `r text_spec("class", color = "red")` **Animal**.   
+Create method **description()** in <span style="     color: red !important;" >class</span> **Animal** which prints **I am an animal**.   
+Create <span style="     color: red !important;" >static</span> method **generalDescription()** in <span style="     color: red !important;" >class</span> **Animal** which prints **Every animal breathes**.   
+Create abstract method **displayColor()** in <span style="     color: red !important;" >class</span> **Animal**.  
+Create empty **main** method in <span style="     color: red !important;" >class</span> **Animal**.   
 Question:
 
         class Animal {
@@ -6843,7 +6994,7 @@ Solution:
           }
         }        
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**.   
 Try to create object of **Animal** class.   
 Question:
@@ -6885,7 +7036,7 @@ Solution:
           }
         }
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**. 
 Delete **abstract** method **displayColor()**.   
 Now, try to create object of **Animal** class.   
@@ -6928,7 +7079,7 @@ Solution:
           }
         }      
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**. 
 Make **abstract** method **displayColor()** as static as well.   
 Now, try to call **displayColor()** directly via class name in main method.   
@@ -6971,7 +7122,7 @@ Solution:
           }
         }      
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**. 
 Create data member **speed** in **Animal** class.   
 Question:
@@ -7015,7 +7166,7 @@ Solution:
           }
         }  
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**. 
 Inherit class **Dog** from **Animal** by using **extend** keyword.   
 Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
@@ -7073,7 +7224,7 @@ Solution:
           }
         }        
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**. 
 Inherit class **Dog** from **Animal** by using **extend** keyword.   
 Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
@@ -7156,7 +7307,7 @@ Solution:
           }
         }     
         
-29. **Exercise**:    `r fmt_todo()`   
+29. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **abstract**. 
 Inherit class **Dog** from **Animal** by using **extend** keyword.   
 Override abstract method **displayColor()** such that it prints **Color of dog is brown** in **Dog** class.   
@@ -7261,13 +7412,13 @@ Solution:
 
 #### Interfaces {-}
 
-45. **Theory**:    `r fmt_todo()`         
+45. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 interface introduction.   
 
-45. **Example**:    `r fmt_todo()`        
+45. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use interfaces.   
 
-45. **Exercise**:    `r fmt_todo()`   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create empty interface **Animal**.   
 Question:
        
@@ -7277,7 +7428,7 @@ Solution:
           
         }
         
-45. **Exercise**:    `r fmt_todo()`   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Add abstract method **displayProperties()** in interface **Animal**.   
 Question:
 
@@ -7290,7 +7441,7 @@ Solution:
           abstract void displayProperties();
         }     
         
-45. **Exercise**:    `r fmt_todo()`   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Delete keyword **abstract** from method **displayProperties()** in interface **Animal**. Don't provide method body.      
 Question:
 
@@ -7303,10 +7454,10 @@ Solution:
           void displayProperties();
         }    
         
-45. **Theory**:    `r fmt_todo()`   
-By default all abstract methods are `r text_spec("public", color = "red")` in an interface.   
+45. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+By default all abstract methods are <span style="     color: red !important;" >public</span> in an interface.   
 
-45. **Exercise**:    `r fmt_todo()`   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Delete keyword **abstract** from method **displayProperties()** in interface **Animal**. Don't provide method body.      
 Question:
 
@@ -7319,12 +7470,12 @@ Solution:
           void displayProperties();
         }  
         
-45. **Theory**:    `r fmt_todo()`   
+45. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 abstract method can never be **static**.   
 
-45. **Exercise**:    `r fmt_todo()`   
-Implement `r text_spec("class", color = "red")` **Dog** from `r text_spec("interface", color = "red")` **Animal** by using keyword `r text_spec("implements", color = "red")`.   
-Declare method **displayProperties()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Dog**.   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Implement <span style="     color: red !important;" >class</span> **Dog** from <span style="     color: red !important;" >interface</span> **Animal** by using keyword <span style="     color: red !important;" >implements</span>.   
+Declare method **displayProperties()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Dog**.   
 Question:
 
         interface Animal {
@@ -7348,11 +7499,11 @@ Solution:
           }
         }
         
-45. **Exercise**:    `r fmt_todo()`   
-Implement `r text_spec("class", color = "red")` **Dog** from `r text_spec("interface", color = "red")` **Animal** by using keyword `r text_spec("implements", color = "red")`.   
-Declare method **displayProperties()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Dog**.   
-Implement `r text_spec("class", color = "red")` **Fish** from `r text_spec("interface", color = "red")` **Animal** by using keyword `r text_spec("implements", color = "red")`.   
-Declare method **displayProperties()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Fish**.   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Implement <span style="     color: red !important;" >class</span> **Dog** from <span style="     color: red !important;" >interface</span> **Animal** by using keyword <span style="     color: red !important;" >implements</span>.   
+Declare method **displayProperties()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Dog**.   
+Implement <span style="     color: red !important;" >class</span> **Fish** from <span style="     color: red !important;" >interface</span> **Animal** by using keyword <span style="     color: red !important;" >implements</span>.   
+Declare method **displayProperties()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Fish**.   
 Question:
 
         interface Animal {
@@ -7388,11 +7539,11 @@ Solution:
           }
         }
         
-45. **Exercise**:    `r fmt_todo()`   
-Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **FlyBehavior** by using keyword `r text_spec("implements", color = "red")`.   
-Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **EatBehavior**.   
-Declare method **fly()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
-Declare method **eat()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Implement <span style="     color: red !important;" >class</span> **Bird** from <span style="     color: red !important;" >interface</span> **FlyBehavior** by using keyword <span style="     color: red !important;" >implements</span>.   
+Implement <span style="     color: red !important;" >class</span> **Bird** from <span style="     color: red !important;" >interface</span> **EatBehavior**.   
+Declare method **fly()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Bird**.   
+Declare method **eat()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Bird**.   
 Question:
 
         interface FlyBehavior {
@@ -7432,12 +7583,12 @@ Solution:
           }
         }   
         
-45. **Exercise**:    `r fmt_todo()`   
-Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **FlyBehavior** by using keyword `r text_spec("implements", color = "red")`.   
-Implement `r text_spec("class", color = "red")` **Bird** from `r text_spec("interface", color = "red")` **EatBehavior**.   
-Declare method **fly()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
-Declare method **eat()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Bird**.   
-Create method **description()** in `r text_spec("class", color = "red")` **Bird**.   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Implement <span style="     color: red !important;" >class</span> **Bird** from <span style="     color: red !important;" >interface</span> **FlyBehavior** by using keyword <span style="     color: red !important;" >implements</span>.   
+Implement <span style="     color: red !important;" >class</span> **Bird** from <span style="     color: red !important;" >interface</span> **EatBehavior**.   
+Declare method **fly()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Bird**.   
+Declare method **eat()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Bird**.   
+Create method **description()** in <span style="     color: red !important;" >class</span> **Bird**.   
 Print **Birds are beautiful creature** in method **description()**.   
 Question:
 
@@ -7482,26 +7633,26 @@ Solution:
           }
         }   
         
-45. **Exercise**:    `r fmt_todo()`   
-    - **Description**:    `r fmt_todo()`   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+    - **Description**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
         **Objective:**   
         Objective is to display text.   
         <br/>
         **Steps to perform:**
-        1. Print `r text_spec("My first java program", color = "orange", bold = TRUE)` in given jShell file.
-        1. Extend `r text_spec("interface", color = "red")` `r text_spec("Puller", color = "brown", bold = TRUE)` from `r text_spec("interface", color = "red")` `r text_spec("ShippingHelper", color = "brown", bold = TRUE)` by using keyword `r text_spec("extends", color = "red")`.
-        1. Extend `r text_spec("interface", color = "red")` **CargoCarrier** from `r text_spec("interface", color = "red")` **ShippingHelper** by using keyword `r text_spec("extends", color = "red")`.   
-        1. Implement `r text_spec("class", color = "red")` **Ox** from `r text_spec("interface", color = "red")` **Puller** by using keyword `r text_spec("implements", color = "red")`.   
-        1. Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
-        1. Declare method **canPull()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
-        1. Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
-        1. Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **Racer**.   
-        1. Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
-        1. Declare method **canRace()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
-        1. Implement `r text_spec("class", color = "red")` **Elephant** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
-        1. Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Elephant**.   
+        1. Print <span style=" font-weight: bold;    color: orange !important;" >My first java program</span> in given jShell file.
+        1. Extend <span style="     color: red !important;" >interface</span> <span style=" font-weight: bold;    color: brown !important;" >Puller</span> from <span style="     color: red !important;" >interface</span> <span style=" font-weight: bold;    color: brown !important;" >ShippingHelper</span> by using keyword <span style="     color: red !important;" >extends</span>.
+        1. Extend <span style="     color: red !important;" >interface</span> **CargoCarrier** from <span style="     color: red !important;" >interface</span> **ShippingHelper** by using keyword <span style="     color: red !important;" >extends</span>.   
+        1. Implement <span style="     color: red !important;" >class</span> **Ox** from <span style="     color: red !important;" >interface</span> **Puller** by using keyword <span style="     color: red !important;" >implements</span>.   
+        1. Declare method **canShip()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Ox**.   
+        1. Declare method **canPull()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Ox**.   
+        1. Implement <span style="     color: red !important;" >class</span> **Horse** from <span style="     color: red !important;" >interface</span> **CargoCarrier** by using keyword <span style="     color: red !important;" >implements</span>.   
+        1. Implement <span style="     color: red !important;" >class</span> **Horse** from <span style="     color: red !important;" >interface</span> **Racer**.   
+        1. Declare method **canShip()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Horse**.   
+        1. Declare method **canRace()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Horse**.   
+        1. Implement <span style="     color: red !important;" >class</span> **Elephant** from <span style="     color: red !important;" >interface</span> **CargoCarrier** by using keyword <span style="     color: red !important;" >implements</span>.   
+        1. Declare method **canShip()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Elephant**.   
         <br/>
-    - **Question**:       `r fmt_todo()`   
+    - **Question**:       <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 
                 System.out.println("");   
     - **Solution**:
@@ -7511,17 +7662,17 @@ Solution:
 
 
 
-Extend `r text_spec("interface", color = "red")` **Puller** from `r text_spec("interface", color = "red")` **ShippingHelper** by using keyword `r text_spec("extends", color = "red")`.   
-Extend `r text_spec("interface", color = "red")` **CargoCarrier** from `r text_spec("interface", color = "red")` **ShippingHelper** by using keyword `r text_spec("extends", color = "red")`.   
-Implement `r text_spec("class", color = "red")` **Ox** from `r text_spec("interface", color = "red")` **Puller** by using keyword `r text_spec("implements", color = "red")`.   
-Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
-Declare method **canPull()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Ox**.   
-Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
-Implement `r text_spec("class", color = "red")` **Horse** from `r text_spec("interface", color = "red")` **Racer**.   
-Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
-Declare method **canRace()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Horse**.   
-Implement `r text_spec("class", color = "red")` **Elephant** from `r text_spec("interface", color = "red")` **CargoCarrier** by using keyword `r text_spec("implements", color = "red")`.   
-Declare method **canShip()** as `r text_spec("public", color = "red")` in `r text_spec("class", color = "red")` **Elephant**.   
+Extend <span style="     color: red !important;" >interface</span> **Puller** from <span style="     color: red !important;" >interface</span> **ShippingHelper** by using keyword <span style="     color: red !important;" >extends</span>.   
+Extend <span style="     color: red !important;" >interface</span> **CargoCarrier** from <span style="     color: red !important;" >interface</span> **ShippingHelper** by using keyword <span style="     color: red !important;" >extends</span>.   
+Implement <span style="     color: red !important;" >class</span> **Ox** from <span style="     color: red !important;" >interface</span> **Puller** by using keyword <span style="     color: red !important;" >implements</span>.   
+Declare method **canShip()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Ox**.   
+Declare method **canPull()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Ox**.   
+Implement <span style="     color: red !important;" >class</span> **Horse** from <span style="     color: red !important;" >interface</span> **CargoCarrier** by using keyword <span style="     color: red !important;" >implements</span>.   
+Implement <span style="     color: red !important;" >class</span> **Horse** from <span style="     color: red !important;" >interface</span> **Racer**.   
+Declare method **canShip()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Horse**.   
+Declare method **canRace()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Horse**.   
+Implement <span style="     color: red !important;" >class</span> **Elephant** from <span style="     color: red !important;" >interface</span> **CargoCarrier** by using keyword <span style="     color: red !important;" >implements</span>.   
+Declare method **canShip()** as <span style="     color: red !important;" >public</span> in <span style="     color: red !important;" >class</span> **Elephant**.   
 Question:
 
         interface ShippingHelper{
@@ -7607,7 +7758,7 @@ Solution:
           }
         }     
         
-45. **Exercise**:    `r fmt_todo()`   
+45. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create variable **x** in interface **MyInterface**.   
 Question:
 
@@ -7623,13 +7774,13 @@ Solution:
 
 #### final keyword {-}
 
-56. **Theory**:    `r fmt_todo()`         
+56. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 final class can never be inherited.      
 
-56. **Example**:    `r fmt_todo()`        
+56. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to use final with class...   
 
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create empty class **Animal**.   
 Declare class **Animal** as **final**.   
 Question:
@@ -7640,7 +7791,7 @@ Solution:
           
         }
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **final**.   
 Print **I am in Animal class** in method **displayProperties()** in **Animal** class.   
 Question:
@@ -7658,7 +7809,7 @@ Solution:
           }
         }  
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare class **Animal** as **final**.   
 Try to inherit class **Dog** from **Animal** class by using **extends** keyword.   
 Question:
@@ -7684,10 +7835,10 @@ Solution:
           
         }
      
-56. **Theory**:    `r fmt_todo()`         
+56. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 final methods can never be overridden.      
 
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Declare method **displayProperties()** as **final** in **Animal** class.   
 Inherit class **Dog** from **Animal** class by using **extends** keyword.   
 Try to create method **displayProperties()** with same signature in **Dog** class.   
@@ -7714,10 +7865,10 @@ Solution:
           
         }
         
-56. **Theory**:    `r fmt_todo()`         
+56. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 final data member
 
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **speed** of **int** type in **Animal** class.   
 Initialize data member **speed** with value **10**.   
 Declare data member **speed** as **final**.   
@@ -7740,7 +7891,7 @@ Solution:
           }
         }  
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **speed** of **int** type in **Animal** class.   
 Initialize data member **speed** with value **10**.   
 Declare data member **speed** as **final**.   
@@ -7763,7 +7914,7 @@ Solution:
           }
         }       
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 try to declare data member **speed** as **final**.   
@@ -7778,7 +7929,7 @@ Solution:
           final int speed;
         }  
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Implement method **modifySpeed(int speed)** such as value of argument **speed** is assigned to data member **speed**.   
@@ -7801,7 +7952,7 @@ Solution:
           }
         }      
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7824,7 +7975,7 @@ Solution:
           }
         }        
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7848,7 +7999,7 @@ Solution:
           }
         }                
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7873,10 +8024,10 @@ Solution:
           }
         }   
         
-56. **Theory**:    `r fmt_todo()`         
+56. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Static data member as final   
         
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Create static data member **speed** of **int** type in **Animal** class.   
 Do not initialize data member **speed**.   
 Declare data member **speed** as **final**.   
@@ -7899,10 +8050,10 @@ Solution:
           }
         }                   
 
-56. **Theory**:    `r fmt_todo()`         
+56. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Local variable as final   
 
-56. **Exercise**:    `r fmt_todo()`   
+56. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>   
 Try to add statement **x=speed** in method **modifySpeed(int speed)**.   
 Question:
 
@@ -7943,13 +8094,13 @@ Solution:
 
 #### Static Block {-}
 
-23. **Theory**:    `r fmt_todo()`         
+23. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of static block.    
 
-23. **Example**:    `r fmt_todo()`        
+23. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
 How to create static block in java file.
 
-23. **Exercise**:    `r fmt_todo()`       
+23. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create static block in java file which prints "In static block" message. Try execute this file.   
 Question:
 
@@ -7966,7 +8117,7 @@ Solution:
           }
         }        
 
-23. **Exercise**:    `r fmt_todo()`       
+23. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 Create first static blocks which prints "In first static block" message.    
 Create second static blocks which prints "In second static block" message. Try execute this java file.    
 Question:
@@ -7992,7 +8143,7 @@ Solution:
           }
         }        
 
-23. **Exercise**:    `r fmt_todo()`       
+23. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 The first static block shall print "In first static block" message.    
 The second static block shall print "In second static block" message.    
 Create main method, which shall print "In main method". Try execute this java file.   
@@ -8027,10 +8178,10 @@ Solution:
           }
         }        
 
-23. **Theory**:    `r fmt_todo()`         
+23. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
 Importance of order of static block.   
 
-23. **Exercise**:    `r fmt_todo()`       
+23. **Exercise**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>       
 The first static block shall print "In first static block" message.    
 Create main method, which shall print "In main method".   
 The second static block shall print "In second static block" message.    
@@ -8065,3 +8216,98 @@ Solution:
             System.out.println("");
           }
         }        
+
+
+
+
+
+
+
+
+
+
+
+## First Module Pages Proposal {-}
+
+1. **Theory** : 
+<span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Overview of Java   
+
+
+1. **Example** : 
+<span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+How to print output in java.   
+
+
+1. **Exercise** : 
+<span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Write a Program to display op message **My first java program** in jshell file.   
+
+
+1. **Exercise** : 
+<span style=" font-weight: bold;    color: red !important;" >TODO</span>   
+Write a Program to display **I am loving coding** in jshell file.      
+
+
+
+
+
+
+
+
+# Kafka {-}
+
+
+
+
+
+
+## Kafka CommandLine {-}
+
+### Module 01: Introduction {-}
+
+#### Producer, Kafka, Consumer {-}
+
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
+Overview of Kafka.  
+
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
+Sbt Start Kafka Cluster
+
+
+
+## Kafka Java {-}
+
+### Module 01: Introduction {-}
+
+#### Kafka Java Api {-}
+
+1. **Theory**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>         
+Overview of Kafka.  
+
+1. **Example**:    <span style=" font-weight: bold;    color: red !important;" >TODO</span>        
+Start Kafka Cluster Using Sbt
+
+
+
+
+# Docker {-}
+
+
+
+
+
+## Alpine {-}
+
+### Packages Summary {-}
+
+procps : for hdfs related images   
+iputils : for ping   
+coreutils : for cat mv rm commands   
+openssh : for ssh server   
+bash : ???   
+
+
+
+<!--chapter:end:index.Rmd-->
+
