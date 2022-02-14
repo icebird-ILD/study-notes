@@ -1,7 +1,6 @@
 --- 
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
 description: study notes in sharing mode
 link-citations: yes
 github-repo: rstudio/bookdown-demo
@@ -13,18 +12,14 @@ library(kableExtra)
 dir=paste(getwd())
 cats_udemy_topic_file=paste(dir, "cats-udemy/udemy.Rmd", sep = "/")
 java_topic_file=paste(dir, "java/index.Rmd", sep = "/")
+docker_topic_file=paste(dir, "docker/index.Rmd", sep = "/")
 ```
 
 ```{r child = cats_udemy_topic_file}
 ```
 
-```{r child = kafka_udemy_topic_file}
-```
 
 ```{r child = java_topic_file}
-```
-
-```{r child = kafka_course_file}
 ```
 
 
