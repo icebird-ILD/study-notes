@@ -1,0 +1,6 @@
+book.bib
+.Rhistory
+.Rproj.user/*
+_bookdown_files/*
+docs/*
+.Rproj.user

@@ -1,0 +1,17 @@
+--- 
+site: bookdown::bookdown_site
+documentclass: book
+description: study notes in sharing mode
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+dir=paste(getwd())
+kafka_course_file=paste(dir, "kafka/index.Rmd", sep = "/")
+```
+
+```{r child = kafka_course_file}
+```
+
