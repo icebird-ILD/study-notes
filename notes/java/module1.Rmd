@@ -30,6 +30,10 @@ fmt_variable <- function(text) {
   text_spec(text, color= "navy", bold = TRUE)
 }
 
+fmt_value <- function(text) {
+  text_spec(text, color= "purple", bold = TRUE)
+}
+
 fmt_data_member <- function(text) {
   text_spec(text, color= "teal", bold = TRUE)
 }
@@ -177,7 +181,7 @@ How to create variable of type `r fmt_keyword("String")` and display its value.
         Objective is to create a variable of `r fmt_keyword("String")` type and display its value.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_output("John")` to it.   
+        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_value("John")` to it.   
         1. Print variable `r fmt_variable("name")`.   
         <br/>
     - **Question**:       `r fmt_todo()`   
@@ -194,8 +198,8 @@ How to create variable of type `r fmt_keyword("String")` and display its value.
         Objective is to create two variables of `r fmt_keyword("String")` type and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("boyName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("John")` to it.   
-        1. Create variable `r fmt_variable("girlName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Maria")` to it.   
+        1. Create variable `r fmt_variable("boyName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("John")` to it.   
+        1. Create variable `r fmt_variable("girlName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Maria")` to it.   
         1. Print variable `r fmt_variable("boyName")`.   
         1. Print variable `r fmt_variable("girlName")`.   
         <br/>
@@ -218,7 +222,7 @@ How to create variable of type `r fmt_keyword("int")` and display its value.
         Objective is to create a variable of `r fmt_keyword("int")` type and display its value.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_output(21)` to it.   
+        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_value(21)` to it.   
         1. Print variable `r fmt_variable("age")`.   
         <br/>
     - **Question**:       `r fmt_todo()`   
@@ -235,8 +239,8 @@ How to create variable of type `r fmt_keyword("int")` and display its value.
         Objective is to create two variables of `r fmt_keyword("int")` type and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("boyAge")` of `r fmt_keyword("int")` type and assign value `r fmt_output(21)` to it.   
-        1. Create variable `r fmt_variable("girlAge")` of `r fmt_keyword("int")` type and assign value `r fmt_output(23)` to it.   
+        1. Create variable `r fmt_variable("boyAge")` of `r fmt_keyword("int")` type and assign value `r fmt_value(21)` to it.   
+        1. Create variable `r fmt_variable("girlAge")` of `r fmt_keyword("int")` type and assign value `r fmt_value(23)` to it.   
         1. Print variable `r fmt_variable("boyAge")`.   
         1. Print variable `r fmt_variable("girlAge")`.   
         <br/>
@@ -260,7 +264,7 @@ How to create variable of type `r fmt_keyword("float")` and display its value.
         Objective is to create a variable of `r fmt_keyword("float")` type and display its value.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(7.1)` to it.   
+        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(7.1)` to it.   
         1. Print variable `r fmt_variable("marks")`.   
         <br/>
     - **Question**:       `r fmt_todo()`   
@@ -277,8 +281,8 @@ How to create variable of type `r fmt_keyword("float")` and display its value.
         Objective is to create two variables of `r fmt_keyword("float")` type and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("boyMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(7.1)` to it.  
-        1. Create variable `r fmt_variable("girlMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(8.3)` to it.  
+        1. Create variable `r fmt_variable("boyMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(7.1)` to it.  
+        1. Create variable `r fmt_variable("girlMarks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(8.3)` to it.  
         1. Print variable `r fmt_variable("boyMarks")`.   
         1. Print variable `r fmt_variable("girlMarks")`.   
         <br/>
@@ -299,9 +303,9 @@ How to create variable of type `r fmt_keyword("float")` and display its value.
         Objective is to create three variables of different types and display their values.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to it.  
-        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_output(22)` to it.  
-        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_output(7.9)` to it.  
+        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
+        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type and assign value `r fmt_value(22)` to it.  
+        1. Create variable `r fmt_variable("marks")` of `r fmt_keyword("float")` type and assign value `r fmt_value(7.9)` to it.  
         1. Print variable `r fmt_variable("name")`.   
         1. Print variable `r fmt_variable("age")`.   
         1. Print variable `r fmt_variable("marks")`.   
@@ -362,8 +366,8 @@ How to do String concatenation.
         Objective is to create variables and concatenate their values in print statement.     
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to it.  
-        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Michael")` to it.  
+        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
+        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Michael")` to it.  
         1. Concatenate variables `r fmt_variable("firstName")` and `r fmt_variable("lastName")` in print statement.   
         <br/>
     - **Question**:       `r fmt_todo()`   
@@ -381,9 +385,9 @@ How to do String concatenation.
         Objective is to create variables and concatenate their values in print statement.     
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to it.  
-        1. Create variable `r fmt_variable("middleName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Ray")` to it.  
-        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Michael")` to it.  
+        1. Create variable `r fmt_variable("firstName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
+        1. Create variable `r fmt_variable("middleName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Ray")` to it.  
+        1. Create variable `r fmt_variable("lastName")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Michael")` to it.  
         1. Concatenate variables `r fmt_variable("firstName")` and `r fmt_variable("middleName")` and `r fmt_variable("lastName")` in print statement.   
         <br/>
     - **Question**:       `r fmt_todo()`   
@@ -417,8 +421,8 @@ How to do String concatenation.
         Objective is to create variables of different types and concatenate their values in print statement.     
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_output("Shawn")` to it.  
-        1. Create variable `r fmt_variable("score")` of `r fmt_keyword("float")` type and assign value `r fmt_output(8.1)` to it.  
+        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type and assign value `r fmt_value("Shawn")` to it.  
+        1. Create variable `r fmt_variable("score")` of `r fmt_keyword("float")` type and assign value `r fmt_value(8.1)` to it.  
         1. Concatenate variables `r fmt_variable("name")` and `r fmt_variable("score")` in print statement.   
         <br/>
     - **Question**:       `r fmt_todo()`   
@@ -436,8 +440,8 @@ How to do String concatenation.
         Objective is to perform addition of two numbers. Store the result in third number. Print the addition result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(10)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(20)` to it.     
+        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(10)` to it.   
+        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(20)` to it.     
         1. Create variable `r fmt_variable("additionResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` + `r fmt_variable("number2")` to it.     
         1. Print `r fmt_output("Addition result is=")` and variable `r fmt_variable("additionResult")` in a single line.   
         <br/>
@@ -457,8 +461,8 @@ How to do String concatenation.
         Objective is to perform subtraction of two numbers. Store the result in third number. Print the subtraction result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(100)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(80)` to it.     
+        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(100)` to it.   
+        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(80)` to it.     
         1. Create variable `r fmt_variable("subtractionResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` - `r fmt_variable("number2")` to it.     
         1. Print `r fmt_output("Subtraction result is=")` and variable `r fmt_variable("subtractionResult")` in a single line.   
         <br/>
@@ -478,8 +482,8 @@ How to do String concatenation.
         Objective is to perform multiplication of two numbers. Store the result in third number. Print the multiplication result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(100)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(80)` to it.     
+        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(100)` to it.   
+        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(80)` to it.     
         1. Create variable `r fmt_variable("multiplicationResult")` of `r fmt_keyword("int")` type and assign result of `r fmt_variable("number1")` * `r fmt_variable("number2")` to it.     
         1. Print `r fmt_output("Multiplication result is=")` and variable `r fmt_variable("multiplicationResult")` in a single line.   
         <br/>
@@ -499,8 +503,8 @@ How to do String concatenation.
         Objective is to perform division of two numbers. Store the result in third decimal number. Print the division result.   
         <br/>
         **Steps to perform:**   
-        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_output(100)` to it.   
-        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_output(80)` to it.     
+        1. Create variable `r fmt_variable("number1")` of `r fmt_keyword("int")` type and assign value `r fmt_value(100)` to it.   
+        1. Create variable `r fmt_variable("number2")` of `r fmt_keyword("int")` type and assign value `r fmt_value(80)` to it.     
         1. Create variable `r fmt_variable("divisionResult")` of `r fmt_keyword("double")` type and assign result of `r fmt_variable("number1")` / `r fmt_variable("number2")` to it.     
         1. Print `r fmt_output("Division result is=")` and variable `r fmt_variable("divisionResult")` in a single line.   
         <br/>
@@ -669,126 +673,155 @@ How to create empty class in java file.
                 }   
 
 1. **Example**:    `r fmt_todo()`        
-How to create empty main method in java file.   
+How to create empty main method in java file.  
+  
+1. **Exercise**:    `r fmt_todo()`       
     - **Description**:    `r fmt_todo()`   
         **Objective:**   
         Objective is to write a java class which can be executed but does nothing on execution.   
         <br/>
         **Steps to perform:**   
-        1. Create `r fmt_keyword("class")` `r fmt_class("MyFirstClass")`.   
-        1. Create `r fmt_keyword("class")` `r fmt_class("MyFirstClass")`.   
+        1. Create `r fmt_method("main")` method in `r fmt_class("ExecutableClass")`.   
         <br/>
     - **Question**:       `r fmt_todo()`   
 
-                class MyFirstClass{
+                class ExecutableClass{
                   
                 } 
     - **Solution**:
 
-                class MyFirstClass{
+                class ExecutableClass{
                   public static void main(String[] args){
                     
                   }
                 }   
-  
-1. **Exercise**:    `r fmt_todo()`       
-Write a java program which contains an class file, in which an empty main method is created.    
-Create `r text_spec("class", color = "red")` **MyClass**.   
-Create empty **main** method.   
-
-        class SampleClass {
-          public static void main(String[] args) {
-          }
-        }
+        
 
 1. **Example**:    `r fmt_todo()`        
 How to print "Hello world" in main method in java file.   
 
 1. **Exercise**:    `r fmt_todo()`       
-Print **I am loving coding**.    
-Print **Programming is amazing**.  
-Question:
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        We want to print some text lines as output.   
+        <br/>
+        **Steps to perform:**   
+        1. Print `r fmt_output("I am loving coding")`    
+        1. Print `r fmt_output("Programming is amazing")`    
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-        class SampleClass {
-          public static void main(String[] args) {
-            System.out.println("");
-            System.out.println("");
-          }
-        }
-Solution:
+                class PrintText {
+                  public static void main(String[] args) {
+                    System.out.println("");
+                    System.out.println("");
+                  }
+                } 
+    - **Solution**:
 
-        class SampleClass {
-          public static void main(String[] args) {
-            System.out.println("I am loving coding");
-            System.out.println("Programming is amazing");
-          }
-        }
-
-1. **Exercise**:    `r fmt_todo()`       
-Print **10**.    
-Question:
-
-        class SampleClass {
-          public static void main(String[] args) {
-            System.out.println();
-          }
-        }
-Solution:
-
-        class SampleClass {
-          public static void main(String[] args) {
-            System.out.println(10);
-          }
-        }
+                class PrintText {
+                  public static void main(String[] args) {
+                    System.out.println("I am loving coding");
+                    System.out.println("Programming is amazing");
+                  }
+                }           
 
 1. **Exercise**:    `r fmt_todo()`       
-Print **37.4**.    
-Question:
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        We want to print some numbers in separate lines as output.   
+        <br/>
+        **Steps to perform:**   
+        1. Print `r fmt_output(10)`    
+        1. Print `r fmt_output(90)`    
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-        class SampleClass {
-          public static void main(String[] args) {
-            System.out.println();
-          }
-        }
-Solution:
+                class PrintNumbers {
+                  public static void main(String[] args) {
+                    System.out.println();
+                    System.out.println();
+                  }
+                } 
+    - **Solution**:
 
-        class SampleClass {
-          public static void main(String[] args) {
-            System.out.println(37.4);
-          }
-        }
+                class PrintNumbers {
+                  public static void main(String[] args) {
+                    System.out.println(10);
+                    System.out.println(90);
+                  }
+                }        
 
 1. **Exercise**:    `r fmt_todo()`       
-Create variable `r text_spec("String", color = "red")` **name** = *"John"*.   
-Create variable **int** **age** = *10*.   
-Create variable **float** **grade** = *7.8*.   
-Print value of **name**.   
-Print value of **age**.   
-Print value of **grade**.   
-Question:
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        We want to print some decimal numbers in separate lines as output.   
+        <br/>
+        **Steps to perform:**   
+        1. Print `r fmt_output(10.8)`    
+        1. Print `r fmt_output(90.29)`    
+        <br/>
+    - **Question**:       `r fmt_todo()`   
 
-        class VariableCreation {
-          public static void main(String[] args) {
-            
-            
-            
-            System.out.println();
-            System.out.println();
-            System.out.println();
-          }
-        }
-Solution:
+                class PrintDecimals {
+                  public static void main(String[] args) {
+                    System.out.println();
+                    System.out.println();
+                  }
+                } 
+    - **Solution**:
 
-        class VariableCreation {
-          public static void main(String[] args) {
-            String name = "John";
-            int age = 15;
-            float grade = 7.8;
-            System.out.println(name);
-            System.out.println(age);
-            System.out.println(grade);
-          }
-        }
+                class PrintDecimals {
+                  public static void main(String[] args) {
+                    System.out.println(10.8);
+                    System.out.println(90.29);
+                  }
+                }        
+
+1. **Exercise**:    `r fmt_todo()`       
+    - **Description**:    `r fmt_todo()`   
+        **Objective:**   
+        We want you to create some variables of different types, assign them some values and finally, print those variables.   
+        <br/>
+        **Steps to perform:**   
+        1. Create variable `r fmt_variable("name")` of `r fmt_keyword("String")` type.   
+        1. Create variable `r fmt_variable("age")` of `r fmt_keyword("int")` type.   
+        1. Create variable `r fmt_variable("score")` of `r fmt_keyword("double")` type.   
+        1. Assign value `r fmt_value("Kristen")` to variable `r fmt_variable("name")`.   
+        1. Assign value `r fmt_value(24)` to variable `r fmt_variable("age")`.   
+        1. Assign value `r fmt_value(9.1)` to variable `r fmt_variable("score")`.   
+        1. Print variable `r fmt_variable("name")`.      
+        1. Print variable `r fmt_variable("age")`.      
+        1. Print variable `r fmt_variable("score")`.      
+        <br/>
+    - **Question**:       `r fmt_todo()`   
+
+                class PrintVariables {
+                  public static void main(String[] args) {
+                    
+                    
+                    System.out.println(name);
+                    System.out.println(age);
+                    System.out.println(score);
+                  }
+                }  
+    - **Solution**:
+
+                class PrintVariables {
+                  public static void main(String[] args) {
+                    String name;
+                    int age;
+                    double score;
+                    
+                    name = "John";
+                    age = 15;
+                    score = 7.8;
+                    
+                    System.out.println(name);
+                    System.out.println(age);
+                    System.out.println(score);
+                  }
+                }                
 
 1. **Exercise**:    `r fmt_todo()`       
 Addition:    
